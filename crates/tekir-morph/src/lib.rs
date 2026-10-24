@@ -16,7 +16,6 @@ pub use analysis::{
 };
 pub use analyzer::{Analyzer, MAX_IGS, RawAnalysis, analyze_word};
 pub use generator::generate_from_igs;
-pub use lexical::LexicalNounForm;
 pub use lexicon::{Lexicon, LexiconEntry, LexiconError, StemAlternant};
 pub use state::{
     Agreement, Case, CopulaTense, Derivation, IgPos, InflectionGroup, NounMorpheme, NounPath,

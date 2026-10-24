@@ -5,10 +5,9 @@ use tekir_core::{TextRequest, TextTransformResponse, TextTransformer};
 
 use crate::{
     analyzer::Analyzer,
-    lexical::LexicalNounForm,
     lexicon::Lexicon,
     preference::choose_best_noun_analysis,
-    state::{Case, InflectionGroup, NounMorpheme, Number, Possessive},
+    state::{IgPos, InflectionGroup},
 };
 
 pub type MorphRequest = TextRequest<()>;
@@ -46,23 +45,37 @@ pub enum PartOfSpeech {
 }
 
 /// One analysis of a surface form. `igs` is the full inflectional-group
-/// chain; `pos`, `number`, `possessive`, `case`, and `morphemes` describe
-/// the final group, and `lexical_form` renders the whole chain with `^DB`
-/// boundaries.
+/// chain, `pos` is the part of speech of its final group, and
+/// `lexical_form` renders the whole chain with `^DB` boundaries.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct MorphAnalysis {
     pub surface: String,
     pub lemma: String,
-    pub lexical: LexicalNounForm,
     pub lexical_form: String,
     pub pos: PartOfSpeech,
-    pub number: Number,
-    pub possessive: Possessive,
-    pub case: Case,
-    pub morphemes: Vec<NounMorpheme>,
     pub igs: Vec<InflectionGroup>,
     #[serde(skip_serializing_if = "AnalysisSource::is_lexicon")]
     pub source: AnalysisSource,
+}
+
+impl MorphAnalysis {
+    /// The last inflectional group, which carries the word's inflection.
+    pub fn final_ig(&self) -> &InflectionGroup {
+        self.igs.last().expect("analysis has at least one group")
+    }
+}
+
+impl From<IgPos> for PartOfSpeech {
+    fn from(pos: IgPos) -> Self {
+        match pos {
+            IgPos::Noun => PartOfSpeech::Noun,
+            IgPos::Adj => PartOfSpeech::Adj,
+            IgPos::Verb => PartOfSpeech::Verb,
+            IgPos::Adv => PartOfSpeech::Adv,
+            IgPos::Ques => PartOfSpeech::Ques,
+            IgPos::Func => PartOfSpeech::Pron,
+        }
+    }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]

@@ -7,7 +7,6 @@
 //! construction.
 
 use crate::{
-    lexical::LexicalNounForm,
     lexicon::{CausativeAllomorph, LexiconEntry},
     rules::{
         PhonoContext, a_harmony, affricate_consonant, i_harmony, i_harmony_after, is_vowel,
@@ -1046,25 +1045,12 @@ pub fn generate_noun_surface(entry: &LexiconEntry, path: &NounPath) -> String {
     )
 }
 
-pub fn generate_surface_from_lexical(entry: &LexiconEntry, lexical: &LexicalNounForm) -> String {
-    generate_from_igs(
-        entry,
-        &[InflectionGroup::noun(
-            None,
-            lexical.number,
-            lexical.possessive,
-            lexical.case,
-        )],
-    )
-}
-
 #[cfg(test)]
 mod tests {
     use crate::{
         analyzer::analyze_word,
-        generator::{generate_from_igs, generate_noun_surface, generate_surface_from_lexical},
+        generator::{generate_from_igs, generate_noun_surface},
         gold::GOLD_GENERATION_CASES,
-        lexical::build_lexical_noun_form,
         lexicon::Lexicon,
         state::{Case, Derivation, InflectionGroup, NounPath, Number, Possessive, noun_paths},
     };
@@ -1318,16 +1304,6 @@ mod tests {
     }
 
     #[test]
-    fn generates_surface_from_lexical_form() {
-        let lexicon = seed();
-        let entry = lexicon.entry_by_lemma("kitap").expect("kitap should exist");
-        let path = NounPath::new(Number::Singular, Possessive::None, Case::Dative);
-        let lexical = build_lexical_noun_form(entry, &path);
-
-        assert_eq!(generate_surface_from_lexical(entry, &lexical), "kitaba");
-    }
-
-    #[test]
     fn generated_surfaces_roundtrip_back_to_their_paths() {
         let lexicon = seed();
         let paths = noun_paths();
@@ -1348,9 +1324,9 @@ mod tests {
                     analyses.iter().any(|analysis| {
                         analysis.lemma == entry.lemma
                             && analysis.igs.len() == 1
-                            && analysis.number == path.number
-                            && analysis.possessive == path.possessive
-                            && analysis.case == path.case
+                            && analysis.final_ig().number == path.number
+                            && analysis.final_ig().possessive == path.possessive
+                            && analysis.final_ig().case == path.case
                     }),
                     "generated surface {} did not roundtrip for lemma={} path={:?}",
                     surface,

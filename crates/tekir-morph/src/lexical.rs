@@ -1,46 +1,7 @@
-use serde::Serialize;
-
-use crate::{
-    lexicon::LexiconEntry,
-    state::{
-        Agreement, Case, CopulaTense, Derivation, IgPos, InflectionGroup, NounMorpheme, NounPath,
-        Number, Polarity, Possessive, VerbTense,
-    },
+use crate::state::{
+    Agreement, Case, CopulaTense, Derivation, IgPos, InflectionGroup, Number, Polarity, Possessive,
+    VerbTense,
 };
-
-#[derive(Debug, Clone, PartialEq, Eq, Serialize)]
-pub struct LexicalNounForm {
-    pub lemma: String,
-    pub lexical_root: String,
-    pub number: Number,
-    pub possessive: Possessive,
-    pub case: Case,
-    pub morphemes: Vec<NounMorpheme>,
-}
-
-impl LexicalNounForm {
-    pub fn to_gloss(&self) -> String {
-        let parts = [
-            self.lemma.as_str(),
-            "Noun",
-            lexical_number_tag(self.number),
-            lexical_possessive_tag(self.possessive),
-            lexical_case_tag(self.case),
-        ];
-        parts.join("+")
-    }
-}
-
-pub fn build_lexical_noun_form(entry: &LexiconEntry, path: &NounPath) -> LexicalNounForm {
-    LexicalNounForm {
-        lemma: entry.lemma.clone(),
-        lexical_root: entry.bare_stem.clone(),
-        number: path.number,
-        possessive: path.possessive,
-        case: path.case,
-        morphemes: path.morphemes.clone(),
-    }
-}
 
 /// Render an inflectional-group chain as a lexical gloss, joining groups
 /// with `^DB` derivational boundaries in the METU-Sabancı convention:
@@ -243,32 +204,21 @@ fn lexical_case_tag(case: Case) -> &'static str {
 #[cfg(test)]
 mod tests {
     use crate::{
-        lexical::build_lexical_noun_form,
-        lexicon::Lexicon,
-        state::{Case, NounPath, Number, Possessive},
+        lexical::gloss_from_igs,
+        state::{Case, InflectionGroup, Number, Possessive},
     };
 
     #[test]
     fn builds_conventional_noun_glosses() {
-        let lexicon = Lexicon::seed();
-        let entry = lexicon.entry_by_lemma("ev").expect("ev should exist");
-        let lexical = build_lexical_noun_form(
-            entry,
-            &NounPath::new(Number::Plural, Possessive::None, Case::Nominative),
-        );
+        let ig = InflectionGroup::noun(None, Number::Plural, Possessive::None, Case::Nominative);
 
-        assert_eq!(lexical.to_gloss(), "ev+Noun+A3pl+Pnon+Nom");
+        assert_eq!(gloss_from_igs("ev", &[ig]), "ev+Noun+A3pl+Pnon+Nom");
     }
 
     #[test]
     fn gloss_keeps_default_singular_and_nominal_tags() {
-        let lexicon = Lexicon::seed();
-        let entry = lexicon.entry_by_lemma("kitap").expect("kitap should exist");
-        let lexical = build_lexical_noun_form(
-            entry,
-            &NounPath::new(Number::Singular, Possessive::None, Case::Dative),
-        );
+        let ig = InflectionGroup::noun(None, Number::Singular, Possessive::None, Case::Dative);
 
-        assert_eq!(lexical.to_gloss(), "kitap+Noun+A3sg+Pnon+Dat");
+        assert_eq!(gloss_from_igs("kitap", &[ig]), "kitap+Noun+A3sg+Pnon+Dat");
     }
 }

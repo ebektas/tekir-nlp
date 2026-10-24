@@ -10,9 +10,9 @@ use std::sync::LazyLock;
 use crate::{
     analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
     analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_ki_tail_into},
-    lexical::{LexicalNounForm, gloss_from_igs},
+    lexical::gloss_from_igs,
     rules::PhonoContext,
-    state::{Case, InflectionGroup, Number, Possessive},
+    state::InflectionGroup,
 };
 
 struct ClosedForm {
@@ -132,20 +132,8 @@ fn build(
     MorphAnalysis {
         surface: surface.to_string(),
         lemma: form.lemma.to_string(),
-        lexical: LexicalNounForm {
-            lemma: form.lemma.to_string(),
-            lexical_root: form.surface.to_string(),
-            number: Number::Singular,
-            possessive: Possessive::None,
-            case: Case::Nominative,
-            morphemes: Vec::new(),
-        },
         lexical_form: format!("{}{}", form.lemma, chain),
         pos,
-        number: Number::Singular,
-        possessive: Possessive::None,
-        case: Case::Nominative,
-        morphemes: Vec::new(),
         igs,
         source: AnalysisSource::Lexicon,
     }

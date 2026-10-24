@@ -321,10 +321,7 @@ fn print_morph_debug(response: &tekir_morph::MorphResponse, best_only: bool) {
         println!("  lemma: {}", analysis.lemma);
         println!("  surface: {}", analysis.surface);
         println!("  pos: {:?}", analysis.pos);
-        println!("  number: {:?}", analysis.number);
-        println!("  possessive: {:?}", analysis.possessive);
-        println!("  case: {:?}", analysis.case);
-        println!("  morphemes: {:?}", analysis.morphemes);
+        println!("  igs: {}", analysis.igs.len());
         if index + 1 < analyses.len() {
             println!();
         }

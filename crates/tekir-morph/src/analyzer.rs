@@ -15,7 +15,7 @@
 //! never reaches the cap).
 
 use crate::{
-    analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
+    analysis::{AnalysisSource, MorphAnalysis},
     generator::{
         SuffixBuf, aorist_is_hr, copula_person_is_past_type, derivation_has_voicing_k,
         harmony_seed, realize_causative, realize_copula_marker, realize_copula_person,
@@ -23,12 +23,12 @@ use crate::{
         realize_neg_aorist_person, realize_neg_aorist_z, realize_noun_morpheme, realize_passive,
         realize_verb_tense, vowel_alternant_context,
     },
-    lexical::{build_lexical_noun_form, gloss_from_igs},
+    lexical::gloss_from_igs,
     lexicon::{Lexicon, LexiconEntry, RootPos, StemAlternant},
     rules::{PhonoContext, is_vowel, starts_with_vowel},
     state::{
-        Agreement, Case, CopulaTense, Derivation, IgPos, InflectionGroup, NounMorpheme, NounPath,
-        Number, Polarity, Possessive, VerbTense,
+        Agreement, Case, CopulaTense, Derivation, IgPos, InflectionGroup, NounMorpheme, Number,
+        Polarity, Possessive, VerbTense,
     },
 };
 
@@ -292,32 +292,12 @@ impl<'a> Analyzer<'a> {
     pub fn render(&self, surface: &str, raw: RawAnalysis) -> MorphAnalysis {
         let entry = self.lexicon.entry(raw.entry);
         let igs = raw.igs();
-        let final_ig = raw.final_ig();
-        let path = NounPath::new(final_ig.number, final_ig.possessive, final_ig.case);
-        let lexical = build_lexical_noun_form(entry, &path);
-        let morphemes = if final_ig.pos == IgPos::Noun {
-            path.morphemes
-        } else {
-            Vec::new()
-        };
 
         MorphAnalysis {
             surface: surface.to_string(),
             lemma: entry.lemma.clone(),
             lexical_form: gloss_from_igs(&entry.lemma, igs),
-            lexical,
-            pos: match final_ig.pos {
-                IgPos::Noun => PartOfSpeech::Noun,
-                IgPos::Adj => PartOfSpeech::Adj,
-                IgPos::Verb => PartOfSpeech::Verb,
-                IgPos::Adv => PartOfSpeech::Adv,
-                IgPos::Ques => PartOfSpeech::Ques,
-                IgPos::Func => PartOfSpeech::Pron,
-            },
-            number: final_ig.number,
-            possessive: final_ig.possessive,
-            case: final_ig.case,
-            morphemes,
+            pos: raw.final_ig().pos.into(),
             igs: igs.to_vec(),
             source: AnalysisSource::Lexicon,
         }
@@ -1811,7 +1791,7 @@ mod tests {
         generator::{generate_from_igs, generate_noun_surface},
         gold::{GOLD_ANALYSIS_CASES, GOLD_DERIVED_SURFACES},
         lexicon::Lexicon,
-        state::{Case, NounMorpheme, Number, Possessive, noun_paths},
+        state::{Case, Possessive, noun_paths},
     };
 
     fn seed() -> Lexicon {
@@ -1825,10 +1805,6 @@ mod tests {
 
         assert_eq!(analyses.len(), 1);
         assert_eq!(analyses[0].lemma, "ev");
-        assert_eq!(analyses[0].number, Number::Plural);
-        assert_eq!(analyses[0].possessive, Possessive::None);
-        assert_eq!(analyses[0].case, Case::Nominative);
-        assert_eq!(analyses[0].morphemes, vec![NounMorpheme::Plural]);
         assert_eq!(analyses[0].lexical_form, "ev+Noun+A3pl+Pnon+Nom");
     }
 
@@ -1839,7 +1815,7 @@ mod tests {
 
         assert_eq!(analyses.len(), 1);
         assert_eq!(analyses[0].lemma, "kitap");
-        assert_eq!(analyses[0].case, Case::Dative);
+        assert_eq!(analyses[0].final_ig().case, Case::Dative);
     }
 
     #[test]

@@ -7,11 +7,11 @@
 //! copular machinery (cases, `-ki`, copulas) applies to the suffix side.
 
 use crate::{
-    analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
+    analysis::{AnalysisSource, MorphAnalysis},
     analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_nominal_tail_into},
-    lexical::{LexicalNounForm, gloss_from_igs},
+    lexical::gloss_from_igs,
     rules::{PhonoContext, last_vowel},
-    state::{IgPos, InflectionGroup, NounPath},
+    state::InflectionGroup,
 };
 
 const QUESTION_PARTICLES: [&str; 4] = ["mı", "mi", "mu", "mü"];
@@ -195,37 +195,11 @@ fn tail_analysis(
         lexical_form.insert_str(lemma.len() + "+Noun".len(), marker);
     }
 
-    let path = NounPath::new(final_ig.number, final_ig.possessive, final_ig.case);
-    let morphemes = if final_ig.pos == IgPos::Noun {
-        path.morphemes.clone()
-    } else {
-        Vec::new()
-    };
-
     MorphAnalysis {
         surface: surface.to_string(),
         lemma: lemma.to_string(),
-        lexical: LexicalNounForm {
-            lemma: lemma.to_string(),
-            lexical_root: lemma.to_string(),
-            number: final_ig.number,
-            possessive: final_ig.possessive,
-            case: final_ig.case,
-            morphemes: path.morphemes,
-        },
         lexical_form,
-        pos: match final_ig.pos {
-            IgPos::Noun => PartOfSpeech::Noun,
-            IgPos::Adj => PartOfSpeech::Adj,
-            IgPos::Verb => PartOfSpeech::Verb,
-            IgPos::Adv => PartOfSpeech::Adv,
-            IgPos::Ques => PartOfSpeech::Ques,
-            IgPos::Func => PartOfSpeech::Pron,
-        },
-        number: final_ig.number,
-        possessive: final_ig.possessive,
-        case: final_ig.case,
-        morphemes,
+        pos: final_ig.pos.into(),
         igs: igs.to_vec(),
         source,
     }

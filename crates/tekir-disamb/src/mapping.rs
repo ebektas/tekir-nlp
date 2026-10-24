@@ -29,20 +29,20 @@ pub fn gold_index(token: &Token, candidates: &[MorphAnalysis]) -> Option<usize> 
         }
         if let Some(case) = token.feat("Case")
             && analysis.pos == PartOfSpeech::Noun
-            && ud_case(case) == Some(analysis.case)
+            && ud_case(case) == Some(analysis.final_ig().case)
         {
             score += 8;
         }
         if let Some(number) = token.feat("Number")
             && analysis.pos == PartOfSpeech::Noun
         {
-            let plural = analysis.number == tekir_morph::Number::Plural;
+            let plural = analysis.final_ig().number == tekir_morph::Number::Plural;
             if (number == "Plur") == plural {
                 score += 4;
             }
         }
         if token.feat("Number[psor]").is_some()
-            == (analysis.possessive != tekir_morph::Possessive::None)
+            == (analysis.final_ig().possessive != tekir_morph::Possessive::None)
         {
             score += 4;
         }

@@ -53,7 +53,7 @@ fn case_penalty(case: Case) -> u8 {
 }
 
 fn number_penalty(analysis: &MorphAnalysis) -> u8 {
-    if looks_plural_surface(&analysis.surface) && matches!(analysis.number, Number::Singular) {
+    if looks_plural_surface(&analysis.surface) && analysis.final_ig().number == Number::Singular {
         1
     } else {
         0
