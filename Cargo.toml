@@ -8,6 +8,7 @@ members = [
     "crates/tekir-disamb",
     "crates/tekir-spell",
     "crates/tekir-subword",
+    "crates/tekir-prep",
     "crates/tekir-cli",
 ]
 resolver = "2"

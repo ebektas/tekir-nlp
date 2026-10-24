@@ -1,0 +1,11 @@
+[package]
+name = "tekir-prep"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde.workspace = true
+tekir-morph = { path = "../tekir-morph" }

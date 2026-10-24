@@ -754,6 +754,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "tekir-prep"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "tekir-morph",
+]
+
+[[package]]
 name = "tekir-segment"
 version = "0.1.0"
 dependencies = [
