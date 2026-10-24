@@ -715,6 +715,7 @@ dependencies = [
  "tekir-normalize",
  "tekir-segment",
  "tekir-spell",
+ "tekir-subword",
  "tekir-tokenize",
  "tiny_http",
 ]

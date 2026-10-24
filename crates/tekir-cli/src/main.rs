@@ -23,6 +23,7 @@ struct Cli {
 
 #[cfg(feature = "server")]
 mod server;
+mod subword;
 
 #[derive(Debug, Subcommand)]
 enum Command {
@@ -34,6 +35,10 @@ enum Command {
     Normalize(NormalizeArgs),
     Segment(SegmentArgs),
     Tokenize(TokenizeArgs),
+    /// Split text into morpheme-aware pieces for subword training.
+    Pretokenize(subword::PretokenizeArgs),
+    /// Train or evaluate subword tokenizers.
+    Tokenizer(subword::TokenizerArgs),
 }
 
 #[derive(Debug, Parser)]
@@ -233,6 +238,8 @@ fn main() -> Result<()> {
         Command::Normalize(args) => run_normalize(args),
         Command::Segment(args) => run_segment(args),
         Command::Tokenize(args) => run_tokenize(args),
+        Command::Pretokenize(args) => subword::run_pretokenize(args),
+        Command::Tokenizer(args) => subword::run_tokenizer(args),
     }
 }
 

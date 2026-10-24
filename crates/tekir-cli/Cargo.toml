@@ -15,6 +15,7 @@ tekir-core = { path = "../tekir-core" }
 tekir-morph = { path = "../tekir-morph" }
 tekir-disamb = { path = "../tekir-disamb" }
 tekir-spell = { path = "../tekir-spell" }
+tekir-subword = { path = "../tekir-subword" }
 tekir-normalize = { path = "../tekir-normalize" }
 tekir-segment = { path = "../tekir-segment" }
 tekir-tokenize = { path = "../tekir-tokenize" }

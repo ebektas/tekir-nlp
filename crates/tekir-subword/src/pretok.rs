@@ -78,13 +78,16 @@ impl Pretokenizer {
     /// Interior morpheme boundaries (byte offsets) of a Turkish-lowercase
     /// word, from its best analysis.
     pub fn word_boundaries(&self, word: &str) -> Vec<usize> {
-        let output = self.service.analyze_word(word);
-        match output.best_analysis {
-            Some(best) if self.split_unknown || best.source != AnalysisSource::Guessed => {
-                best.morpheme_boundaries(self.service.lexicon())
-            }
-            _ => Vec::new(),
-        }
+        self.analyzed_boundaries(word).unwrap_or_default()
+    }
+
+    /// Like [`word_boundaries`](Self::word_boundaries), but `None` when the
+    /// word has no analysis to split by (no analysis at all, or only a
+    /// guessed one with `split_unknown` off).
+    pub fn analyzed_boundaries(&self, word: &str) -> Option<Vec<usize>> {
+        let best = self.service.analyze_word(word).best_analysis?;
+        (self.split_unknown || best.source != AnalysisSource::Guessed)
+            .then(|| best.morpheme_boundaries(self.service.lexicon()))
     }
 
     /// Pre-tokenize one text into contiguous byte ranges covering it.
@@ -147,7 +150,7 @@ impl Pretokenizer {
     }
 }
 
-fn lowercase(word: &str) -> Cow<'_, str> {
+pub(crate) fn lowercase(word: &str) -> Cow<'_, str> {
     if is_turkish_lowercase(word) {
         Cow::Borrowed(word)
     } else {
