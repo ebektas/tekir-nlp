@@ -1,0 +1,19 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "tekir-nlp"
+description = "Fast Turkish NLP for LLM work: morphology, morpheme-aware tokenizers, corpus cleaning"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Natural Language :: Turkish",
+    "Topic :: Text Processing :: Linguistic",
+]
+dynamic = ["version"]
+
+[tool.maturin]
+module-name = "tekir"

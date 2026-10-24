@@ -1,0 +1,23 @@
+[package]
+name = "tekir-py"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+publish = false
+
+[lib]
+name = "tekir"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "=0.29.3", features = ["extension-module", "abi3-py39"] }
+tekir-core = { path = "../tekir-core" }
+tekir-disamb = { path = "../tekir-disamb" }
+tekir-morph = { path = "../tekir-morph" }
+tekir-prep = { path = "../tekir-prep" }
+tekir-spell = { path = "../tekir-spell" }
+tekir-subword = { path = "../tekir-subword" }
+serde.workspace = true
+serde_json.workspace = true
