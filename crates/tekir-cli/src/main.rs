@@ -21,6 +21,7 @@ struct Cli {
     command: Command,
 }
 
+mod prep;
 #[cfg(feature = "server")]
 mod server;
 mod subword;
@@ -39,6 +40,8 @@ enum Command {
     Pretokenize(subword::PretokenizeArgs),
     /// Train or evaluate subword tokenizers.
     Tokenizer(subword::TokenizerArgs),
+    /// Clean a corpus: PII redaction, quality filter, deduplication.
+    Prep(prep::PrepArgs),
 }
 
 #[derive(Debug, Parser)]
@@ -240,6 +243,7 @@ fn main() -> Result<()> {
         Command::Tokenize(args) => run_tokenize(args),
         Command::Pretokenize(args) => subword::run_pretokenize(args),
         Command::Tokenizer(args) => subword::run_tokenizer(args),
+        Command::Prep(args) => prep::run_prep(args),
     }
 }
 
@@ -495,7 +499,7 @@ fn read_stdin() -> Result<String> {
     Ok(buffer)
 }
 
-fn print_json<T: Serialize>(task: &'static str, value: &T) -> Result<()> {
+pub(crate) fn print_json<T: Serialize>(task: &'static str, value: &T) -> Result<()> {
     let payload = JsonEnvelope {
         schema_version: "1",
         task,

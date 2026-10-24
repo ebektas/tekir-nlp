@@ -14,6 +14,7 @@ serde_json.workspace = true
 tekir-core = { path = "../tekir-core" }
 tekir-morph = { path = "../tekir-morph" }
 tekir-disamb = { path = "../tekir-disamb" }
+tekir-prep = { path = "../tekir-prep" }
 tekir-spell = { path = "../tekir-spell" }
 tekir-subword = { path = "../tekir-subword" }
 tekir-normalize = { path = "../tekir-normalize" }

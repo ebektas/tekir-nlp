@@ -713,6 +713,7 @@ dependencies = [
  "tekir-disamb",
  "tekir-morph",
  "tekir-normalize",
+ "tekir-prep",
  "tekir-segment",
  "tekir-spell",
  "tekir-subword",
