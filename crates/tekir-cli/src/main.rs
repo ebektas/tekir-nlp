@@ -42,6 +42,8 @@ enum Command {
     Tokenizer(subword::TokenizerArgs),
     /// Clean a corpus: PII redaction, quality filter, deduplication.
     Prep(prep::PrepArgs),
+    /// Restore Turkish letters in ASCII-typed text, in context.
+    Restore(prep::RestoreArgs),
 }
 
 #[derive(Debug, Parser)]
@@ -244,6 +246,7 @@ fn main() -> Result<()> {
         Command::Pretokenize(args) => subword::run_pretokenize(args),
         Command::Tokenizer(args) => subword::run_tokenizer(args),
         Command::Prep(args) => prep::run_prep(args),
+        Command::Restore(args) => prep::run_restore(args),
     }
 }
 

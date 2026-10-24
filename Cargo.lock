@@ -777,7 +777,10 @@ name = "tekir-spell"
 version = "0.1.0"
 dependencies = [
  "serde",
+ "tekir-core",
+ "tekir-disamb",
  "tekir-morph",
+ "tekir-tokenize",
 ]
 
 [[package]]

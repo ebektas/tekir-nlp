@@ -22,6 +22,10 @@ pub struct PrepArgs {
     input: Option<PathBuf>,
     #[arg(long, value_enum, default_value_t = InputFormat::Jsonl)]
     input_format: InputFormat,
+    /// Restore Turkish letters in ASCII-typed text (`cok guzel` -> `çok
+    /// güzel`), choosing spellings in context.
+    #[arg(long)]
+    restore_diacritics: bool,
     /// Replace PII with `[TCKN]`, `[IBAN]`, `[PHONE]`, ... placeholders.
     #[arg(long)]
     redact_pii: bool,
@@ -92,9 +96,41 @@ fn read_records(args: &PrepArgs) -> Result<Vec<InputRecord>> {
     Ok(records)
 }
 
+#[derive(Debug, Parser)]
+pub struct RestoreArgs {
+    /// Text to restore; omit to read lines from stdin.
+    input: Option<String>,
+    #[arg(long, default_value_t = 0)]
+    threads: usize,
+}
+
+pub fn run_restore(args: RestoreArgs) -> Result<()> {
+    let lines: Vec<String> = match args.input {
+        Some(text) => vec![text],
+        None => io::stdin()
+            .lock()
+            .lines()
+            .collect::<io::Result<_>>()
+            .context("failed to read stdin")?,
+    };
+    let mut stdout = io::BufWriter::new(io::stdout().lock());
+    for line in tekir_spell::Restorer::default().restore_batch(&lines, args.threads) {
+        writeln!(stdout, "{line}")?;
+    }
+    Ok(())
+}
+
 pub fn run_prep(args: PrepArgs) -> Result<()> {
     let mut records = read_records(&args)?;
     let total = records.len();
+
+    if args.restore_diacritics {
+        let texts: Vec<&str> = records.iter().map(|r| r.text.as_str()).collect();
+        let restored = tekir_spell::Restorer::default().restore_batch(&texts, args.threads);
+        for (record, text) in records.iter_mut().zip(restored) {
+            record.text = text;
+        }
+    }
 
     if args.redact_pii {
         let redacted = parallel_map(&records, args.threads, |record| {

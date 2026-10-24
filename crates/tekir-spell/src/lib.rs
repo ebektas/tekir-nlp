@@ -3,10 +3,13 @@
 //! it has an analysis (Oflazer's original spelling-checker thesis).
 
 use serde::Serialize;
+
+pub mod restore;
+pub use restore::Restorer;
 use tekir_morph::{MorphService, analyze_word, closed, guess};
 
 /// ASCII letters that may stand for a Turkish letter in deasciified text.
-const DEASCII: &[(char, char)] = &[
+pub(crate) const DEASCII: &[(char, char)] = &[
     ('c', 'ç'),
     ('g', 'ğ'),
     ('i', 'ı'),
@@ -105,7 +108,7 @@ impl SpellChecker {
 /// All combinations of ASCII-for-Turkish substitutions (bounded: at most
 /// 1024 variants), nearest-to-input first is not guaranteed; the checker
 /// filter does the real work.
-fn deascii_variants(word: &str) -> impl Iterator<Item = String> {
+pub(crate) fn deascii_variants(word: &str) -> impl Iterator<Item = String> {
     let slots: Vec<(usize, char, char)> = word
         .char_indices()
         .filter_map(|(index, ch)| {
