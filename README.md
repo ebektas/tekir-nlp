@@ -1,4 +1,4 @@
-# Tekir
+# Tekir-nlp
 
 > This project was started for me to learn rust and complete years of unfinished nlp projects with the help of claude, thanks AAA & Zemberek for the inspo.
 
@@ -35,6 +35,13 @@ Batch mode: `--stdin --input-format jsonl --output jsonl --jobs N` reads
 Server: `cargo build --release -p tekir-cli --features server`, then
 `tekir-cli serve --port 8321` and `POST /morph|/disamb|/spell|...` with
 `{"text": "..."}`.
+
+Docker (server only, everything embedded):
+
+```bash
+docker build -t tekir-nlp .
+docker run --rm -p 8321:8321 tekir-nlp
+```
 
 ## Docs
 

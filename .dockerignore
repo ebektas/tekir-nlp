@@ -1,0 +1,8 @@
+target/
+.git/
+# pins a rustup toolchain + components; the base image already has one
+rust-toolchain.toml
+CLAUDE.md
+AGENTS.md
+.claude/
+.codex
