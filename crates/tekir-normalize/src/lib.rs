@@ -30,7 +30,7 @@ impl NormalizeService {
             NormalizeOutput {
                 output_len_bytes: normalized.len(),
                 normalized,
-                mode: mode,
+                mode,
             },
         )
     }

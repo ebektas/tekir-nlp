@@ -30,7 +30,7 @@ impl SegmentService {
             SegmentOutput {
                 segment_count: segments.len(),
                 segments,
-                mode: mode,
+                mode,
             },
         )
     }

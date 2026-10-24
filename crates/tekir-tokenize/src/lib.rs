@@ -33,7 +33,7 @@ impl TokenizeService {
             TokenizeOutput {
                 token_count: tokens.len(),
                 tokens,
-                mode: mode,
+                mode,
             },
         )
     }
