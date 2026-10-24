@@ -42,14 +42,7 @@ pub fn apostrophe_analyses(surface: &str) -> Option<Vec<MorphAnalysis>> {
         )];
         push_unique(
             &mut analyses,
-            tail_analysis(
-                surface,
-                stem,
-                Some("+Prop"),
-                &igs,
-                AnalysisSource::Proper,
-                Vec::new(),
-            ),
+            tail_analysis(surface, stem, &igs, AnalysisSource::Proper, Vec::new()),
         );
         return Some(analyses);
     }
@@ -61,7 +54,6 @@ pub fn apostrophe_analyses(surface: &str) -> Option<Vec<MorphAnalysis>> {
             &mut analyses,
             surface,
             stem,
-            Some("+Prop"),
             AnalysisSource::Proper,
             &raw,
             context,
@@ -91,7 +83,6 @@ pub fn question_particle_analyses(surface: &str) -> Vec<MorphAnalysis> {
                 tail_analysis(
                     surface,
                     particle,
-                    None,
                     &igs,
                     AnalysisSource::Question,
                     Vec::new(),
@@ -106,7 +97,6 @@ pub fn question_particle_analyses(surface: &str) -> Vec<MorphAnalysis> {
             &mut analyses,
             surface,
             particle,
-            None,
             AnalysisSource::Question,
             &raw,
             context,
@@ -145,7 +135,6 @@ pub fn guessed_analyses(surface: &str) -> Vec<MorphAnalysis> {
             &mut analyses,
             surface,
             root,
-            Some("+Unk"),
             AnalysisSource::Guessed,
             &raw,
             context,
@@ -180,7 +169,6 @@ fn collect(
     analyses: &mut Vec<MorphAnalysis>,
     surface: &str,
     lemma: &str,
-    marker: Option<&'static str>,
     source: AnalysisSource,
     raw: &[RawAnalysis],
     context: PhonoContext,
@@ -200,7 +188,7 @@ fn collect(
         }
         push_unique(
             analyses,
-            tail_analysis(surface, lemma, marker, candidate.igs(), source, boundaries),
+            tail_analysis(surface, lemma, candidate.igs(), source, boundaries),
         );
     }
 }
@@ -219,13 +207,17 @@ fn push_unique(analyses: &mut Vec<MorphAnalysis>, analysis: MorphAnalysis) {
 fn tail_analysis(
     surface: &str,
     lemma: &str,
-    marker: Option<&'static str>,
     igs: &[InflectionGroup],
     source: AnalysisSource,
     boundaries: Vec<usize>,
 ) -> MorphAnalysis {
     let final_ig = *igs.last().expect("analysis has at least one group");
     let mut lexical_form = gloss_from_igs(lemma, igs);
+    let marker = match source {
+        AnalysisSource::Proper => Some("+Prop"),
+        AnalysisSource::Guessed => Some("+Unk"),
+        _ => None,
+    };
     if let Some(marker) = marker {
         lexical_form.insert_str(lemma.len() + "+Noun".len(), marker);
     }
