@@ -32,6 +32,15 @@ layer over those services.
   - Averaged-perceptron morphological disambiguation and the sentence
     pipeline (tokenize -> analyze -> pick best analysis in context);
     bundles a trained model and uses the full embedded lexicon
+- `crates/tekir-subword`
+  - Morpheme-aware pre-tokenization, BPE training, tokenizer evaluation;
+    see [docs/llm-toolkit.md](docs/llm-toolkit.md)
+- `crates/tekir-prep`
+  - Corpus cleaning: PII redaction, deduplication, quality signals
+- `crates/tekir-spell`
+  - Spell checking and in-context diacritic restoration
+- `crates/tekir-py`
+  - Python bindings (`import tekir`), built with maturin
 - `crates/tekir-cli`
   - Command-line interface and batch-processing entrypoint; with the
     optional `server` feature, also the HTTP JSON service (`tekir serve`)

@@ -6,3 +6,5 @@ CLAUDE.local.md
 AGENTS.md
 .claude/
 .codex
+__pycache__/
+*.so
