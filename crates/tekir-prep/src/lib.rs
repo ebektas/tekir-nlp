@@ -9,4 +9,21 @@
 
 pub mod dedup;
 pub mod pii;
+pub mod quality;
 mod text;
+
+#[cfg(test)]
+mod tests {
+    fn assert_send_sync<T: Send + Sync>() {}
+
+    #[test]
+    fn public_types_are_send_and_sync() {
+        assert_send_sync::<crate::pii::PiiSpan>();
+        assert_send_sync::<crate::dedup::MinHasher>();
+        assert_send_sync::<crate::dedup::Signature>();
+        assert_send_sync::<crate::dedup::UnionFind>();
+        assert_send_sync::<crate::quality::QualityScorer>();
+        assert_send_sync::<crate::quality::QualityScratch>();
+        assert_send_sync::<crate::quality::QualityConfig>();
+    }
+}
