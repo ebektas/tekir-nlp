@@ -3,7 +3,9 @@
 > This project was started for me to learn rust and complete years of unfinished nlp projects with the help of claude, thanks AAA & Zemberek for the inspo.
 
 Tekir is a Rust toolkit for Turkish NLP, built around a morphological
-analyzer that follows Oflazer (1994).
+analyzer that follows Oflazer (1994). It is meant as a modern take on
+Zemberek: useful when working on LLMs — tokenizer training, corpus
+cleaning, evaluation data — and fast enough for LLM data-prep scale.
 
 ## Crates
 
