@@ -19,6 +19,18 @@ pub enum Possessive {
     ThirdPlural,
 }
 
+impl Possessive {
+    pub const ALL: [Possessive; 7] = [
+        Possessive::None,
+        Possessive::FirstSingular,
+        Possessive::SecondSingular,
+        Possessive::ThirdSingular,
+        Possessive::FirstPlural,
+        Possessive::SecondPlural,
+        Possessive::ThirdPlural,
+    ];
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
 #[serde(rename_all = "snake_case")]
 pub enum Case {
@@ -32,13 +44,16 @@ pub enum Case {
     Instrumental,
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NounState {
-    Root,
-    Number,
-    Possessive,
-    Case,
-    Terminal,
+impl Case {
+    pub const ALL: [Case; 7] = [
+        Case::Nominative,
+        Case::Accusative,
+        Case::Dative,
+        Case::Locative,
+        Case::Ablative,
+        Case::Genitive,
+        Case::Instrumental,
+    ];
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
@@ -316,109 +331,6 @@ impl InflectionGroup {
     }
 }
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum NounTransitionValue {
-    Number(Number),
-    Possessive(Possessive),
-    Case(Case),
-    Terminal,
-}
-
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub struct NounTransition {
-    pub from: NounState,
-    pub to: NounState,
-    pub value: NounTransitionValue,
-}
-
-pub const NOUN_TRANSITIONS: &[NounTransition] = &[
-    NounTransition {
-        from: NounState::Root,
-        to: NounState::Number,
-        value: NounTransitionValue::Number(Number::Singular),
-    },
-    NounTransition {
-        from: NounState::Root,
-        to: NounState::Number,
-        value: NounTransitionValue::Number(Number::Plural),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::None),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::FirstSingular),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::SecondSingular),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::ThirdSingular),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::FirstPlural),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::SecondPlural),
-    },
-    NounTransition {
-        from: NounState::Number,
-        to: NounState::Possessive,
-        value: NounTransitionValue::Possessive(Possessive::ThirdPlural),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Nominative),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Accusative),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Dative),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Locative),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Ablative),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Genitive),
-    },
-    NounTransition {
-        from: NounState::Possessive,
-        to: NounState::Case,
-        value: NounTransitionValue::Case(Case::Instrumental),
-    },
-    NounTransition {
-        from: NounState::Case,
-        to: NounState::Terminal,
-        value: NounTransitionValue::Terminal,
-    },
-];
-
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct NounPath {
     pub number: Number,
@@ -464,63 +376,26 @@ impl NounPath {
     }
 }
 
+/// Every single-group noun inflection: number x possessive x case (98).
 pub fn noun_paths() -> Vec<NounPath> {
-    let mut paths = Vec::new();
-
-    for number_transition in transitions_from(NounState::Root) {
-        if let NounTransitionValue::Number(number) = number_transition.value {
-            for possessive_transition in transitions_from(number_transition.to) {
-                if let NounTransitionValue::Possessive(possessive) = possessive_transition.value {
-                    for case_transition in transitions_from(possessive_transition.to) {
-                        if let NounTransitionValue::Case(case) = case_transition.value {
-                            if has_terminal_transition(case_transition.to) {
-                                paths.push(NounPath::new(number, possessive, case));
-                            }
-                        }
-                    }
-                }
+    let mut paths = Vec::with_capacity(2 * Possessive::ALL.len() * Case::ALL.len());
+    for number in [Number::Singular, Number::Plural] {
+        for possessive in Possessive::ALL {
+            for case in Case::ALL {
+                paths.push(NounPath::new(number, possessive, case));
             }
         }
     }
-
     paths
-}
-
-fn transitions_from(state: NounState) -> impl Iterator<Item = &'static NounTransition> {
-    NOUN_TRANSITIONS
-        .iter()
-        .filter(move |transition| transition.from == state)
-}
-
-fn has_terminal_transition(state: NounState) -> bool {
-    transitions_from(state).any(|transition| {
-        transition.to == NounState::Terminal
-            && matches!(transition.value, NounTransitionValue::Terminal)
-    })
 }
 
 #[cfg(test)]
 mod tests {
-    use crate::state::{
-        Case, NOUN_TRANSITIONS, NounMorpheme, NounState, NounTransitionValue, Number, Possessive,
-        noun_paths,
-    };
+    use crate::state::{Case, NounMorpheme, Number, Possessive, noun_paths};
 
     #[test]
     fn builds_expected_number_of_noun_paths() {
         assert_eq!(noun_paths().len(), 98);
-    }
-
-    #[test]
-    fn transition_table_starts_from_root_and_ends_in_terminal() {
-        assert!(NOUN_TRANSITIONS.iter().any(|transition| {
-            transition.from == NounState::Root
-                && matches!(transition.value, NounTransitionValue::Number(_))
-        }));
-        assert!(NOUN_TRANSITIONS.iter().any(|transition| {
-            transition.to == NounState::Terminal
-                && matches!(transition.value, NounTransitionValue::Terminal)
-        }));
     }
 
     #[test]

@@ -125,26 +125,6 @@ impl IgChain {
     }
 }
 
-const ALL_POSSESSIVES: [Possessive; 7] = [
-    Possessive::None,
-    Possessive::FirstSingular,
-    Possessive::SecondSingular,
-    Possessive::ThirdSingular,
-    Possessive::FirstPlural,
-    Possessive::SecondPlural,
-    Possessive::ThirdPlural,
-];
-
-const ALL_CASES: [Case; 7] = [
-    Case::Nominative,
-    Case::Accusative,
-    Case::Dative,
-    Case::Locative,
-    Case::Ablative,
-    Case::Genitive,
-    Case::Instrumental,
-];
-
 const OVERT_CASES: [Case; 6] = [
     Case::Accusative,
     Case::Dative,
@@ -483,7 +463,7 @@ fn walk_inflection(
             continue;
         };
 
-        for possessive in ALL_POSSESSIVES {
+        for possessive in Possessive::ALL {
             let possessive_state = match possessive_morpheme(possessive) {
                 None => Some(state),
                 Some(morpheme) => consume_inflection(candidate, morpheme, number, false, state),
@@ -496,7 +476,7 @@ fn walk_inflection(
                 Possessive::ThirdSingular | Possessive::ThirdPlural
             );
 
-            for case in ALL_CASES {
+            for case in Case::ALL {
                 let case_state = match case_morpheme(case) {
                     None => Some(state),
                     Some(morpheme) => {
