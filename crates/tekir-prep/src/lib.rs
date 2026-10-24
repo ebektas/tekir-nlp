@@ -7,4 +7,6 @@
 //! global state, no locks), so results are byte-identical regardless of
 //! thread count, and every public type is `Send + Sync`.
 
+pub mod dedup;
 pub mod pii;
+mod text;
