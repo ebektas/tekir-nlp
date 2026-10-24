@@ -128,7 +128,9 @@ The CLI is implemented in [crates/tekir-cli/src/main.rs](crates/tekir-cli/src/ma
 Current commands:
 
 - `morph`
-- `reverse`
+- `disamb`
+- `spell`
+- `serve` (with the `server` feature)
 - `normalize`
 - `tokenize`
 - `segment`

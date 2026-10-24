@@ -8,7 +8,6 @@ use std::{
 use anyhow::{Context, Result};
 use clap::{Parser, Subcommand, ValueEnum};
 use serde::{Deserialize, Serialize};
-use tekir_core::{ReverseMode, ReverseService};
 use tekir_morph::{Lexicon, MorphService};
 use tekir_normalize::{NormalizeMode, NormalizeService};
 use tekir_segment::{SegmentMode, SegmentService};
@@ -32,21 +31,9 @@ enum Command {
     Spell(SpellArgs),
     #[cfg(feature = "server")]
     Serve(ServeArgs),
-    Reverse(ReverseArgs),
     Normalize(NormalizeArgs),
     Segment(SegmentArgs),
     Tokenize(TokenizeArgs),
-}
-
-#[derive(Debug, Parser)]
-struct ReverseArgs {
-    input: Option<String>,
-    #[arg(long)]
-    stdin: bool,
-    #[arg(long, value_enum, default_value_t = ModeArg::Graphemes)]
-    mode: ModeArg,
-    #[arg(long, default_value_t = OutputFormat::Text, value_enum)]
-    output: OutputFormat,
 }
 
 #[derive(Debug, Parser)]
@@ -162,14 +149,6 @@ struct SegmentArgs {
 }
 
 #[derive(Debug, Clone, Copy, ValueEnum)]
-enum ModeArg {
-    Graphemes,
-    Chars,
-    Words,
-    Lines,
-}
-
-#[derive(Debug, Clone, Copy, ValueEnum)]
 enum OutputFormat {
     Text,
     Debug,
@@ -200,17 +179,6 @@ enum NormalizeModeArg {
 #[derive(Debug, Clone, Copy, ValueEnum)]
 enum SegmentModeArg {
     Turkish,
-}
-
-impl From<ModeArg> for ReverseMode {
-    fn from(value: ModeArg) -> Self {
-        match value {
-            ModeArg::Graphemes => ReverseMode::Graphemes,
-            ModeArg::Chars => ReverseMode::Chars,
-            ModeArg::Words => ReverseMode::Words,
-            ModeArg::Lines => ReverseMode::Lines,
-        }
-    }
 }
 
 impl From<TokenizeModeArg> for TokenizeMode {
@@ -259,7 +227,6 @@ fn main() -> Result<()> {
         }
         #[cfg(feature = "server")]
         Command::Serve(args) => server::run_serve(args),
-        Command::Reverse(args) => run_reverse(args),
         Command::Normalize(args) => run_normalize(args),
         Command::Segment(args) => run_segment(args),
         Command::Tokenize(args) => run_tokenize(args),
@@ -383,27 +350,6 @@ fn run_disamb(args: DisambArgs) -> Result<()> {
         OutputFormat::Json => print_json("disamb", &sentence)?,
         OutputFormat::Jsonl => print_jsonl_record("disamb", None, &sentence)?,
     }
-    Ok(())
-}
-
-fn run_reverse(args: ReverseArgs) -> Result<()> {
-    let input = resolve_input(args.input, args.stdin)?;
-    let service = ReverseService;
-    let response = service.reverse(input, args.mode.into());
-
-    match args.output {
-        OutputFormat::Text => println!("{}", response.output.transformed),
-        OutputFormat::Debug => {
-            println!("mode: {:?}", response.output.mode);
-            println!("input_len_bytes: {}", response.input_len_bytes);
-            println!("output_len_bytes: {}", response.output.output_len_bytes);
-            println!("original: {}", response.original);
-            println!("transformed: {}", response.output.transformed);
-        }
-        OutputFormat::Json => print_json("reverse", &response)?,
-        OutputFormat::Jsonl => anyhow::bail!("reverse does not support --output jsonl"),
-    }
-
     Ok(())
 }
 
@@ -801,8 +747,8 @@ struct BatchResult {
 #[cfg(test)]
 mod tests {
     use super::{
-        InputFormat, ModeArg, MorphArgs, NormalizeArgs, NormalizeModeArg, OutputFormat,
-        ReverseArgs, SegmentArgs, SegmentModeArg, TokenizeArgs, TokenizeModeArg,
+        InputFormat, MorphArgs, NormalizeArgs, NormalizeModeArg, OutputFormat, SegmentArgs,
+        SegmentModeArg, TokenizeArgs, TokenizeModeArg,
     };
 
     #[test]
@@ -820,19 +766,6 @@ mod tests {
         assert_eq!(args.input.as_deref(), Some("evler"));
         assert!(!args.stdin);
         assert!(args.best_only);
-    }
-
-    #[test]
-    fn reverse_args_support_non_stdin_text_output() {
-        let args = ReverseArgs {
-            input: Some("tekir".to_string()),
-            stdin: false,
-            mode: ModeArg::Chars,
-            output: OutputFormat::Text,
-        };
-
-        assert_eq!(args.input.as_deref(), Some("tekir"));
-        assert!(!args.stdin);
     }
 
     #[test]
