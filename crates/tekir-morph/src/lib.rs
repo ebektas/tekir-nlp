@@ -14,7 +14,7 @@ pub use analysis::{
     AnalysisSource, MorphAnalysis, MorphMode, MorphOutput, MorphRequest, MorphResponse,
     MorphService, PartOfSpeech,
 };
-pub use analyzer::{MAX_IGS, NounAnalyzer, RawNounAnalysis, analyze_nouns};
+pub use analyzer::{Analyzer, MAX_IGS, RawAnalysis, analyze_word};
 pub use generator::generate_from_igs;
 pub use lexical::LexicalNounForm;
 pub use lexicon::{Lexicon, LexiconEntry, LexiconError, StemAlternant};

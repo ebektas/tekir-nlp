@@ -4,7 +4,7 @@ use serde::Serialize;
 use tekir_core::{TextRequest, TextTransformResponse, TextTransformer};
 
 use crate::{
-    analyzer::NounAnalyzer,
+    analyzer::Analyzer,
     lexical::LexicalNounForm,
     lexicon::Lexicon,
     preference::choose_best_noun_analysis,
@@ -129,7 +129,7 @@ impl TextTransformer for MorphService {
                 if let Some(apostrophe) = crate::guess::apostrophe_analyses(&request.input) {
                     apostrophe
                 } else {
-                    let mut analyses = NounAnalyzer::new(&self.lexicon).analyze(&request.input);
+                    let mut analyses = Analyzer::new(&self.lexicon).analyze(&request.input);
                     analyses.extend(crate::closed::closed_analyses(&request.input));
                     analyses.extend(crate::guess::question_particle_analyses(&request.input));
                     if analyses.is_empty() {

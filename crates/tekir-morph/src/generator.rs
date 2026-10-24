@@ -1061,7 +1061,7 @@ pub fn generate_surface_from_lexical(entry: &LexiconEntry, lexical: &LexicalNoun
 #[cfg(test)]
 mod tests {
     use crate::{
-        analyzer::analyze_nouns,
+        analyzer::analyze_word,
         generator::{generate_from_igs, generate_noun_surface, generate_surface_from_lexical},
         gold::GOLD_GENERATION_CASES,
         lexical::build_lexical_noun_form,
@@ -1342,7 +1342,7 @@ mod tests {
                 .filter(|path| !entry.compound_p3sg || path.possessive != Possessive::None)
             {
                 let surface = generate_noun_surface(entry, path);
-                let analyses = analyze_nouns(&lexicon, &surface);
+                let analyses = analyze_word(&lexicon, &surface);
 
                 assert!(
                     analyses.iter().any(|analysis| {

@@ -18,7 +18,7 @@
 use std::{env, thread, time::Instant};
 
 use tekir_morph::{
-    Lexicon, LexiconEntry, NounAnalyzer, generator::generate_noun_surface, state::noun_paths,
+    Analyzer, Lexicon, LexiconEntry, generator::generate_noun_surface, state::noun_paths,
 };
 
 fn main() {
@@ -113,7 +113,7 @@ fn run(lexicon: &Lexicon, workload: &[String], rounds: usize, threads: usize) ->
 
         for worker in 0..threads {
             handles.push(scope.spawn(move || {
-                let analyzer = NounAnalyzer::new(lexicon);
+                let analyzer = Analyzer::new(lexicon);
                 let mut scratch = Vec::with_capacity(8);
                 let mut analyses = 0usize;
 

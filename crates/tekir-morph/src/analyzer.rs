@@ -39,13 +39,13 @@ pub const MAX_IGS: usize = 8;
 /// inflectional-group chain, no strings. Render to a full [`MorphAnalysis`]
 /// on demand.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub struct RawNounAnalysis {
+pub struct RawAnalysis {
     pub entry: u32,
     ig_count: u8,
     igs: [InflectionGroup; MAX_IGS],
 }
 
-impl RawNounAnalysis {
+impl RawAnalysis {
     pub fn igs(&self) -> &[InflectionGroup] {
         &self.igs[..self.ig_count as usize]
     }
@@ -59,9 +59,9 @@ impl RawNounAnalysis {
 /// Sync`, and safe to use from many threads at once — batch workers should
 /// each hold one and reuse a scratch `Vec` via [`analyze_raw_into`].
 ///
-/// [`analyze_raw_into`]: NounAnalyzer::analyze_raw_into
+/// [`analyze_raw_into`]: Analyzer::analyze_raw_into
 #[derive(Debug, Clone, Copy)]
-pub struct NounAnalyzer<'a> {
+pub struct Analyzer<'a> {
     lexicon: &'a Lexicon,
 }
 
@@ -186,7 +186,7 @@ const OVERT_COPULA_TENSES: [CopulaTense; 3] = [
     CopulaTense::Conditional,
 ];
 
-impl<'a> NounAnalyzer<'a> {
+impl<'a> Analyzer<'a> {
     pub fn new(lexicon: &'a Lexicon) -> Self {
         Self { lexicon }
     }
@@ -212,8 +212,8 @@ impl<'a> NounAnalyzer<'a> {
 
     /// Append raw analyses for `surface` to `out` without heap allocation in
     /// the matching path. Homograph lexicon entries may yield analyses that
-    /// render identically; [`analyze`](NounAnalyzer::analyze) deduplicates.
-    pub fn analyze_raw_into(&self, surface: &str, out: &mut Vec<RawNounAnalysis>) {
+    /// render identically; [`analyze`](Analyzer::analyze) deduplicates.
+    pub fn analyze_raw_into(&self, surface: &str, out: &mut Vec<RawAnalysis>) {
         self.lexicon
             .for_each_stem_prefix(surface, |entry, alternant, stem_len| {
                 let entry_ref = self.lexicon.entry(entry);
@@ -289,7 +289,7 @@ impl<'a> NounAnalyzer<'a> {
     }
 
     /// Render a raw analysis into the full string-bearing form.
-    pub fn render(&self, surface: &str, raw: RawNounAnalysis) -> MorphAnalysis {
+    pub fn render(&self, surface: &str, raw: RawAnalysis) -> MorphAnalysis {
         let entry = self.lexicon.entry(raw.entry);
         let igs = raw.igs();
         let final_ig = raw.final_ig();
@@ -325,8 +325,8 @@ impl<'a> NounAnalyzer<'a> {
 }
 
 /// Analyze `surface` against `lexicon` with a throwaway analyzer.
-pub fn analyze_nouns(lexicon: &Lexicon, surface: &str) -> Vec<MorphAnalysis> {
-    NounAnalyzer::new(lexicon).analyze(surface)
+pub fn analyze_word(lexicon: &Lexicon, surface: &str) -> Vec<MorphAnalysis> {
+    Analyzer::new(lexicon).analyze(surface)
 }
 
 /// A noun stem (root or derived): try its inflection readings, then further
@@ -336,7 +336,7 @@ fn walk_noun_stem(
     state: WalkState<'_>,
     chain: IgChain,
     derivation: Option<Derivation>,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     walk_inflection(
         candidate,
@@ -384,7 +384,7 @@ fn try_denominal_verbs(
     candidate: &Candidate<'_>,
     state: WalkState<'_>,
     chain: IgChain,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     for derivation in [Derivation::Become, Derivation::Acquire] {
         if let Some(next) = consume_with(candidate, state, |ctx, buf| {
@@ -416,7 +416,7 @@ fn walk_adjective(
     state: WalkState<'_>,
     chain: IgChain,
     derivation: Derivation,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     walk_adjective_ig(
         candidate,
@@ -435,7 +435,7 @@ fn walk_adjective_ig(
     state: WalkState<'_>,
     chain: IgChain,
     adjective_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     emit(candidate, state, chain, adjective_ig, out);
     try_copula(candidate, state, chain, adjective_ig, out);
@@ -490,7 +490,7 @@ fn walk_inflection(
     derivation: Option<Derivation>,
     filter: InflectionFilter,
     numbers: &[Number],
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     for &number in numbers {
         let number_state = match number {
@@ -565,7 +565,7 @@ fn try_copula(
     state: WalkState<'_>,
     chain: IgChain,
     nominal_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     // Every copular emission consumes at least one character, and every
     // top-level copular suffix starts with a character in the gate set.
@@ -681,7 +681,7 @@ fn try_copula_adverbs(
     state: WalkState<'_>,
     chain: IgChain,
     tense: Option<CopulaTense>,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     if state.remaining.is_empty() {
         return;
@@ -767,7 +767,7 @@ fn try_relative(
     state: WalkState<'_>,
     chain: IgChain,
     case_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     if state.remaining.is_empty() {
         return;
@@ -791,7 +791,7 @@ fn walk_relative(
     candidate: &Candidate<'_>,
     state: WalkState<'_>,
     chain: IgChain,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let adjective_ig = InflectionGroup::adj(Derivation::Relative);
     emit(candidate, state, chain, adjective_ig, out);
@@ -838,7 +838,7 @@ fn emit(
     state: WalkState<'_>,
     chain: IgChain,
     final_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     if !state.remaining.is_empty()
         || state.k_fixup == KFixup::NeedsVowel
@@ -852,7 +852,7 @@ fn emit(
     let Some(done) = chain.push(final_ig) else {
         return;
     };
-    out.push(RawNounAnalysis {
+    out.push(RawAnalysis {
         entry: candidate.entry,
         ig_count: done.len as u8,
         igs: done.igs,
@@ -1031,7 +1031,7 @@ fn walk_verb_stem(
     state: WalkState<'_>,
     chain: IgChain,
     stem: VerbStemState,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     walk_verb_body(candidate, state, chain, stem, out);
 
@@ -1093,7 +1093,7 @@ fn walk_verb_body(
     state: WalkState<'_>,
     chain: IgChain,
     stem: VerbStemState,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     walk_verb_exits(
         candidate,
@@ -1175,7 +1175,7 @@ fn walk_verb_exits(
     stem: VerbStemState,
     able: bool,
     polarity: Polarity,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let root_bare = stem.root_bare && polarity == Polarity::Positive && !able;
     let template = InflectionGroup::verb(stem.derivation);
@@ -1476,7 +1476,7 @@ fn finish_finite_tense(
     polarity: Polarity,
     able: bool,
     tense: VerbTense,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     emit(
         candidate,
@@ -1555,7 +1555,7 @@ fn finish_a3pl_before_second(
     polarity: Polarity,
     able: bool,
     tense: VerbTense,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let Some(plural) = consume_with(candidate, state, |ctx, buf| {
         realize_copula_person(Agreement::A3pl, false, ctx, buf)
@@ -1597,7 +1597,7 @@ fn finish_second_tenses(
     polarity: Polarity,
     able: bool,
     tense: VerbTense,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     for second in OVERT_COPULA_TENSES {
         let Some(tensed) = consume_with(candidate, state, |ctx, buf| {
@@ -1705,7 +1705,7 @@ fn walk_participle(
     state: WalkState<'_>,
     chain: IgChain,
     derivation: Derivation,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let adjective_ig = InflectionGroup::adj(derivation);
     emit(candidate, state, chain, adjective_ig, out);
@@ -1741,7 +1741,7 @@ static TAIL_ENTRY_REF: std::sync::LazyLock<LexiconEntry> =
 pub(crate) fn analyze_nominal_tail_into(
     context: PhonoContext,
     tail: &str,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let candidate = Candidate {
         entry: TAIL_ENTRY,
@@ -1764,7 +1764,7 @@ pub(crate) fn analyze_ki_tail_into(
     context: PhonoContext,
     tail: &str,
     root_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let candidate = Candidate {
         entry: TAIL_ENTRY,
@@ -1787,7 +1787,7 @@ pub(crate) fn analyze_copular_tail_into(
     context: PhonoContext,
     tail: &str,
     root_ig: InflectionGroup,
-    out: &mut Vec<RawNounAnalysis>,
+    out: &mut Vec<RawAnalysis>,
 ) {
     let candidate = Candidate {
         entry: TAIL_ENTRY,
@@ -1807,7 +1807,7 @@ pub(crate) fn analyze_copular_tail_into(
 #[cfg(test)]
 mod tests {
     use crate::{
-        analyzer::{NounAnalyzer, analyze_nouns},
+        analyzer::{Analyzer, analyze_word},
         generator::{generate_from_igs, generate_noun_surface},
         gold::{GOLD_ANALYSIS_CASES, GOLD_DERIVED_SURFACES},
         lexicon::Lexicon,
@@ -1821,7 +1821,7 @@ mod tests {
     #[test]
     fn analyzes_simple_plural() {
         let lexicon = seed();
-        let analyses = analyze_nouns(&lexicon, "evler");
+        let analyses = analyze_word(&lexicon, "evler");
 
         assert_eq!(analyses.len(), 1);
         assert_eq!(analyses[0].lemma, "ev");
@@ -1835,7 +1835,7 @@ mod tests {
     #[test]
     fn analyzes_voiced_case_form() {
         let lexicon = seed();
-        let analyses = analyze_nouns(&lexicon, "kitaba");
+        let analyses = analyze_word(&lexicon, "kitaba");
 
         assert_eq!(analyses.len(), 1);
         assert_eq!(analyses[0].lemma, "kitap");
@@ -1846,7 +1846,7 @@ mod tests {
     fn analyzes_pronominal_n_case_forms() {
         let lexicon = seed();
 
-        let analyses = analyze_nouns(&lexicon, "masasında");
+        let analyses = analyze_word(&lexicon, "masasında");
         assert_eq!(analyses.len(), 1);
         assert_eq!(analyses[0].lexical_form, "masa+Noun+A3sg+P3sg+Loc");
     }
@@ -1854,7 +1854,7 @@ mod tests {
     #[test]
     fn analyzes_ambiguous_leri_forms() {
         let lexicon = seed();
-        let analyses = analyze_nouns(&lexicon, "evleri");
+        let analyses = analyze_word(&lexicon, "evleri");
 
         assert_eq!(analyses.len(), 4);
         let glosses: Vec<&str> = analyses
@@ -1872,31 +1872,31 @@ mod tests {
         let lexicon = seed();
 
         assert!(
-            analyze_nouns(&lexicon, "kitab").is_empty(),
+            analyze_word(&lexicon, "kitab").is_empty(),
             "voiced stem must not stand word-finally"
         );
         assert!(
-            analyze_nouns(&lexicon, "kitapı").is_empty(),
+            analyze_word(&lexicon, "kitapı").is_empty(),
             "bare stem must not take a vowel-initial suffix when a vowel stem exists"
         );
         assert!(
-            analyze_nouns(&lexicon, "kitabta").is_empty(),
+            analyze_word(&lexicon, "kitabta").is_empty(),
             "vowel stem must not take a consonant-initial suffix"
         );
         assert!(
-            analyze_nouns(&lexicon, "susu").is_empty(),
+            analyze_word(&lexicon, "susu").is_empty(),
             "y-stem must block the s-buffer reading"
         );
         assert!(
-            analyze_nouns(&lexicon, "kitabçı").is_empty(),
+            analyze_word(&lexicon, "kitabçı").is_empty(),
             "derivations attach to the bare stem"
         );
         assert!(
-            analyze_nouns(&lexicon, "kitaplığ").is_empty(),
+            analyze_word(&lexicon, "kitaplığ").is_empty(),
             "voiced derived k must be followed by a vowel"
         );
         assert!(
-            analyze_nouns(&lexicon, "kitaplıka").is_empty(),
+            analyze_word(&lexicon, "kitaplıka").is_empty(),
             "canonical derived k must not be followed by a vowel"
         );
     }
@@ -1906,7 +1906,7 @@ mod tests {
         let lexicon = seed();
 
         let glosses = |surface: &str| -> Vec<String> {
-            analyze_nouns(&lexicon, surface)
+            analyze_word(&lexicon, surface)
                 .into_iter()
                 .map(|analysis| analysis.lexical_form)
                 .collect()
@@ -1935,7 +1935,7 @@ mod tests {
         let lexicon = seed();
 
         let glosses = |surface: &str| -> Vec<String> {
-            analyze_nouns(&lexicon, surface)
+            analyze_word(&lexicon, surface)
                 .into_iter()
                 .map(|analysis| analysis.lexical_form)
                 .collect()
@@ -1958,7 +1958,7 @@ mod tests {
         ));
 
         assert!(
-            analyze_nouns(&lexicon, "evdekide").is_empty(),
+            analyze_word(&lexicon, "evdekide").is_empty(),
             "zero-nominalized ki must take pronominal-n case forms"
         );
     }
@@ -2030,7 +2030,7 @@ mod tests {
         let lexicon = seed();
 
         let glosses = |surface: &str| -> Vec<String> {
-            analyze_nouns(&lexicon, surface)
+            analyze_word(&lexicon, surface)
                 .into_iter()
                 .map(|analysis| analysis.lexical_form)
                 .collect()
@@ -2064,17 +2064,17 @@ mod tests {
         let lexicon = seed();
 
         assert_eq!(
-            analyze_nouns(&lexicon, "evler").len(),
+            analyze_word(&lexicon, "evler").len(),
             1,
             "bare plurals must not receive a zero-copula reading"
         );
         assert_eq!(
-            analyze_nouns(&lexicon, "ev").len(),
+            analyze_word(&lexicon, "ev").len(),
             1,
             "bare nominals must not receive a third-singular copula reading"
         );
         assert_eq!(
-            analyze_nouns(&lexicon, "evdeler").len(),
+            analyze_word(&lexicon, "evdeler").len(),
             1,
             "copular third plural after a case is unambiguous"
         );
@@ -2084,7 +2084,7 @@ mod tests {
     fn analyzes_homograph_senses_without_duplicates() {
         let lexicon = seed();
 
-        let shared = analyze_nouns(&lexicon, "şıkta");
+        let shared = analyze_word(&lexicon, "şıkta");
         let locative_count = shared
             .iter()
             .filter(|analysis| analysis.lexical_form == "şık+Noun+A3sg+Pnon+Loc")
@@ -2095,14 +2095,14 @@ mod tests {
     #[test]
     fn returns_no_analyses_for_unknown_words() {
         let lexicon = seed();
-        assert!(analyze_nouns(&lexicon, "zzz").is_empty());
-        assert!(analyze_nouns(&lexicon, "").is_empty());
+        assert!(analyze_word(&lexicon, "zzz").is_empty());
+        assert!(analyze_word(&lexicon, "").is_empty());
     }
 
     #[test]
     fn every_analysis_regenerates_its_surface() {
         let lexicon = seed();
-        let analyzer = NounAnalyzer::new(&lexicon);
+        let analyzer = Analyzer::new(&lexicon);
         let paths = noun_paths();
 
         let mut surfaces: Vec<String> = Vec::new();
@@ -2147,7 +2147,7 @@ mod tests {
         let lexicon = seed();
 
         for case in GOLD_ANALYSIS_CASES {
-            let analyses = analyze_nouns(&lexicon, case.surface);
+            let analyses = analyze_word(&lexicon, case.surface);
             assert!(
                 analyses
                     .iter()
@@ -2168,7 +2168,7 @@ mod tests {
 mod large_tests {
     use crate::{
         Possessive,
-        analyzer::{NounAnalyzer, analyze_nouns},
+        analyzer::{Analyzer, analyze_word},
         generator::{generate_from_igs, generate_noun_surface},
         lexicon::{Lexicon, RootPos},
         state::noun_paths,
@@ -2176,7 +2176,7 @@ mod large_tests {
     use std::time::Instant;
 
     fn sweep(lexicon: &Lexicon, stride: usize) -> (usize, usize) {
-        let analyzer = NounAnalyzer::new(lexicon);
+        let analyzer = Analyzer::new(lexicon);
         let paths = noun_paths();
         let mut raw = Vec::new();
         let (mut checked, mut failures) = (0, 0);
@@ -2231,16 +2231,16 @@ mod large_tests {
         let started = Instant::now();
 
         let huge = "ev".repeat(50_000); // 100KB token
-        let _ = analyze_nouns(&lexicon, &huge);
+        let _ = analyze_word(&lexicon, &huge);
 
         let mut deep = String::from("ev");
         for _ in 0..30 {
             deep.push_str("dekilerinki");
         }
-        let _ = analyze_nouns(&lexicon, &deep); // beyond MAX_IGS: pruned, not stuck
+        let _ = analyze_word(&lexicon, &deep); // beyond MAX_IGS: pruned, not stuck
 
         for input in ["", " ", "🐈🐈🐈", "'", "ev'"] {
-            let _ = analyze_nouns(&lexicon, input);
+            let _ = analyze_word(&lexicon, input);
         }
 
         assert!(

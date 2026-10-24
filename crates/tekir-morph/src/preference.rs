@@ -67,14 +67,14 @@ fn looks_plural_surface(surface: &str) -> bool {
 #[cfg(test)]
 mod tests {
     use crate::{
-        MorphAnalysis, analyzer::analyze_nouns, gold::GOLD_PREFERENCE_CASES, lexicon::Lexicon,
+        MorphAnalysis, analyzer::analyze_word, gold::GOLD_PREFERENCE_CASES, lexicon::Lexicon,
         preference::choose_best_noun_analysis,
     };
 
     #[test]
     fn prefers_non_possessive_case_reading_for_evleri() {
         let lexicon = Lexicon::seed();
-        let analyses = analyze_nouns(&lexicon, "evleri");
+        let analyses = analyze_word(&lexicon, "evleri");
         let best =
             choose_best_noun_analysis(&analyses).expect("evleri should have at least one analysis");
 
@@ -84,7 +84,7 @@ mod tests {
     #[test]
     fn prefers_genitive_reading_for_evin() {
         let lexicon = Lexicon::seed();
-        let analyses = analyze_nouns(&lexicon, "evin");
+        let analyses = analyze_word(&lexicon, "evin");
         let best =
             choose_best_noun_analysis(&analyses).expect("evin should have at least one analysis");
 
@@ -101,7 +101,7 @@ mod tests {
         let lexicon = Lexicon::seed();
 
         for case in GOLD_PREFERENCE_CASES {
-            let analyses = analyze_nouns(&lexicon, case.surface);
+            let analyses = analyze_word(&lexicon, case.surface);
             let best = choose_best_noun_analysis(&analyses)
                 .expect("shared preference case should have at least one analysis");
 

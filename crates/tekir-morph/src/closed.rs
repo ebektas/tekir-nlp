@@ -9,7 +9,7 @@ use std::sync::LazyLock;
 
 use crate::{
     analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
-    analyzer::{RawNounAnalysis, analyze_copular_tail_into, analyze_ki_tail_into},
+    analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_ki_tail_into},
     lexical::{LexicalNounForm, gloss_from_igs},
     rules::PhonoContext,
     state::{Case, InflectionGroup, Number, Possessive},
@@ -64,7 +64,7 @@ fn chain_pos(chain: &str) -> PartOfSpeech {
 /// lexicon finds.
 pub fn closed_analyses(surface: &str) -> Vec<MorphAnalysis> {
     let mut analyses = Vec::new();
-    let mut raw: Vec<RawNounAnalysis> = Vec::new();
+    let mut raw: Vec<RawAnalysis> = Vec::new();
 
     for form in TABLE.iter() {
         if surface == form.surface {

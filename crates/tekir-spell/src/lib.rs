@@ -3,7 +3,7 @@
 //! it has an analysis (Oflazer's original spelling-checker thesis).
 
 use serde::Serialize;
-use tekir_morph::{Lexicon, MorphService, analyze_nouns, closed, guess};
+use tekir_morph::{Lexicon, MorphService, analyze_word, closed, guess};
 
 /// ASCII letters that may stand for a Turkish letter in deasciified text.
 const DEASCII: &[(char, char)] = &[
@@ -53,7 +53,7 @@ impl SpellChecker {
         if let Some(analyses) = guess::apostrophe_analyses(word) {
             return !analyses.is_empty();
         }
-        !analyze_nouns(self.service.lexicon(), word).is_empty()
+        !analyze_word(self.service.lexicon(), word).is_empty()
             || !closed::closed_analyses(word).is_empty()
             || !guess::question_particle_analyses(word).is_empty()
     }

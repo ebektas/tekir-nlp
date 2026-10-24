@@ -8,7 +8,7 @@
 
 use crate::{
     analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
-    analyzer::{RawNounAnalysis, analyze_copular_tail_into, analyze_nominal_tail_into},
+    analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_nominal_tail_into},
     lexical::{LexicalNounForm, gloss_from_igs},
     rules::{PhonoContext, last_vowel},
     state::{IgPos, InflectionGroup, NounPath},
@@ -161,7 +161,7 @@ fn collect(
     lemma: &str,
     marker: Option<&'static str>,
     source: AnalysisSource,
-    raw: &[RawNounAnalysis],
+    raw: &[RawAnalysis],
 ) {
     for candidate in raw {
         push_unique(

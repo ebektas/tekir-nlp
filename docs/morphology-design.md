@@ -67,7 +67,7 @@ without any extra rules.
 
 ### Surface-driven analysis
 
-`NounAnalyzer::analyze_raw_into`:
+`Analyzer::analyze_raw_into`:
 
 1. For each character boundary of the input, binary-search the sorted stem
    index for stems equal to that prefix (O(word length × log stems), no
@@ -75,7 +75,7 @@ without any extra rules.
 2. For each candidate stem, walk the nominal morphotactics (inflection,
    derivation, relative `-ki`); epsilon transitions consume nothing, overt
    suffixes must match their realized form; mismatches prune immediately.
-3. Emit `RawNounAnalysis` (entry id + fixed-capacity inflectional-group
+3. Emit `RawAnalysis` (entry id + fixed-capacity inflectional-group
    array, no strings, `Copy`).
 
 Cost per word is independent of lexicon size — this is what the previous
