@@ -7,6 +7,7 @@ members = [
     "crates/tekir-tokenize",
     "crates/tekir-disamb",
     "crates/tekir-spell",
+    "crates/tekir-subword",
     "crates/tekir-cli",
 ]
 resolver = "2"
