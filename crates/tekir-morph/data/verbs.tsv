@@ -1,0 +1,45 @@
+# Tekir seed verb lexicon (roots without the -mAk infinitive).
+# Columns (tab-separated): lemma	vowel_stem	aorist	causative	gloss
+#
+# vowel_stem: stem before vowel-initial suffixes (final voicing: git/gid).
+# aorist: "i" marks the closed class of monosyllabic roots taking +Hr
+#   instead of +Ar (the 13 exceptions); "-" = rule-based.
+# causative: lexical allomorph override: "ir" (+Hr), "it" (+Ht), "ar"
+#   (+Ar); "-" = rule-based (+t after vowels and polysyllabic l/r stems,
+#   +DHr otherwise).
+yap	-	-	-	do
+koş	-	-	-	run
+yaz	-	-	-	write
+sev	-	-	-	love
+aç	-	-	-	open
+bak	-	-	-	look
+gel	-	i	-	come
+al	-	i	-	take
+ol	-	i	-	become
+bil	-	i	-	know
+gör	-	i	-	see
+ver	-	i	-	give
+bul	-	i	-	find
+kal	-	i	-	stay
+dur	-	i	-	stand
+san	-	i	-	suppose
+var	-	i	-	arrive
+vur	-	i	-	hit
+öl	-	i	-	die
+git	gid	-	-	go
+et	ed	-	-	do (auxiliary)
+tat	tad	-	-	taste
+oku	-	-	-	read
+bekle	-	-	-	wait
+başla	-	-	-	begin
+söyle	-	-	-	say
+anla	-	-	-	understand
+ye	-	-	-	eat
+de	-	-	-	say
+iç	-	-	ir	drink
+çık	-	-	ar	go out
+çalış	-	-	-	work
+konuş	-	-	-	speak
+düşün	-	-	-	think
+otur	-	-	-	sit
+oyna	-	-	-	play

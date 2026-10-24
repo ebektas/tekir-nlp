@@ -1,0 +1,26 @@
+[workspace]
+members = [
+    "crates/tekir-core",
+    "crates/tekir-morph",
+    "crates/tekir-normalize",
+    "crates/tekir-segment",
+    "crates/tekir-tokenize",
+    "crates/tekir-disamb",
+    "crates/tekir-spell",
+    "crates/tekir-cli",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+version = "0.1.0"
+authors = ["Tekir Contributors"]
+rust-version = "1.85"
+
+[workspace.dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tiny_http = "0.12"

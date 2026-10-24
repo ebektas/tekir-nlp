@@ -1,0 +1,8 @@
+#! pos: compound-noun
+# Tekir seed compound-noun lexicon (lexicalized third-person marker).
+# Columns: lemma	bare_stem	vowel_stem	gloss
+# bare_stem carries consonant-initial suffixes (buzdolapları), vowel_stem
+# (when different) the vowel-initial ones (buzdolabım).
+bitpazarı	bitpazar	-	flea market
+buzdolabı	buzdolap	buzdolab	refrigerator
+hanımeli	hanımel	-	honeysuckle

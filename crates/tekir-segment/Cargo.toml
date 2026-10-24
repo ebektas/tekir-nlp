@@ -1,0 +1,12 @@
+[package]
+name = "tekir-segment"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde.workspace = true
+tekir-core = { path = "../tekir-core" }
+tekir-tokenize = { path = "../tekir-tokenize" }

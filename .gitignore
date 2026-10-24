@@ -1,0 +1,8 @@
+/target
+
+# local-only agent files
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+.claude/
+.codex

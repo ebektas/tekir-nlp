@@ -1,0 +1,11 @@
+[package]
+name = "tekir-spell"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tekir-morph = { path = "../tekir-morph" }
+serde.workspace = true

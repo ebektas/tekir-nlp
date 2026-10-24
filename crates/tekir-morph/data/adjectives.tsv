@@ -1,0 +1,10 @@
+#! pos: adj
+# Tekir seed adjective lexicon. Same columns as nouns:
+# lemma	vowel_stem	harmony_vowel	gloss
+güzel	-	-	beautiful
+büyük	büyüğ	-	big
+küçük	küçüğ	-	small
+yeni	-	-	new
+boş	-	-	empty
+genç	genc	-	young
+uzak	uzağ	-	far

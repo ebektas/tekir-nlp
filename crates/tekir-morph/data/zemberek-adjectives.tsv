@@ -1,0 +1,5064 @@
+#! pos: adj
+# Imported from the Zemberek-NLP master dictionary.
+# Source: https://github.com/ahmetaa/zemberek-nlp
+#   (morphology/src/main/resources/tr/master-dictionary.dict)
+# Source data license: Apache License 2.0 (c) Zemberek-NLP contributors.
+# Converted by tekir-morph's import_zemberek example; the gloss column
+# preserves the source metadata plus inferred attributes.
+# Columns: lemma	vowel_stem	harmony_vowel	gloss
+aba	-	-	P:Adj
+abanoz	-	-	P:Adj
+abat	-	-	P:Adj; A:NoVoicing
+abazan	-	-	P:Adj
+abaşo	-	-	P:Adj
+abes	-	-	P:Adj
+abide	-	-	P:Adj
+ablak	-	-	P:Adj; A:NoVoicing
+ablavut	ablavud	-	P:Adj; +Voicing(inferred)
+abone	-	-	P:Adj
+abraş	-	-	P:Adj
+abstre	-	-	P:Adj
+absürt	-	-	P:Adj; A:NoVoicing
+abuk	abuğ	-	P:Adj; +Voicing(inferred)
+abullabut	-	-	P:Adj; A:NoVoicing
+abus	-	-	P:Adj
+acar	-	-	P:Adj
+acayip	acayib	-	P:Adj; +Voicing(inferred)
+acele	-	-	P:Adj
+aceleci	-	-	P:Adj
+acemi	-	-	P:Adj
+acil	-	-	P:Adj
+acul	-	-	P:Adj
+acı	-	-	P:Adj
+acıklı	-	-	P:Adj
+acımasız	-	-	P:Adj
+acımtırak	-	-	P:Adj; A:NoVoicing
+acırak	-	-	P:Adj;A:NoVoicing
+adamcıl	-	-	P:Adj
+adapte	-	-	P:Adj
+adcı	-	-	P:Adj
+adi	-	-	P:Adj
+adil	-	-	P:Adj
+adli	-	-	P:Adj
+aerodinamik	aerodinamiğ	-	P:Adj; +Voicing(inferred)
+aerolojik	-	-	P:Adj; A:NoVoicing
+afacan	-	-	P:Adj
+afaki	-	-	P:Adj
+afal	-	-	P:Adj
+afet	-	-	P:Adj; A:NoVoicing
+afif	-	-	P:Adj
+afife	-	-	P:Adj
+afişe	-	-	P:Adj
+agnostik	agnostiğ	-	P:Adj; +Voicing(inferred)
+agresif	-	-	P:Adj
+agâh	-	-	P:Adj
+ahdî	-	-	P:Adj
+ahenktar	-	-	P:Adj
+aheste	-	-	P:Adj
+ahi	-	-	P:Adj
+ahir	-	-	P:Adj
+ahlaki	-	-	P:Adj
+ahmak	ahmağ	-	P:Adj; +Voicing(inferred)
+ahraz	-	-	P:Adj
+ahretlik	ahretliğ	-	P:Adj; +Voicing(inferred)
+ahu	-	-	P:Adj
+ahşap	ahşab	-	P:Adj; +Voicing(inferred)
+ailevi	-	-	P:Adj
+ajitatör	-	-	P:Adj
+ajite	-	-	P:Adj
+ak	-	-	P:Adj
+akademik	akademiğ	-	P:Adj; +Voicing(inferred)
+akaju	-	-	P:Adj
+akbaba	-	-	P:Adj
+akil	-	-	P:Adj
+akim	-	-	P:Adj
+akkor	-	-	P:Adj
+aklî	-	-	P:Adj
+aklıevvel	-	-	P:Adj
+aklıselim	-	-	P:Adj
+akman	-	-	P:Adj
+akordiyon	-	-	P:Adj
+akrilik	akriliğ	-	P:Adj; +Voicing(inferred)
+akrobatik	akrobatiğ	-	P:Adj; +Voicing(inferred)
+akromatik	akromatiğ	-	P:Adj; +Voicing(inferred)
+aksak	aksağ	-	P:Adj; +Voicing(inferred)
+aksi	-	-	P:Adj
+aktif	-	-	P:Adj
+aktinolojik	aktinolojiğ	-	P:Adj; +Voicing(inferred)
+aktüel	-	-	P:Adj
+aktüeryal	-	-	P:Adj
+akur	-	-	P:Adj
+akut	-	-	P:Adj ; A:NoVoicing
+akça	-	-	P:Adj
+akçıl	-	-	P:Adj
+akılalmaz	-	-	P:Adj
+akışkan	-	-	P:Adj
+akışmaz	-	-	P:Adj
+akşın	-	-	P:Adj
+al	-	-	P:Adj
+ala	-	-	P:Adj
+alabacak	alabacağ	-	P:Adj; +Voicing(inferred)
+alabros	-	-	P:Adj
+alaca	-	-	P:Adj
+alafranga	-	-	P:Adj
+alakadar	-	-	P:Adj
+alamerikan	-	-	P:Adj
+alaminüt	alaminüd	-	P:Adj; +Voicing(inferred)
+alaten	-	-	P:Adj
+alaturka	-	-	P:Adj
+albinos	-	-	P:Adj
+aldanç	aldanc	-	P:Adj; +Voicing(inferred)
+aldırmaz	-	-	P:Adj
+alegorik	alegoriğ	-	P:Adj; +Voicing(inferred)
+alenî	-	-	P:Adj
+alerjik	alerjiğ	-	P:Adj; +Voicing(inferred)
+alesta	-	-	P:Adj
+aleyhtar	-	-	P:Adj
+alfabetik	alfabetiğ	-	P:Adj; +Voicing(inferred)
+algın	-	-	P:Adj
+ali	-	-	P:Adj
+alicenap	alicenab	-	P:Adj; +Voicing(inferred)
+alifatik	alifatiğ	-	P:Adj; +Voicing(inferred)
+alil	-	-	P:Adj
+alim	-	-	P:Adj
+aliyyülâlâ	-	-	P:Adj
+alkalik	alkaliğ	-	P:Adj; +Voicing(inferred)
+alkolik	alkoliğ	-	P:Adj; +Voicing(inferred)
+allahlık	allahlığ	-	P:Adj; +Voicing(inferred)
+allame	-	-	P:Adj
+almaşık	almaşığ	-	P:Adj; +Voicing(inferred)
+alp	-	-	P:Adj
+alt	-	-	P:Adj
+alternatif	-	-	P:Adj
+altmışar	-	-	P:Adj
+altmışlık	altmışlığ	-	P:Adj; +Voicing(inferred)
+altuni	-	-	P:Adj
+altüst	-	-	P:Adj; A:NoVoicing
+altıgen	-	-	P:Adj
+altılı	-	-	P:Adj
+altın	-	-	P:Adj
+altız	-	-	P:Adj
+altışar	-	-	P:Adj
+alyon	-	-	P:Adj
+alçacık	alçacığ	-	P:Adj; +Voicing(inferred)
+alçak	alçağ	-	P:Adj; +Voicing(inferred)
+alçarak	alçarağ	-	P:Adj; +Voicing(inferred)
+alçı	-	-	P:Adj
+alüfte	-	-	P:Adj
+alüminyum	-	-	P:Adj
+alıcı	-	-	P:Adj
+alık	alığ	-	P:Adj; +Voicing(inferred)
+alıngan	-	-	P:Adj
+alışkan	-	-	P:Adj
+alışkın	-	-	P:Adj
+alışık	alışığ	-	P:Adj; +Voicing(inferred)
+amade	-	-	P:Adj
+amansız	-	-	P:Adj
+amatör	-	-	P:Adj
+amelî	-	-	P:Adj
+amfibi	-	-	P:Adj
+amfibik	amfibiğ	-	P:Adj; +Voicing(inferred)
+amir	-	-	P:Adj
+amiyane	-	-	P:Adj
+amorf	-	-	P:Adj
+ampirik	ampiriğ	-	P:Adj; +Voicing(inferred)
+ampirist	-	-	P:Adj;A:NoVoicing
+amudi	-	-	P:Adj
+ana	-	-	P:Adj
+anacıl	-	-	P:Adj
+anaerkil	-	-	P:Adj
+anaerobik	anaerobiğ	-	P:Adj; +Voicing(inferred)
+anahtar	-	-	P:Adj
+anakronik	anakroniğ	-	P:Adj; +Voicing(inferred)
+anal	-	-	P:Adj
+analitik	analitiğ	-	P:Adj; +Voicing(inferred)
+analjezik	analjeziğ	-	P:Adj; +Voicing(inferred)
+analog	-	-	P:Adj ; A:NoVoicing
+analojik	analojiğ	-	P:Adj; +Voicing(inferred)
+ananevi	-	-	P:Adj
+anarşik	anarşiğ	-	P:Adj; +Voicing(inferred)
+anatomik	anatomiğ	-	P:Adj; +Voicing(inferred)
+anayasal	-	-	P:Adj
+anaç	anac	-	P:Adj; +Voicing(inferred)
+andaval	-	-	P:Adj
+androsefal	-	-	P:Adj
+anemik	anemiğ	-	P:Adj; +Voicing(inferred)
+anestezik	anesteziğ	-	P:Adj; +Voicing(inferred)
+anesteziyolojik	anesteziyolojiğ	-	P:Adj; +Voicing(inferred)
+angaje	-	-	P:Adj
+angora	-	-	P:Adj
+angudi	-	-	P:Adj
+angut	angud	-	P:Adj; +Voicing(inferred)
+angın	-	-	P:Adj
+ani	-	-	P:Adj
+anif	-	-	P:Adj
+ankastre	-	-	P:Adj
+anlamdaş	-	-	P:Adj
+anlaşılmaz	-	-	P:Adj
+anlık	anlığ	-	P:Adj; +Voicing(inferred)
+anonim	-	-	P:Adj
+anorganik	anorganiğ	-	P:Adj; +Voicing(inferred)
+anormal	-	i	P:Adj; A:InverseHarmony
+ansiklopedik	ansiklopediğ	-	P:Adj; +Voicing(inferred)
+antarktik	antarktiğ	-	P:Adj; +Voicing(inferred)
+antialerjik	antialerjiğ	-	P:Adj; +Voicing(inferred)
+antiasit	antiasid	-	P:Adj; +Voicing(inferred)
+antibakteriyel	-	-	P:Adj
+antidemokratik	antidemokratiğ	-	P:Adj; +Voicing(inferred)
+antiemperyalist	-	-	P:Adj; A:NoVoicing
+antihijyenik	antihijyeniğ	-	P:Adj; +Voicing(inferred)
+antik	antiğ	-	P:Adj; +Voicing(inferred)
+antika	-	-	P:Adj
+antikapitalist	-	-	P:Adj;A:NoVoicing
+antikomünist	-	-	P:Adj; A:NoVoicing
+antilop	antilob	-	P:Adj; +Voicing(inferred)
+antipatik	antipatiğ	-	P:Adj; +Voicing(inferred)
+antipersonel	-	-	P:Adj
+antisemit	-	-	P:Adj; A:NoVoicing
+antisemitik	antisemitiğ	-	P:Adj; +Voicing(inferred)
+antisemitist	-	-	P:Adj; A:NoVoicing
+antiseptik	antiseptiğ	-	P:Adj; +Voicing(inferred)
+antitonal	-	-	P:Adj
+antiviral	-	-	P:Adj
+antolojik	antolojiğ	-	P:Adj; +Voicing(inferred)
+antropoit	antropoid	-	P:Adj; +Voicing(inferred)
+antropolojik	antropolojiğ	-	P:Adj; +Voicing(inferred)
+antropozoik	antropozoiğ	-	P:Adj; +Voicing(inferred)
+anut	anud	-	P:Adj; +Voicing(inferred)
+anık	anığ	-	P:Adj; +Voicing(inferred)
+anında	-	-	P:Adj
+apacı	-	-	P:Adj
+apak	apağ	-	P:Adj; +Voicing(inferred)
+apalak	apalağ	-	P:Adj; +Voicing(inferred)
+apaydın	-	-	P:Adj
+apayrı	-	-	P:Adj
+apaz	-	-	P:Adj
+apaçık	apaçığ	-	P:Adj; +Voicing(inferred)
+apiko	-	-	P:Adj
+apokaliptik	apokaliptiğ	-	P:Adj; +Voicing(inferred)
+apolitik	apolitiğ	-	P:Adj; +Voicing(inferred)
+aposteriori	-	-	P:Adj
+apriori	-	-	P:Adj
+aptal	-	-	P:Adj
+apışak	apışağ	-	P:Adj; +Voicing(inferred)
+apışık	apışığ	-	P:Adj; +Voicing(inferred)
+ara	-	-	P:Adj
+araba	-	-	P:Adj
+arabesk	-	-	P:Adj; A:NoVoicing
+arabozan	-	-	P:Adj
+aracı	-	-	P:Adj
+aralık	aralığ	-	P:Adj; +Voicing(inferred)
+aranje	-	-	P:Adj
+arap	arab	-	P:Adj; +Voicing(inferred)
+ardışık	ardışığ	-	P:Adj; +Voicing(inferred)
+argın	-	-	P:Adj
+ari	-	-	P:Adj
+arif	-	-	P:Adj
+arifane	-	-	P:Adj
+aristokrat	-	-	P:Adj; A:NoVoicing
+aristokratik	aristokratiğ	-	P:Adj; +Voicing(inferred)
+aritmetik	aritmetiğ	-	P:Adj; +Voicing(inferred)
+aritmik	aritmiğ	-	P:Adj; +Voicing(inferred)
+arka	-	-	P:Adj
+arkaik	arkaiğ	-	P:Adj; +Voicing(inferred)
+arkeolojik	arkeolojiğ	-	P:Adj; +Voicing(inferred)
+arkeometrik	arkeometriğ	-	P:Adj; +Voicing(inferred)
+arktik	arktiğ	-	P:Adj; +Voicing(inferred)
+arlanmaz	-	-	P:Adj
+armonik	armoniğ	-	P:Adj; +Voicing(inferred)
+armonize	-	-	P:Adj
+armudi	-	-	P:Adj
+armut	armud	-	P:Adj; +Voicing(inferred)
+aromatik	aromatiğ	-	P:Adj; +Voicing(inferred)
+arsıulusal	-	-	P:Adj
+arsız	-	-	P:Adj
+art	ard	-	P:Adj; A:Voicing
+artağan	-	-	P:Adj
+artistik	artistiğ	-	P:Adj; +Voicing(inferred)
+artçı	-	-	P:Adj
+artı	-	-	P:Adj
+artık	artığ	-	P:Adj; +Voicing(inferred)
+arzani	-	-	P:Adj
+arı	-	-	P:Adj
+arık	arığ	-	P:Adj; +Voicing(inferred)
+arız	-	-	P:Adj
+arızi	-	-	P:Adj
+as	-	-	P:Adj
+asabi	-	-	P:Adj
+asal	-	-	P:Adj
+asalak	asalağ	-	P:Adj; +Voicing(inferred)
+aseksüel	-	-	P:Adj
+asenkron	-	-	P:Adj
+aseptik	aseptiğ	-	P:Adj; +Voicing(inferred)
+asetik	asetiğ	-	P:Adj; +Voicing(inferred)
+asfalt	-	-	P:Adj; A:NoVoicing
+asgari	-	-	P:Adj
+asi	-	-	P:Adj
+asil	-	-	P:Adj
+asilzade	-	-	P:Adj
+asimetrik	asimetriğ	-	P:Adj; +Voicing(inferred)
+asimile	-	-	P:Adj
+asker	-	-	P:Adj
+askerî	-	-	P:Adj
+askıntı	-	-	P:Adj
+aslî	-	-	P:Adj
+asma	-	-	P:Adj
+asorti	-	-	P:Adj
+asortik	asortiğ	-	P:Adj; +Voicing(inferred)
+asosyal	-	i	P:Adj; A:InverseHarmony
+asri	-	-	P:Adj
+astigmat	-	-	P:Adj; A:NoVoicing
+astragan	-	-	P:Adj
+astrolojik	astrolojiğ	-	P:Adj; +Voicing(inferred)
+astronomik	astronomiğ	-	P:Adj; +Voicing(inferred)
+astropikal	-	i	P:Adj; A:InverseHarmony
+asude	-	-	P:Adj
+asık	asığ	-	P:Adj; +Voicing(inferred)
+asıl	-	-	P:Adj
+ataerkil	-	-	P:Adj
+atak	atağ	-	P:Adj; +Voicing(inferred)
+atavik	ataviğ	-	P:Adj; +Voicing(inferred)
+ate	-	-	P:Adj
+ateist	-	-	P:Adj; A:NoVoicing
+ateşin	-	-	P:Adj
+ateşperest	-	-	P:Adj; A:NoVoicing
+atik	atiğ	-	P:Adj; +Voicing(inferred)
+atletik	atletiğ	-	P:Adj; +Voicing(inferred)
+atmosferik	atmosferiğ	-	P:Adj; +Voicing(inferred)
+atomal	-	-	P:Adj
+atomik	atomiğ	-	P:Adj; +Voicing(inferred)
+atonal	-	i	P:Adj; A:InverseHarmony
+atık	atığ	-	P:Adj; +Voicing(inferred)
+atıl	-	-	P:Adj
+atılgan	-	-	P:Adj
+aval	-	-	P:Adj
+avanak	avanağ	-	P:Adj; +Voicing(inferred)
+avantüriye	-	-	P:Adj
+avantüriyer	-	-	P:Adj
+avare	-	-	P:Adj
+avcı	-	-	P:Adj
+avdetî	-	-	P:Adj
+ayan	-	-	P:Adj
+aydın	-	-	P:Adj
+aykırı	-	-	P:Adj
+aylak	aylağ	-	P:Adj; +Voicing(inferred)
+aylık	aylığ	-	P:Adj; +Voicing(inferred)
+aymaz	-	-	P:Adj
+ayna	-	-	P:Adj
+ayni	-	-	P:Adj
+aynı	-	-	P:Adj
+ayrı	-	-	P:Adj
+ayrık	ayrığ	-	P:Adj; +Voicing(inferred)
+ayrışık	ayrışığ	-	P:Adj; +Voicing(inferred)
+aysar	-	-	P:Adj
+ayyar	-	-	P:Adj
+ayyaş	-	-	P:Adj
+ayıboğan	-	-	P:Adj
+ayık	ayığ	-	P:Adj; +Voicing(inferred)
+ayıp	ayıb	-	P:Adj; +Voicing(inferred)
+az	-	-	P:Adj
+azade	-	-	P:Adj
+azami	-	-	P:Adj
+azat	azad	-	P:Adj; +Voicing(inferred)
+azgın	-	-	P:Adj
+aziz	-	-	P:Adj
+azman	-	-	P:Adj
+azoik	azoiğ	-	P:Adj; +Voicing(inferred)
+azıcık	azıcığ	-	P:Adj; +Voicing(inferred)
+aç	-	-	P:Adj
+açgöz	-	-	P:Adj
+açgözlü	-	-	P:Adj
+açık	açığ	-	P:Adj; +Voicing(inferred)
+açıkgöz	-	-	P:Adj
+ağa	-	-	P:Adj
+ağababa	-	-	P:Adj
+ağarık	ağarığ	-	P:Adj; +Voicing(inferred)
+ağaç	ağac	-	P:Adj; +Voicing(inferred)
+ağlak	ağlağ	-	P:Adj; +Voicing(inferred)
+ağlamaklı	-	-	P:Adj
+ağır	-	-	P:Adj
+ağırayak	ağırayağ	-	P:Adj; +Voicing(inferred)
+ağırbaşlı	-	-	P:Adj
+ağırcanlı	-	-	P:Adj
+ağırelli	-	-	P:Adj
+ağırkanlı	-	-	P:Adj
+ağızcıl	-	-	P:Adj
+ağızsıl	-	-	P:Adj
+aşağı	-	-	P:Adj
+aşikâr	-	-	P:Adj
+aşina	-	-	P:Adj
+aşkın	-	-	P:Adj
+aşı	-	-	P:Adj
+aşırı	-	-	P:Adj
+baba	-	-	P:Adj
+babacan	-	-	P:Adj
+babacıl	-	-	P:Adj
+babayani	-	-	P:Adj
+babayiğit	babayiğid	-	P:Adj; +Voicing(inferred)
+babaçko	-	-	P:Adj
+badik	badiğ	-	P:Adj; +Voicing(inferred)
+bahri	-	-	P:Adj
+bahtiyar	-	-	P:Adj
+baki	-	-	P:Adj
+bakir	-	-	P:Adj
+bakire	-	-	P:Adj
+baklaçiçeği	-	-	P:Adj
+bakraç	bakrac	-	P:Adj; +Voicing(inferred)
+bakterisit	bakterisid	-	P:Adj; +Voicing(inferred)
+bakteriyel	-	-	P:Adj
+bakteriyolojik	bakteriyolojiğ	-	P:Adj; +Voicing(inferred)
+bakıcı	-	-	P:Adj
+bakır	-	-	P:Adj
+balaban	-	-	P:Adj
+baldudak	baldudağ	-	P:Adj; +Voicing(inferred)
+baliğ	-	-	P:Adj
+balkı	-	-	P:Adj
+balonvari	-	-	P:Adj
+balıketi	-	-	P:Adj
+balıksırtı	-	-	P:Adj
+balıkçıl	-	-	P:Adj
+bambaşka	-	-	P:Adj
+bambu	-	-	P:Adj
+banal	-	i	P:Adj; A:InverseHarmony
+bani	-	-	P:Adj
+barbar	-	-	P:Adj
+bardak	bardağ	-	P:Adj; +Voicing(inferred)
+bardan	-	-	P:Adj
+bariz	-	-	P:Adj
+barudi	-	-	P:Adj
+barışsever	-	-	P:Adj
+barışçıl	-	-	P:Adj
+barışık	barışığ	-	P:Adj; +Voicing(inferred)
+basari	-	-	P:Adj
+basbayağı	-	-	P:Adj
+basit	-	-	P:Adj; A:NoVoicing
+baskın	-	-	P:Adj
+basma	-	-	P:Adj
+basmakalıp	basmakalıb	-	P:Adj; +Voicing(inferred)
+bastıbacak	bastıbacağ	-	P:Adj; +Voicing(inferred)
+basık	basığ	-	P:Adj; +Voicing(inferred)
+batak	batağ	-	P:Adj; +Voicing(inferred)
+batakçıl	-	-	P:Adj
+bati	-	-	P:Adj
+batik	batiğ	-	P:Adj; +Voicing(inferred)
+batkın	-	-	P:Adj
+battal	-	-	P:Adj
+batı	-	-	P:Adj
+batık	batığ	-	P:Adj; +Voicing(inferred)
+batıl	-	-	P:Adj
+bay	-	-	P:Adj
+bayat	bayad	-	P:Adj; +Voicing(inferred)
+bayağı	-	-	P:Adj
+baygın	-	-	P:Adj
+baylan	-	-	P:Adj
+baypas	-	-	P:Adj
+bayrı	-	-	P:Adj
+baysal	-	-	P:Adj
+bayındır	-	-	P:Adj
+baz	-	-	P:Adj
+bazal	-	-	P:Adj
+bazik	baziğ	-	P:Adj; +Voicing(inferred)
+bazofil	-	-	P:Adj
+bazı	-	-	P:Adj
+bağa	-	-	P:Adj
+bağdadî	-	-	P:Adj
+bağdaşmaz	-	-	P:Adj
+bağdaşık	bağdaşığ	-	P:Adj; +Voicing(inferred)
+bağlaşık	bağlaşığ	-	P:Adj; +Voicing(inferred)
+bağnaz	-	-	P:Adj
+bağıl	-	-	P:Adj
+bağımlı	-	-	P:Adj
+bağımsız	-	-	P:Adj
+bağırgan	-	-	P:Adj
+bağırtkan	-	-	P:Adj
+bağışık	bağışığ	-	P:Adj; +Voicing(inferred)
+başat	-	-	P:Adj ; A:NoVoicing
+başka	-	-	P:Adj
+başlı	-	-	P:Adj
+başlıca	-	-	P:Adj
+baştanımaz	-	-	P:Adj
+başıbozuk	başıbozuğ	-	P:Adj; +Voicing(inferred)
+başıboş	-	-	P:Adj
+becerikli	-	-	P:Adj
+beceriksiz	-	-	P:Adj
+bed	-	-	P:Adj
+bedava	-	-	P:Adj
+bedbaht	-	-	P:Adj; A:NoVoicing
+bedbin	-	-	P:Adj
+bedel	-	-	P:Adj
+bedenî	-	-	P:Adj
+bedhah	-	-	P:Adj
+bedihî	-	-	P:Adj
+bediî	-	-	P:Adj
+bednam	-	-	P:Adj
+beher	-	-	P:Adj
+behimi	-	-	P:Adj
+bej	-	-	P:Adj
+bek	-	-	P:Adj
+beklenmedik	beklenmediğ	-	P:Adj; +Voicing(inferred)
+beklenmez	-	-	P:Adj
+bekri	-	-	P:Adj
+beledi	-	-	P:Adj
+beleş	-	-	P:Adj
+belgesel	-	-	P:Adj
+belgin	-	-	P:Adj
+belgisiz	-	-	P:Adj
+belirgin	-	-	P:Adj
+belirli	-	-	P:Adj
+belirsiz	-	-	P:Adj
+belirtik	belirtiğ	-	P:Adj; +Voicing(inferred)
+beliğ	-	-	P:Adj
+belli	-	-	P:Adj
+bembeyaz	-	-	P:Adj
+benbenci	-	-	P:Adj
+benci	-	-	P:Adj
+bencil	-	-	P:Adj
+bengi	-	-	P:Adj
+benimki	-	-	P:Adj
+beniçinci	-	-	P:Adj
+benmerkezci	-	-	P:Adj
+benzer	-	-	P:Adj
+benzeri	-	-	P:Adj
+benzeş	-	-	P:Adj
+benzeşik	benzeşiğ	-	P:Adj; +Voicing(inferred)
+beraber	-	-	P:Adj
+berbat	-	-	P:Adj; A:NoVoicing
+berceste	-	-	P:Adj
+berdevam	-	-	P:Adj
+berduş	-	-	P:Adj
+bereli	-	-	P:Adj
+bergamodi	-	-	P:Adj
+berhane	-	-	P:Adj
+berhava	-	-	P:Adj
+berhayat	-	-	P:Adj; A:NoVoicing
+berhudar	-	-	P:Adj
+beri	-	-	P:Adj
+beribenzer	-	-	P:Adj
+beriki	-	-	P:Adj
+berk	-	-	P:Adj
+berkemal	-	i	P:Adj; A:InverseHarmony
+berrak	berrağ	-	P:Adj; +Voicing(inferred)
+bertaraf	-	-	P:Adj
+bertik	bertiğ	-	P:Adj; +Voicing(inferred)
+besbedava	-	-	P:Adj
+besbelli	-	-	P:Adj
+besbeter	-	-	P:Adj
+besili	-	-	P:Adj
+besleme	-	-	P:Adj
+beslenen	-	-	P:Adj
+bestseller	-	-	P:Adj
+beter	-	-	P:Adj
+beton	-	-	P:Adj
+betonarme	-	-	P:Adj
+beyaz	-	-	P:Adj
+beyazımsı	-	-	P:Adj
+beyazımtırak	beyazımtırağ	-	P:Adj; +Voicing(inferred)
+beyefendi	-	-	P:Adj
+beyhude	-	-	P:Adj
+beyinsiz	-	-	P:Adj
+beylik	beyliğ	-	P:Adj; +Voicing(inferred)
+beynamaz	-	-	P:Adj
+beynelmilel	-	-	P:Adj
+bez	-	-	P:Adj
+bezeli	-	-	P:Adj
+bezgin	-	-	P:Adj
+beğenilir	-	-	P:Adj
+beğenir	-	-	P:Adj
+beşer	-	-	P:Adj
+beşerî	-	-	P:Adj
+beşgen	-	-	P:Adj
+beşiz	-	-	P:Adj
+beşuş	-	-	P:Adj
+biaman	-	-	P:Adj
+bibaht	-	-	P:Adj; A:NoVoicing
+bibehre	-	-	P:Adj
+bibliyofil	-	-	P:Adj
+bibliyografik	bibliyografiğ	-	P:Adj; +Voicing(inferred)
+bidar	-	-	P:Adj
+bigâne	-	-	P:Adj
+bigünah	-	-	P:Adj
+bihaber	-	-	P:Adj
+bihuş	-	-	P:Adj
+biilaç	biilac	-	P:Adj; +Voicing(inferred)
+bikarar	-	-	P:Adj
+bikes	-	-	P:Adj
+bilavasıta	-	-	P:Adj
+bilcümle	-	-	P:Adj
+bildik	bildiğ	-	P:Adj; +Voicing(inferred)
+bilecen	-	-	P:Adj
+bileyici	-	-	P:Adj
+bileşik	bileşiğ	-	P:Adj; +Voicing(inferred)
+bilge	-	-	P:Adj
+bilgiç	bilgic	-	P:Adj; +Voicing(inferred)
+bilimsel	-	-	P:Adj
+bilindik	bilindiğ	-	P:Adj; +Voicing(inferred)
+bilinen	-	-	P:Adj
+bilinmedik	bilinmediğ	-	P:Adj; +Voicing(inferred)
+bilinmeyen	-	-	P:Adj
+bilinmez	-	-	P:Adj
+bilir	-	-	P:Adj
+bilişsel	-	-	P:Adj
+billur	-	-	P:Adj
+billuri	-	-	P:Adj
+billuriye	-	-	P:Adj
+billursu	-	-	P:Adj
+billûrî	-	-	P:Adj
+bilumum	-	-	P:Adj
+binbir	-	-	P:Adj
+binek	bineğ	-	P:Adj; +Voicing(inferred)
+binlerce	-	-	P:Adj
+binlik	binliğ	-	P:Adj; +Voicing(inferred)
+bir	-	-	P:Adj
+biraz	-	-	P:Adj
+birazcık	birazcığ	-	P:Adj; +Voicing(inferred)
+birebir	-	-	P:Adj
+bireysel	-	-	P:Adj
+bireyüstü	-	-	P:Adj
+biricik	biriciğ	-	P:Adj; +Voicing(inferred)
+birincil	-	-	P:Adj
+birkaç	birkac	-	P:Adj; +Voicing(inferred)
+birleşen	-	-	P:Adj
+birleşik	birleşiğ	-	P:Adj; +Voicing(inferred)
+birlik	birliğ	-	P:Adj; +Voicing(inferred)
+birtakım	-	-	P:Adj
+birçok	birçoğ	-	P:Adj; +Voicing(inferred)
+biseksüel	-	-	P:Adj
+bitap	bitab	-	P:Adj; +Voicing(inferred)
+bitaraf	-	-	P:Adj
+bitek	biteğ	-	P:Adj; +Voicing(inferred)
+bitik	bitiğ	-	P:Adj; +Voicing(inferred)
+bitirim	-	-	P:Adj
+bitişik	bitişiğ	-	P:Adj; +Voicing(inferred)
+bitişken	-	-	P:Adj
+bitkin	-	-	P:Adj
+bitkisel	-	-	P:Adj
+bivefa	-	-	P:Adj
+biyografik	biyografiğ	-	P:Adj; +Voicing(inferred)
+biyolojik	biyolojiğ	-	P:Adj; +Voicing(inferred)
+biyomedikal	-	i	P:Adj; A:InverseHarmony
+biyometeorolojik	biyometeorolojiğ	-	P:Adj; +Voicing(inferred)
+biyonik	biyoniğ	-	P:Adj; +Voicing(inferred)
+bizimki	-	-	P:Adj
+biçimli	-	-	P:Adj
+blok	-	-	P:Adj;A:NoVoicing
+bloke	-	-	P:Adj
+bodur	-	-	P:Adj
+bohem	-	-	P:Adj
+bok	-	-	P:Adj
+boktan	-	-	P:Adj
+bol	-	-	P:Adj
+bolca	-	-	P:Adj
+bombok	-	-	P:Adj; A:NoVoicing
+bomboz	-	-	P:Adj
+bomboş	-	-	P:Adj
+bonkör	-	-	P:Adj
+bor	-	-	P:Adj
+borak	-	-	P:Adj; A:NoVoicing
+bordo	-	-	P:Adj
+bordomtırak	bordomtırağ	-	P:Adj; +Voicing(inferred)
+boydak	boydağ	-	P:Adj; +Voicing(inferred)
+boydaş	-	-	P:Adj
+boynuz	-	-	P:Adj
+boz	-	-	P:Adj
+bozarık	bozarığ	-	P:Adj; +Voicing(inferred)
+bozca	-	-	P:Adj
+bozgun	-	-	P:Adj
+bozrak	bozrağ	-	P:Adj; +Voicing(inferred)
+bozuk	bozuğ	-	P:Adj; +Voicing(inferred)
+bozuşuk	bozuşuğ	-	P:Adj; +Voicing(inferred)
+boğuk	boğuğ	-	P:Adj; +Voicing(inferred)
+boğunuk	boğunuğ	-	P:Adj; +Voicing(inferred)
+boş	-	-	P:Adj
+boşboğaz	-	-	P:Adj
+boşuna	-	-	P:Adj
+brakisefal	-	i	P:Adj;A:InverseHarmony
+bromhidrik	bromhidriğ	-	P:Adj; +Voicing(inferred)
+bronz	-	-	P:Adj
+brüt	-	-	P:Adj
+budala	-	-	P:Adj
+buklet	bukled	-	P:Adj; +Voicing(inferred)
+bulamaç	bulamac	-	P:Adj; +Voicing(inferred)
+bulanık	bulanığ	-	P:Adj; +Voicing(inferred)
+bulaşkan	-	-	P:Adj
+bulaşıcı	-	-	P:Adj
+bulaşık	bulaşığ	-	P:Adj; +Voicing(inferred)
+buldumcuk	buldumcuğ	-	P:Adj; +Voicing(inferred)
+bullak	bullağ	-	P:Adj; +Voicing(inferred)
+bumburuşuk	bumburuşuğ	-	P:Adj; +Voicing(inferred)
+bumbuz	-	-	P:Adj
+bunak	bunağ	-	P:Adj; +Voicing(inferred)
+bunca	-	-	P:Adj
+buncağız	-	-	P:Adj
+bungalov	-	-	P:Adj
+bungun	-	-	P:Adj
+bunlu	-	-	P:Adj
+burjuva	-	-	P:Adj
+burkuk	burkuğ	-	P:Adj; +Voicing(inferred)
+burma	-	-	P:Adj
+burnaz	-	-	P:Adj
+buruk	buruğ	-	P:Adj; +Voicing(inferred)
+buruşuk	buruşuğ	-	P:Adj; +Voicing(inferred)
+busbulanık	busbulanığ	-	P:Adj; +Voicing(inferred)
+buyurgan	-	-	P:Adj
+buz	-	-	P:Adj
+bâtın	-	-	P:Adj
+bâtıni	-	-	P:Adj
+bîçare	-	-	P:Adj
+böcekkabuğu	-	-	P:Adj
+böcekçil	-	-	P:Adj
+bölgesel	-	-	P:Adj
+bölücü	-	-	P:Adj
+bölünmez	-	-	P:Adj
+bön	-	-	P:Adj
+bönce	-	-	P:Adj
+börtük	börtüğ	-	P:Adj; +Voicing(inferred)
+böyle	-	-	P:Adj
+böylesine	-	-	P:Adj
+bücür	-	-	P:Adj
+bükük	büküğ	-	P:Adj; +Voicing(inferred)
+bükülgen	-	-	P:Adj
+bükülü	-	-	P:Adj
+bürokrat	bürokrad	-	P:Adj; +Voicing(inferred)
+bürokratik	bürokratiğ	-	P:Adj; +Voicing(inferred)
+bürümcük	bürümcüğ	-	P:Adj; +Voicing(inferred)
+bütün	-	-	P:Adj
+bütüncül	-	-	P:Adj
+bütünler	-	-	P:Adj
+bütünleyen	-	-	P:Adj
+bütünleşik	bütünleşiğ	-	P:Adj; +Voicing(inferred)
+büyücek	büyüceğ	-	P:Adj; +Voicing(inferred)
+büyük	büyüğ	-	P:Adj; +Voicing(inferred)
+büyütken	-	-	P:Adj
+büzük	büzüğ	-	P:Adj; +Voicing(inferred)
+büzüşük	büzüşüğ	-	P:Adj; +Voicing(inferred)
+bıdık	bıdığ	-	P:Adj; +Voicing(inferred)
+bıkkın	-	-	P:Adj
+bıçaklık	bıçaklığ	-	P:Adj; +Voicing(inferred)
+bıçkın	-	-	P:Adj
+cadaloz	-	-	P:Adj
+cafcaf	-	-	P:Adj
+cahil	-	-	P:Adj
+caiz	-	-	P:Adj
+calip	calib	-	P:Adj; +Voicing(inferred)
+cam	-	-	P:Adj
+cambaz	-	-	P:Adj
+cami	-	-	P:Adj
+camit	camid	-	P:Adj; +Voicing(inferred)
+can	-	-	P:Adj
+canavar	-	-	P:Adj
+canciğer	-	-	P:Adj
+candan	-	-	P:Adj
+canfes	-	-	P:Adj
+canhıraş	-	-	P:Adj
+cani	-	-	P:Adj
+canlı	-	-	P:Adj
+capcanlı	-	-	P:Adj
+carcar	-	-	P:Adj
+cari	-	-	P:Adj
+cascavlak	cascavlağ	-	P:Adj; +Voicing(inferred)
+cavalacoz	-	-	P:Adj
+cavlak	cavlağ	-	P:Adj; +Voicing(inferred)
+caygın	-	-	P:Adj
+cazibedar	-	-	P:Adj
+cazip	cazib	-	P:Adj; +Voicing(inferred)
+cebbar	-	-	P:Adj
+ceberut	-	-	P:Adj;A:NoVoicing
+cebin	-	-	P:Adj
+cebrî	-	-	P:Adj
+cedit	cedid	-	P:Adj; +Voicing(inferred)
+cefakeş	-	-	P:Adj
+cefakâr	-	-	P:Adj
+cehennemî	-	-	P:Adj
+celi	-	-	P:Adj
+celil	-	-	P:Adj
+cellat	cellad	-	P:Adj; +Voicing(inferred)
+cemi	-	-	P:Adj
+cemil	-	-	P:Adj
+cemile	-	-	P:Adj
+cenabet	cenabed	-	P:Adj; +Voicing(inferred)
+cengâver	-	-	P:Adj
+cennet	cenned	-	P:Adj; +Voicing(inferred)
+cennetmekân	-	-	P:Adj
+centilmen	-	-	P:Adj
+cenubi	-	-	P:Adj
+cerrahi	-	-	P:Adj
+cerrar	-	-	P:Adj
+cesim	-	-	P:Adj
+cesur	-	-	P:Adj
+cesurane	-	-	P:Adj
+cevabi	-	-	P:Adj
+ceviz	-	-	P:Adj
+cevizî	-	-	P:Adj
+cevval	-	i	P:Adj; A:InverseHarmony
+cevvi	-	-	P:Adj
+cezai	-	-	P:Adj
+cezrî	-	-	P:Adj
+cici	-	-	P:Adj
+ciddi	-	-	P:Adj
+cife	-	-	P:Adj
+cihanşinas	-	-	P:Adj
+cihanşümul	-	ü	P:Adj; A:InverseHarmony
+cikcik	cikciğ	-	P:Adj; +Voicing(inferred)
+cillop	cillob	-	P:Adj; +Voicing(inferred)
+cilvebaz	-	-	P:Adj
+cilvekâr	-	-	P:Adj
+cimbakuka	-	-	P:Adj
+cimri	-	-	P:Adj
+cinai	-	-	P:Adj
+cingöz	-	-	P:Adj
+cins	-	-	P:Adj
+cinsel	-	-	P:Adj
+cinsî	-	-	P:Adj
+cismanî	-	-	P:Adj
+civan	-	-	P:Adj
+civanmert	civanmerd	-	P:Adj; +Voicing(inferred)
+civar	-	-	P:Adj
+civelek	civeleğ	-	P:Adj; +Voicing(inferred)
+coğrafi	-	-	P:Adj
+coşkun	-	-	P:Adj
+cumhuriyetperver	-	-	P:Adj
+cura	-	-	P:Adj
+cömert	cömerd	-	P:Adj; +Voicing(inferred)
+cüce	-	-	P:Adj
+cüda	-	-	P:Adj
+cümle	-	-	P:Adj
+cünüp	cünüb	-	P:Adj; +Voicing(inferred)
+cüretkâr	-	-	P:Adj
+cüzi	-	-	P:Adj
+cıbıl	-	-	P:Adj
+cıbıldak	cıbıldağ	-	P:Adj; +Voicing(inferred)
+cılk	-	-	P:Adj
+cılkava	-	-	P:Adj
+cılız	-	-	P:Adj
+cırlak	cırlağ	-	P:Adj; +Voicing(inferred)
+cırtlak	cırtlağ	-	P:Adj; +Voicing(inferred)
+cıvık	cıvığ	-	P:Adj; +Voicing(inferred)
+cızbız	-	-	P:Adj
+daim	-	-	P:Adj
+daimî	-	-	P:Adj
+dairevi	-	-	P:Adj
+dakik	dakiğ	-	P:Adj; +Voicing(inferred)
+dal	-	-	P:Adj
+dalgacı	-	-	P:Adj
+dalgalı	-	-	P:Adj
+dalgasız	-	-	P:Adj
+dalgın	-	-	P:Adj
+dalkavuk	dalkavuğ	-	P:Adj; +Voicing(inferred)
+dalkavukça	-	-	P:Adj
+dallama	-	-	P:Adj
+daltaban	-	-	P:Adj
+dalyarak	dalyarağ	-	P:Adj; +Voicing(inferred)
+damaksıl	-	-	P:Adj
+damalı	-	-	P:Adj
+damardaraltan	-	-	P:Adj
+damargenişleten	-	-	P:Adj
+damatlık	damatlığ	-	P:Adj; +Voicing(inferred)
+damdazlak	damdazlağ	-	P:Adj; +Voicing(inferred)
+damla	-	-	P:Adj
+damsız	-	-	P:Adj
+damıtık	damıtığ	-	P:Adj; +Voicing(inferred)
+damızlık	damızlığ	-	P:Adj; +Voicing(inferred)
+dandik	dandiğ	-	P:Adj; +Voicing(inferred)
+dandini	-	-	P:Adj
+dangalakça	-	-	P:Adj
+daniska	-	-	P:Adj
+danişment	danişmend	-	P:Adj; +Voicing(inferred)
+danslı	-	-	P:Adj
+danssız	-	-	P:Adj
+danışıklı	-	-	P:Adj
+dapdar	-	-	P:Adj
+dapdaracık	dapdaracığ	-	P:Adj; +Voicing(inferred)
+dar	-	-	P:Adj
+daracık	daracığ	-	P:Adj; +Voicing(inferred)
+daraç	darac	-	P:Adj; +Voicing(inferred)
+daraş	-	-	P:Adj
+dargın	-	-	P:Adj
+darmadağın	-	-	P:Adj
+darmadağınık	darmadağınığ	-	P:Adj; +Voicing(inferred)
+darmaduman	-	-	P:Adj
+darılgan	-	-	P:Adj
+dasdaracık	dasdaracığ	-	P:Adj; +Voicing(inferred)
+davalı	-	-	P:Adj
+davalık	davalığ	-	P:Adj; +Voicing(inferred)
+davetkâr	-	-	P:Adj
+davetsiz	-	-	P:Adj
+davudi	-	-	P:Adj
+dayaklık	dayaklığ	-	P:Adj; +Voicing(inferred)
+dayalı	-	-	P:Adj
+dayanıklı	-	-	P:Adj
+dayanıksız	-	-	P:Adj
+dayanılmaz	-	-	P:Adj
+dayanışık	dayanışığ	-	P:Adj; +Voicing(inferred)
+daylak	daylağ	-	P:Adj; +Voicing(inferred)
+dayı	-	-	P:Adj
+daz	-	-	P:Adj
+dazlak	dazlağ	-	P:Adj; +Voicing(inferred)
+dağcıl	-	-	P:Adj
+dağlı	-	-	P:Adj
+dağlık	dağlığ	-	P:Adj; +Voicing(inferred)
+dağınık	dağınığ	-	P:Adj; +Voicing(inferred)
+dağıtık	dağıtığ	-	P:Adj; +Voicing(inferred)
+debdebeli	-	-	P:Adj
+debdebesiz	-	-	P:Adj
+debil	-	-	P:Adj
+deccal	-	-	P:Adj
+defakto	-	-	P:Adj
+defansif	-	-	P:Adj
+deforme	-	-	P:Adj
+degaje	-	-	P:Adj
+dehhaş	-	-	P:Adj
+dehşet	dehşed	-	P:Adj; +Voicing(inferred)
+dehşetli	-	-	P:Adj
+deist	-	-	P:Adj; A:NoVoicing
+dejenere	-	-	P:Adj
+deklare	-	-	P:Adj
+dekolte	-	-	P:Adj
+dekoratif	-	-	P:Adj
+deli	-	-	P:Adj
+delice	-	-	P:Adj
+delik	deliğ	-	P:Adj; +Voicing(inferred)
+delikanlı	-	-	P:Adj
+delimsirek	delimsireğ	-	P:Adj; +Voicing(inferred)
+delişmen	-	-	P:Adj
+demagojik	demagojiğ	-	P:Adj; +Voicing(inferred)
+demevi	-	-	P:Adj
+deminki	-	-	P:Adj
+demir	-	-	P:Adj
+demirbaş	-	-	P:Adj
+demirhindi	-	-	P:Adj
+demirî	-	-	P:Adj
+demkeş	-	-	P:Adj
+demode	-	-	P:Adj
+demografik	demografiğ	-	P:Adj; +Voicing(inferred)
+demokrat	-	-	P:Adj; A:NoVoicing
+demokratik	demokratiğ	-	P:Adj; +Voicing(inferred)
+demoralize	-	-	P:Adj
+deneme	-	-	P:Adj
+deni	-	-	P:Adj
+denizaşırı	-	-	P:Adj
+denk	deng	-	P:Adj; +Voicing(inferred)
+denktaş	-	-	P:Adj
+denli	-	-	P:Adj
+densiz	-	-	P:Adj
+denyo	-	-	P:Adj
+depderin	-	-	P:Adj
+deplase	-	-	P:Adj
+derbeder	-	-	P:Adj
+derdest	-	-	P:Adj; A:NoVoicing
+deri	-	-	P:Adj
+derin	-	-	P:Adj
+derişik	derişiğ	-	P:Adj; +Voicing(inferred)
+dermatolojik	dermatolojiğ	-	P:Adj; +Voicing(inferred)
+dermeyan	-	-	P:Adj
+derneşik	derneşiğ	-	P:Adj; +Voicing(inferred)
+derslik	dersliğ	-	P:Adj; +Voicing(inferred)
+dertop	-	-	P:Adj; A:NoVoicing
+deruni	-	-	P:Adj
+deryadil	-	-	P:Adj
+deskriptif	-	-	P:Adj
+despot	despod	-	P:Adj; +Voicing(inferred)
+despotik	-	-	P:Adj;A:NoVoicing
+dessas	-	-	P:Adj
+destani	-	-	P:Adj
+destari	-	-	P:Adj
+destursuz	-	-	P:Adj
+determinist	-	-	P:Adj; A:NoVoicing
+detone	-	-	P:Adj
+dev	-	-	P:Adj
+devalüe	-	-	P:Adj
+devasa	-	-	P:Adj
+devingen	-	-	P:Adj
+devitken	-	-	P:Adj
+devletli	-	-	P:Adj
+devrik	devriğ	-	P:Adj; +Voicing(inferred)
+devrisi	-	-	P:Adj
+devrî	-	-	P:Adj
+devşirme	-	-	P:Adj
+deyyus	-	-	P:Adj
+dezenfektan	-	-	P:Adj
+dezenfekte	-	-	P:Adj
+değerbilir	-	-	P:Adj
+değerli	-	-	P:Adj
+değersiz	-	-	P:Adj
+değgin	-	-	P:Adj
+değirmi	-	-	P:Adj
+değişik	değişiğ	-	P:Adj; +Voicing(inferred)
+değişken	-	-	P:Adj
+değişkin	-	-	P:Adj
+değişmez	-	-	P:Adj
+değme	-	-	P:Adj
+deşifre	-	-	P:Adj
+deşik	deşiğ	-	P:Adj; +Voicing(inferred)
+didaktik	didaktiğ	-	P:Adj; +Voicing(inferred)
+didingen	-	-	P:Adj
+didişken	-	-	P:Adj
+dijital	-	i	P:Adj; A:InverseHarmony
+dik	-	-	P:Adj
+dikdörtgen	-	-	P:Adj
+dikey	-	-	P:Adj
+dikgen	-	-	P:Adj
+dikili	-	-	P:Adj
+dikkafalı	-	-	P:Adj
+dikkatli	-	-	P:Adj
+diktatör	-	-	P:Adj
+dilbaz	-	-	P:Adj
+dillek	dilleğ	-	P:Adj; +Voicing(inferred)
+dilsever	-	-	P:Adj
+dimdik	dimdiğ	-	P:Adj; +Voicing(inferred)
+dinamik	dinamiğ	-	P:Adj; +Voicing(inferred)
+dinamit	dinamid	-	P:Adj; +Voicing(inferred)
+dindar	-	-	P:Adj
+dingil	-	-	P:Adj
+dingildek	dingildeğ	-	P:Adj; +Voicing(inferred)
+dingin	-	-	P:Adj
+dinç	-	-	P:Adj
+dinî	-	-	P:Adj
+dipdinç	dipdinc	-	P:Adj; +Voicing(inferred)
+dipdiri	-	-	P:Adj
+diplomatik	diplomatiğ	-	P:Adj; +Voicing(inferred)
+direkt	-	-	P:Adj; A:NoVoicing
+direngen	-	-	P:Adj
+direşken	-	-	P:Adj
+diri	-	-	P:Adj
+diril	-	-	P:Adj
+divane	-	-	P:Adj
+diyabetik	diyabetiğ	-	P:Adj; +Voicing(inferred)
+diyakronik	diyakroniğ	-	P:Adj; +Voicing(inferred)
+diyalektolojik	diyalektolojiğ	-	P:Adj; +Voicing(inferred)
+diyez	-	-	P:Adj
+diğer	-	-	P:Adj
+diğerkâm	-	-	P:Adj
+dişbudak	dişbudağ	-	P:Adj; +Voicing(inferred)
+dişi	-	-	P:Adj
+dişil	-	-	P:Adj
+dişlek	dişleğ	-	P:Adj; +Voicing(inferred)
+dişli	-	-	P:Adj
+dobra	-	-	P:Adj
+dogmatik	dogmatiğ	-	P:Adj; +Voicing(inferred)
+dokuma	-	-	P:Adj
+dokunaklı	-	-	P:Adj
+dokunmatik	dokunmatiğ	-	P:Adj; +Voicing(inferred)
+dokunulmaz	-	-	P:Adj
+dokuzgen	-	-	P:Adj
+dokuzlu	-	-	P:Adj
+dokuzuz	-	-	P:Adj
+dokümanter	-	-	P:Adj
+dolam	-	-	P:Adj
+dolaşık	dolaşığ	-	P:Adj; +Voicing(inferred)
+dolgun	-	-	P:Adj
+dolikosefal	-	-	P:Adj
+dolma	-	-	P:Adj
+dolmuş	-	-	P:Adj
+dolu	-	-	P:Adj
+dolusu	-	-	P:Adj
+domestik	domestiğ	-	P:Adj; +Voicing(inferred)
+dominant	-	-	P:Adj; A:NoVoicing
+donsuz	-	-	P:Adj
+donuk	donuğ	-	P:Adj; +Voicing(inferred)
+dopdolu	-	-	P:Adj
+dore	-	-	P:Adj
+doru	-	-	P:Adj
+dosdoğru	-	-	P:Adj
+dost	-	-	P:Adj
+doygun	-	-	P:Adj
+doymaz	-	-	P:Adj
+doyumluk	doyumluğ	-	P:Adj; +Voicing(inferred)
+doyumsuz	-	-	P:Adj
+doğal	-	-	P:Adj
+doğasever	-	-	P:Adj
+doğaötesi	-	-	P:Adj
+doğaüstü	-	-	P:Adj
+doğma	-	-	P:Adj
+doğru	-	-	P:Adj
+doğrudan	-	-	P:Adj
+doğrusuz	-	-	P:Adj
+doğu	-	-	P:Adj
+doğurgan	-	-	P:Adj
+doğuştan	-	-	P:Adj
+dramatik	dramatiğ	-	P:Adj; +Voicing(inferred)
+dramatize	-	-	P:Adj
+duble	-	-	P:Adj
+dubleks	-	-	P:Adj
+dudaksıl	-	-	P:Adj
+dul	-	-	P:Adj
+dun	-	-	P:Adj
+dupduru	-	-	P:Adj
+dural	-	-	P:Adj
+durağan	-	-	P:Adj
+durgun	-	-	P:Adj
+duru	-	-	P:Adj
+duruk	duruğ	-	P:Adj; +Voicing(inferred)
+duruksun	-	-	P:Adj
+duyar	-	-	P:Adj
+duyarlı	-	-	P:Adj
+duygan	-	-	P:Adj
+duygun	-	-	P:Adj
+duyuüstü	-	-	P:Adj
+dâhi	-	-	P:Adj
+dâhice	-	-	P:Adj
+dâhilî	-	-	P:Adj
+dökme	-	-	P:Adj
+dökük	döküğ	-	P:Adj; +Voicing(inferred)
+dökülgen	-	-	P:Adj
+döküm	-	-	P:Adj
+döküntü	-	-	P:Adj
+dölek	döleğ	-	P:Adj; +Voicing(inferred)
+dönek	döneğ	-	P:Adj; +Voicing(inferred)
+dönel	-	-	P:Adj
+dönencel	-	-	P:Adj
+döner	-	-	P:Adj
+dönme	-	-	P:Adj
+dönük	dönüğ	-	P:Adj; +Voicing(inferred)
+dönüşlü	-	-	P:Adj
+dönüşsüz	-	-	P:Adj
+dördüz	-	-	P:Adj
+dörtgen	-	-	P:Adj
+dörtköşe	-	-	P:Adj
+dörtlü	-	-	P:Adj
+dörtlük	dörtlüğ	-	P:Adj; +Voicing(inferred)
+dövme	-	-	P:Adj
+dövülgen	-	-	P:Adj
+dövüşken	-	-	P:Adj
+döşeli	-	-	P:Adj
+döşemelik	döşemeliğ	-	P:Adj; +Voicing(inferred)
+düalist	-	-	P:Adj; A:NoVoicing
+düdük	düdüğ	-	P:Adj; +Voicing(inferred)
+dümbelek	dümbeleğ	-	P:Adj; +Voicing(inferred)
+dümdüz	-	-	P:Adj
+dünyevi	-	-	P:Adj
+dürülü	-	-	P:Adj
+dürüst	-	-	P:Adj; A:NoVoicing
+dürüşt	dürüşd	-	P:Adj; +Voicing(inferred)
+düttürü	-	-	P:Adj
+düz	-	-	P:Adj
+düzayak	düzayağ	-	P:Adj; +Voicing(inferred)
+düzce	-	-	P:Adj
+düzenbaz	-	-	P:Adj
+düzenleşik	düzenleşiğ	-	P:Adj; +Voicing(inferred)
+düzenli	-	-	P:Adj
+düzeyli	-	-	P:Adj
+düzeysiz	-	-	P:Adj
+düzgün	-	-	P:Adj
+düzlem	-	-	P:Adj
+düzme	-	-	P:Adj
+düzmece	-	-	P:Adj
+düztaban	-	-	P:Adj
+düçar	-	-	P:Adj
+düşey	-	-	P:Adj
+düşkün	-	-	P:Adj
+düşman	-	-	P:Adj
+düşük	düşüğ	-	P:Adj; +Voicing(inferred)
+düşüncel	-	-	P:Adj
+düşüntülü	-	-	P:Adj
+dımdızlak	dımdızlağ	-	P:Adj; +Voicing(inferred)
+dızman	-	-	P:Adj
+dığdığı	-	-	P:Adj
+dış	-	-	P:Adj
+dışbeslenen	-	-	P:Adj
+dışbükey	-	-	P:Adj
+dışrak	dışrağ	-	P:Adj; +Voicing(inferred)
+dıştan	-	-	P:Adj
+dışınlı	-	-	P:Adj
+ebedî	-	-	P:Adj
+ebleh	-	-	P:Adj
+ebruli	-	-	P:Adj
+ebrulu	-	-	P:Adj
+ecnebi	-	-	P:Adj
+edebiyatsever	-	-	P:Adj
+edebî	-	-	P:Adj
+edepli	-	-	P:Adj
+edibane	-	-	P:Adj
+edilgen	-	-	P:Adj
+edilgin	-	-	P:Adj
+edna	-	-	P:Adj
+efdal	-	-	P:Adj
+efece	-	-	P:Adj
+efemine	-	-	P:Adj
+efendi	-	-	P:Adj
+efkârlı	-	-	P:Adj
+eflatun	-	-	P:Adj
+eflatuni	-	-	P:Adj
+efsanevi	-	-	P:Adj
+efsunkâr	-	-	P:Adj
+egemen	-	-	P:Adj
+egoist	-	-	P:Adj;A:NoVoicing
+egosantrik	egosantriğ	-	P:Adj; +Voicing(inferred)
+egosantrist	-	-	P:Adj;A:NoVoicing
+egzistansiyalist	-	-	P:Adj;A:NoVoicing
+egzotik	egzotiğ	-	P:Adj; +Voicing(inferred)
+ehem	ehemm	-	P:Adj; A:Doubling
+ehlikitap	ehlikitab	-	P:Adj; +Voicing(inferred)
+ehlisünnet	ehlisünned	-	P:Adj; +Voicing(inferred)
+ehlizevk	ehlizevğ	-	P:Adj; +Voicing(inferred)
+ehlî	-	-	P:Adj
+ehven	-	-	P:Adj
+ek	-	-	P:Adj
+ekarte	-	-	P:Adj
+eke	-	-	P:Adj
+ekili	-	-	P:Adj
+eklektik	eklektiğ	-	P:Adj; +Voicing(inferred)
+ekli	-	-	P:Adj
+ekolojik	ekolojiğ	-	P:Adj; +Voicing(inferred)
+ekonomik	ekonomiğ	-	P:Adj; +Voicing(inferred)
+ekose	-	-	P:Adj
+ekru	-	-	P:Adj
+eksantrik	eksantriğ	-	P:Adj; +Voicing(inferred)
+eksi	-	-	P:Adj
+eksik	eksiğ	-	P:Adj; +Voicing(inferred)
+ekspres	-	-	P:Adj
+ekspresyonist	-	-	P:Adj;A:NoVoicing
+ekstra	-	-	P:Adj
+ekstrem	-	-	P:Adj
+ekzotermik	ekzotermiğ	-	P:Adj; +Voicing(inferred)
+ekşi	-	-	P:Adj
+ekşimsi	-	-	P:Adj
+ekşimtırak	ekşimtırağ	-	P:Adj; +Voicing(inferred)
+ela	-	-	P:Adj
+elastik	elastiğ	-	P:Adj; +Voicing(inferred)
+elastiki	-	-	P:Adj
+elbiselik	elbiseliğ	-	P:Adj; +Voicing(inferred)
+elektriksiz	-	-	P:Adj
+elektrobiyolojik	elektrobiyolojiğ	-	P:Adj; +Voicing(inferred)
+elektrodinamik	elektrodinamiğ	-	P:Adj; +Voicing(inferred)
+elektrojen	-	-	P:Adj
+elektromanyetik	elektromanyetiğ	-	P:Adj; +Voicing(inferred)
+elektronegatif	-	-	P:Adj
+elektronik	elektroniğ	-	P:Adj; +Voicing(inferred)
+elektropozitif	-	-	P:Adj
+elektrostatik	elektrostatiğ	-	P:Adj; +Voicing(inferred)
+elektroteknik	elektrotekniğ	-	P:Adj; +Voicing(inferred)
+elezer	-	-	P:Adj
+eleştirel	-	-	P:Adj
+elgin	-	-	P:Adj
+elifî	-	-	P:Adj
+elim	-	-	P:Adj
+elipsoidal	-	i	P:Adj; A:InverseHarmony
+elipsoit	elipsoid	-	P:Adj; +Voicing(inferred)
+eliptik	eliptiğ	-	P:Adj; +Voicing(inferred)
+elit	-	-	P:Adj; A:NoVoicing
+ellilik	elliliğ	-	P:Adj; +Voicing(inferred)
+elmas	-	-	P:Adj
+elmastıraş	-	-	P:Adj
+elvan	-	-	P:Adj
+elverişli	-	-	P:Adj
+elverişsiz	-	-	P:Adj
+elyaf	-	-	P:Adj
+elzem	-	-	P:Adj
+emaye	-	-	P:Adj
+embesil	-	-	P:Adj
+embriyolojik	embriyolojiğ	-	P:Adj; +Voicing(inferred)
+emekli	-	-	P:Adj
+emektar	-	-	P:Adj
+emin	-	-	P:Adj
+empermeabl	-	-	P:Adj
+emperyalist	-	-	P:Adj; A:NoVoicing
+empresyonist	-	-	P:Adj;A:NoVoicing
+emprime	-	-	P:Adj
+emzikli	-	-	P:Adj
+enayi	-	-	P:Adj
+endemik	endemiğ	-	P:Adj; +Voicing(inferred)
+ender	-	-	P:Adj
+endirekt	endirekd	-	P:Adj; +Voicing(inferred)
+endoskopik	endoskopiğ	-	P:Adj; +Voicing(inferred)
+endotermik	endotermiğ	-	P:Adj; +Voicing(inferred)
+endüstriyel	-	-	P:Adj
+enek	eneğ	-	P:Adj; +Voicing(inferred)
+enerjik	enerjiğ	-	P:Adj; +Voicing(inferred)
+enez	-	-	P:Adj
+eneze	-	-	P:Adj
+enfes	-	-	P:Adj
+engin	-	-	P:Adj
+enjekte	-	-	P:Adj
+enstantane	-	-	P:Adj
+enstrümantal	-	i	P:Adj; A:InverseHarmony
+entegre	-	-	P:Adj
+entel	-	-	P:Adj
+entelektüel	-	-	P:Adj
+enteresan	-	-	P:Adj
+enternasyonalist	-	-	P:Adj;A:NoVoicing
+enterne	-	-	P:Adj
+entipüften	-	-	P:Adj
+entomolojik	entomolojiğ	-	P:Adj; +Voicing(inferred)
+envaitürlü	-	-	P:Adj
+envaiçeşit	envaiçeşid	-	P:Adj; +Voicing(inferred)
+epidemik	epidemiğ	-	P:Adj; +Voicing(inferred)
+epidemiyolojik	epidemiyolojiğ	-	P:Adj; +Voicing(inferred)
+epik	epiğ	-	P:Adj; +Voicing(inferred)
+epileptik	epileptiğ	-	P:Adj; +Voicing(inferred)
+epistemolojik	epistemolojiğ	-	P:Adj; +Voicing(inferred)
+er	-	-	P:Adj
+erden	-	-	P:Adj
+ergen	-	-	P:Adj
+ergin	-	-	P:Adj
+ergonomik	ergonomiğ	-	P:Adj; +Voicing(inferred)
+erguvani	-	-	P:Adj
+erigen	-	-	P:Adj
+eril	-	-	P:Adj
+erincek	erinceğ	-	P:Adj; +Voicing(inferred)
+eriten	-	-	P:Adj
+erişkin	-	-	P:Adj
+erkek	erkeğ	-	P:Adj; +Voicing(inferred)
+erkekçil	-	-	P:Adj
+erkin	-	-	P:Adj
+erotik	erotiğ	-	P:Adj; +Voicing(inferred)
+ertesi	-	-	P:Adj
+erzel	-	-	P:Adj
+esas	-	-	P:Adj
+esasi	-	-	P:Adj
+esatirî	-	-	P:Adj
+esbak	esbağ	-	P:Adj; +Voicing(inferred)
+esen	-	-	P:Adj
+eski	-	-	P:Adj
+eskülabi	-	-	P:Adj
+eslek	esleğ	-	P:Adj; +Voicing(inferred)
+esmer	-	-	P:Adj
+esnek	esneğ	-	P:Adj; +Voicing(inferred)
+espressivo	-	-	P:Adj
+espritüel	-	-	P:Adj
+esrarengiz	-	-	P:Adj
+esrik	esriğ	-	P:Adj; +Voicing(inferred)
+essah	-	-	P:Adj
+estetik	estetiğ	-	P:Adj; +Voicing(inferred)
+eteklik	etekliğ	-	P:Adj; +Voicing(inferred)
+etik	etiğ	-	P:Adj; +Voicing(inferred)
+etimolojik	etimolojiğ	-	P:Adj; +Voicing(inferred)
+etiyolojik	etiyolojiğ	-	P:Adj; +Voicing(inferred)
+etkin	-	-	P:Adj
+etnik	etniğ	-	P:Adj; +Voicing(inferred)
+etnografik	etnografiğ	-	P:Adj; +Voicing(inferred)
+etnolojik	etnolojiğ	-	P:Adj; +Voicing(inferred)
+etobur	-	-	P:Adj
+etolojik	etolojiğ	-	P:Adj; +Voicing(inferred)
+etraflı	-	-	P:Adj
+ettirgen	-	-	P:Adj
+etçil	-	-	P:Adj
+evaze	-	-	P:Adj
+evcil	-	-	P:Adj
+evcimen	-	-	P:Adj
+evgin	-	-	P:Adj
+evirgen	-	-	P:Adj
+evirtik	evirtiğ	-	P:Adj; +Voicing(inferred)
+evli	-	-	P:Adj
+evrik	evriğ	-	P:Adj; +Voicing(inferred)
+evrilir	-	-	P:Adj
+evrişik	evrişiğ	-	P:Adj; +Voicing(inferred)
+evvelsi	-	-	P:Adj
+evvelâ	-	-	P:Adj
+ezelî	-	-	P:Adj
+ezgin	-	-	P:Adj
+ezik	eziğ	-	P:Adj; +Voicing(inferred)
+ezilgen	-	-	P:Adj
+ezoterik	ezoteriğ	-	P:Adj; +Voicing(inferred)
+eçhel	-	-	P:Adj
+eğik	eğiğ	-	P:Adj; +Voicing(inferred)
+eğinik	eğiniğ	-	P:Adj; +Voicing(inferred)
+eğitsel	-	-	P:Adj
+eğreti	-	-	P:Adj
+eğri	-	-	P:Adj
+eğrim	-	-	P:Adj
+eş	-	-	P:Adj
+eşekçe	-	-	P:Adj
+eşit	-	-	P:Adj; A:NoVoicing
+eşkenar	-	-	P:Adj
+eşkin	-	-	P:Adj
+eşlenik	eşleniğ	-	P:Adj; +Voicing(inferred)
+eşref	-	-	P:Adj
+faal	-	i	P:Adj; A:InverseHarmony
+fabrikasyon	-	-	P:Adj
+fahiş	-	-	P:Adj
+fahur	-	-	P:Adj
+faik	faiğ	-	P:Adj; +Voicing(inferred)
+fail	-	-	P:Adj
+failimuhtar	-	-	P:Adj
+fakir	-	-	P:Adj
+fakirane	-	-	P:Adj
+falan	-	-	P:Adj
+falanca	-	-	P:Adj
+fanatik	fanatiğ	-	P:Adj; +Voicing(inferred)
+fanfan	-	-	P:Adj
+fantastik	fantastiğ	-	P:Adj; +Voicing(inferred)
+fantezi	-	-	P:Adj
+fantezist	-	-	P:Adj;A:NoVoicing
+farazî	-	-	P:Adj
+farfara	-	-	P:Adj
+fariğ	-	-	P:Adj
+farmakolojik	farmakolojiğ	-	P:Adj; +Voicing(inferred)
+farmason	-	-	P:Adj
+fasarya	-	-	P:Adj
+fasih	-	-	P:Adj
+fasit	-	-	P:Adj; A:NoVoicing
+fatih	-	-	P:Adj
+favori	-	-	P:Adj
+faziletkâr	-	-	P:Adj
+fazla	-	-	P:Adj
+fazıl	-	-	P:Adj
+fağfur	-	-	P:Adj
+faşizan	-	-	P:Adj
+feci	-	-	P:Adj
+fedakâr	-	-	P:Adj
+federal	-	-	P:Adj
+federatif	-	-	P:Adj
+federe	-	-	P:Adj
+felsefî	-	-	P:Adj
+feminen	-	-	P:Adj
+fena	-	-	P:Adj
+fennî	-	-	P:Adj
+fenomenal	-	-	P:Adj
+feodal	-	-	P:Adj
+ferah	-	-	P:Adj
+ferdî	-	-	P:Adj
+ferih	-	-	P:Adj
+feriştah	-	-	P:Adj
+fersude	-	-	P:Adj
+ferî	-	-	P:Adj
+fesat	fesad	-	P:Adj; +Voicing(inferred)
+fettan	-	-	P:Adj
+fettane	-	-	P:Adj
+fevkalbeşer	-	-	P:Adj
+fevkalâde	-	-	P:Adj
+feyyaz	-	-	P:Adj
+figüratif	-	-	P:Adj
+fiilî	-	-	P:Adj
+fikrî	-	-	P:Adj
+fildekoz	-	-	P:Adj
+fildişi	-	-	P:Adj
+filinta	-	-	P:Adj
+filizî	-	-	P:Adj
+filolojik	filolojiğ	-	P:Adj; +Voicing(inferred)
+filozofik	filozofiğ	-	P:Adj; +Voicing(inferred)
+finalist	-	-	P:Adj;A:NoVoicing
+finansal	-	-	P:Adj
+finanse	-	-	P:Adj
+fingirdek	fingirdeğ	-	P:Adj; +Voicing(inferred)
+fire	-	-	P:Adj
+firfiri	-	-	P:Adj
+fiskal	-	-	P:Adj
+fiske	-	-	P:Adj
+fisto	-	-	P:Adj
+fitne	-	-	P:Adj
+fitopatolojik	fitopatolojiğ	-	P:Adj; +Voicing(inferred)
+fizyokrat	fizyokrad	-	P:Adj; +Voicing(inferred)
+fizyolojik	fizyolojiğ	-	P:Adj; +Voicing(inferred)
+fodul	-	-	P:Adj
+fokurdak	fokurdağ	-	P:Adj; +Voicing(inferred)
+folklorik	folkloriğ	-	P:Adj; +Voicing(inferred)
+fonetik	fonetiğ	-	P:Adj; +Voicing(inferred)
+fonksiyonel	-	-	P:Adj
+fonojenik	fonojeniğ	-	P:Adj; +Voicing(inferred)
+formalist	-	-	P:Adj;A:NoVoicing
+formalık	formalığ	-	P:Adj; +Voicing(inferred)
+formel	-	-	P:Adj
+formüle	-	-	P:Adj
+fos	-	-	P:Adj
+fosforışıl	-	-	P:Adj
+fotojen	-	-	P:Adj
+fotojenik	fotojeniğ	-	P:Adj; +Voicing(inferred)
+fotomekanik	fotomekaniğ	-	P:Adj; +Voicing(inferred)
+fotoğrafik	fotoğrafiğ	-	P:Adj; +Voicing(inferred)
+frapan	-	-	P:Adj
+frenolojik	frenolojiğ	-	P:Adj; +Voicing(inferred)
+frigorifik	frigorifiğ	-	P:Adj; +Voicing(inferred)
+frijit	frijid	-	P:Adj; +Voicing(inferred)
+fukara	-	-	P:Adj
+fundamentalist	-	-	P:Adj; A:NoVoicing
+fâni	-	-	P:Adj
+fötr	-	-	P:Adj
+füme	-	-	P:Adj
+fürumaye	-	-	P:Adj
+füsunkâr	-	-	P:Adj
+fütürist	-	-	P:Adj;A:NoVoicing
+fıkırdak	fıkırdağ	-	P:Adj; +Voicing(inferred)
+fırdöndü	-	-	P:Adj
+fırlak	fırlağ	-	P:Adj; +Voicing(inferred)
+fırıldak	fırıldağ	-	P:Adj; +Voicing(inferred)
+fırın	-	-	P:Adj
+fıstık	fıstığ	-	P:Adj; +Voicing(inferred)
+fıçı	-	-	P:Adj
+gabardin	-	-	P:Adj
+gabi	-	-	P:Adj
+gaddar	-	-	P:Adj
+gaffar	-	-	P:Adj
+gafil	-	-	P:Adj
+gafur	-	-	P:Adj
+gaip	gaib	-	P:Adj; +Voicing(inferred)
+galip	galib	-	P:Adj; +Voicing(inferred)
+galiz	-	-	P:Adj
+galvanize	-	-	P:Adj
+gammaz	-	-	P:Adj
+gani	-	-	P:Adj
+ganyan	-	-	P:Adj
+garantör	-	-	P:Adj
+garazkâr	-	-	P:Adj
+gariban	-	-	P:Adj
+garip	garib	-	P:Adj; +Voicing(inferred)
+gayretkeş	-	-	P:Adj
+gayrikabil	-	-	P:Adj
+gayrimahdut	gayrimahdud	-	P:Adj; +Voicing(inferred)
+gayrimakul	-	-	P:Adj
+gayrimemnun	-	-	P:Adj
+gayrimeskûn	-	-	P:Adj
+gayrimeşru	-	-	P:Adj
+gayrimuayyen	-	-	P:Adj
+gayrimuntazam	-	-	P:Adj
+gayrimümkün	-	-	P:Adj
+gayriresmî	-	-	P:Adj
+gayrisafi	-	-	P:Adj
+gayrı	-	-	P:Adj
+gayur	-	-	P:Adj
+gazışıl	-	-	P:Adj
+gebe	-	-	P:Adj
+geberik	geberiğ	-	P:Adj; +Voicing(inferred)
+gebeş	-	-	P:Adj
+gecelik	geceliğ	-	P:Adj; +Voicing(inferred)
+geda	-	-	P:Adj
+gelecek	geleceğ	-	P:Adj; +Voicing(inferred)
+gelen	-	-	P:Adj
+geleğen	-	-	P:Adj
+gelgeç	gelgec	-	P:Adj; +Voicing(inferred)
+gelinlik	gelinliğ	-	P:Adj; +Voicing(inferred)
+gelişigüzel	-	-	P:Adj
+gelişkin	-	-	P:Adj
+gen	-	-	P:Adj
+gencecik	genceciğ	-	P:Adj; +Voicing(inferred)
+genel	-	-	P:Adj
+genelgeçer	-	-	P:Adj
+genetik	genetiğ	-	P:Adj; +Voicing(inferred)
+geniş	-	-	P:Adj
+genzek	genzeğ	-	P:Adj; +Voicing(inferred)
+genzel	-	-	P:Adj
+genç	-	-	P:Adj
+gençten	-	-	P:Adj
+geometrik	geometriğ	-	P:Adj; +Voicing(inferred)
+gepegenç	gepegenc	-	P:Adj; +Voicing(inferred)
+gepgenç	gepgenc	-	P:Adj; +Voicing(inferred)
+gerek	gereğ	-	P:Adj; +Voicing(inferred)
+gerekli	-	-	P:Adj
+gergin	-	-	P:Adj
+geri	-	-	P:Adj
+gerici	-	-	P:Adj
+gerilek	gerileğ	-	P:Adj; +Voicing(inferred)
+gerzek	gerzeğ	-	P:Adj; +Voicing(inferred)
+gerçek	gerçeğ	-	P:Adj; +Voicing(inferred)
+gerçeküstü	-	-	P:Adj
+geveze	-	-	P:Adj
+gevrek	gevreğ	-	P:Adj; +Voicing(inferred)
+gevşek	gevşeğ	-	P:Adj; +Voicing(inferred)
+gezenti	-	-	P:Adj
+gezeğen	-	-	P:Adj
+gezgin	-	-	P:Adj
+gezi	-	-	P:Adj
+gezmen	-	-	P:Adj
+geç	-	-	P:Adj
+geçen	-	-	P:Adj
+geçer	-	-	P:Adj
+geçerli	-	-	P:Adj
+geçersiz	-	-	P:Adj
+geçici	-	-	P:Adj
+geçirgen	-	-	P:Adj
+geçkin	-	-	P:Adj
+geçmiş	-	-	P:Adj
+gibisi	-	-	P:Adj
+gidi	-	-	P:Adj
+giranbaha	-	-	P:Adj
+girgin	-	-	P:Adj
+girift	girifd	-	P:Adj; +Voicing(inferred)
+giriftar	-	-	P:Adj
+girişik	girişiğ	-	P:Adj; +Voicing(inferred)
+girişken	-	-	P:Adj
+giyinik	giyiniğ	-	P:Adj; +Voicing(inferred)
+gizil	-	-	P:Adj
+gizli	-	-	P:Adj
+global	-	-	P:Adj
+goblen	-	-	P:Adj
+godoş	-	-	P:Adj
+grafolojik	grafolojiğ	-	P:Adj; +Voicing(inferred)
+gramatikal	-	-	P:Adj
+gri	-	-	P:Adj
+grimtırak	grimtırağ	-	P:Adj; +Voicing(inferred)
+gudubet	gudubed	-	P:Adj; +Voicing(inferred)
+gâvur	-	-	P:Adj
+gödeş	-	-	P:Adj
+gök	göğ	-	P:Adj; A:Voicing
+gökmen	-	-	P:Adj
+gökçe	-	-	P:Adj
+gökçek	gökçeğ	-	P:Adj; +Voicing(inferred)
+gökçül	-	-	P:Adj
+gökşin	-	-	P:Adj
+gölcül	-	-	P:Adj
+gölgecil	-	-	P:Adj
+gömgök	gömgöğ	-	P:Adj; +Voicing(inferred)
+gömme	-	-	P:Adj
+gömük	gömüğ	-	P:Adj; +Voicing(inferred)
+gömülü	-	-	P:Adj
+gönen	-	-	P:Adj
+gönç	-	-	P:Adj
+görece	-	-	P:Adj
+göreli	-	-	P:Adj
+görmez	-	-	P:Adj
+görsel	-	-	P:Adj
+görünmez	-	-	P:Adj
+görünür	-	-	P:Adj
+göstermelik	göstermeliğ	-	P:Adj; +Voicing(inferred)
+götürü	-	-	P:Adj
+gövel	-	-	P:Adj
+göynük	göynüğ	-	P:Adj; +Voicing(inferred)
+göyük	göyüğ	-	P:Adj; +Voicing(inferred)
+gözde	-	-	P:Adj
+göçebe	-	-	P:Adj
+göçer	-	-	P:Adj
+göçeri	-	-	P:Adj
+göçerkonar	-	-	P:Adj
+göçkün	-	-	P:Adj
+göçmen	-	-	P:Adj
+göğem	-	-	P:Adj
+gücenik	güceniğ	-	P:Adj; +Voicing(inferred)
+gücük	gücüğ	-	P:Adj; +Voicing(inferred)
+güderi	-	-	P:Adj
+güdük	güdüğ	-	P:Adj; +Voicing(inferred)
+gülecen	-	-	P:Adj
+güleç	gülec	-	P:Adj; +Voicing(inferred)
+güleğen	-	-	P:Adj
+gülkurusu	-	-	P:Adj
+gülümser	-	-	P:Adj
+gülünç	gülünc	-	P:Adj; +Voicing(inferred)
+gümrah	-	-	P:Adj
+gümüş	-	-	P:Adj
+günah	-	-	P:Adj
+günahkâr	-	-	P:Adj
+güncel	-	-	P:Adj
+gündelik	gündeliğ	-	P:Adj; +Voicing(inferred)
+gündeş	-	-	P:Adj
+güney	-	-	P:Adj
+güneybatı	-	-	P:Adj
+güneydoğu	-	-	P:Adj
+güngörmez	-	-	P:Adj
+güngörmüş	-	-	P:Adj
+günlük	günlüğ	-	P:Adj; +Voicing(inferred)
+günübirlik	günübirliğ	-	P:Adj; +Voicing(inferred)
+güpgüzel	-	-	P:Adj
+gür	-	-	P:Adj
+gürbüz	-	-	P:Adj
+güre	-	-	P:Adj
+gürgen	-	-	P:Adj
+güvela	-	-	P:Adj
+güvenilir	-	-	P:Adj
+güvercinboynu	-	-	P:Adj
+güvercingöğsü	-	-	P:Adj
+güvez	-	-	P:Adj
+güzel	-	-	P:Adj
+güzeşte	-	-	P:Adj
+güzide	-	-	P:Adj
+güç	-	-	P:Adj
+güçlü	-	-	P:Adj
+gıcık	gıcığ	-	P:Adj; +Voicing(inferred)
+gıcır	-	-	P:Adj
+gır	-	-	P:Adj
+gıyabî	-	-	P:Adj
+haberdar	-	-	P:Adj
+habis	-	-	P:Adj
+hadim	-	-	P:Adj
+hafi	-	-	P:Adj
+hafif	-	-	P:Adj
+hafifmeşrep	hafifmeşreb	-	P:Adj; +Voicing(inferred)
+hafız	-	-	P:Adj
+hain	-	-	P:Adj
+haiz	-	-	P:Adj
+hak	-	-	P:Adj
+hakaretamiz	-	-	P:Adj
+hakim	-	-	P:Adj
+hakir	-	-	P:Adj
+hakperest	hakperesd	-	P:Adj; +Voicing(inferred)
+haksever	-	-	P:Adj
+haktanır	-	-	P:Adj
+hakşinas	-	-	P:Adj
+haleldar	-	-	P:Adj
+halim	-	-	P:Adj
+halis	-	-	P:Adj
+halisüddem	-	-	P:Adj
+halka	-	-	P:Adj
+hallice	-	-	P:Adj
+haluk	haluğ	-	P:Adj; +Voicing(inferred)
+ham	-	-	P:Adj
+hamarat	-	-	P:Adj; A:NoVoicing
+hamhalat	-	-	P:Adj; A:NoVoicing
+hami	-	-	P:Adj
+hamil	-	-	P:Adj
+hamile	-	-	P:Adj
+hamiyetperver	-	-	P:Adj
+hamur	-	-	P:Adj
+handan	-	-	P:Adj
+hanedan	-	-	P:Adj
+hangi	-	-	P:Adj
+hantal	-	-	P:Adj
+hanım	-	-	P:Adj
+hapis	-	-	P:Adj
+harabi	-	-	P:Adj
+haram	-	-	P:Adj
+harap	harab	-	P:Adj; +Voicing(inferred)
+harbi	-	-	P:Adj
+harbî	-	-	P:Adj
+harcıâlem	-	-	P:Adj
+harfendaz	-	-	P:Adj
+haricî	-	-	P:Adj
+harika	-	-	P:Adj
+haris	-	-	P:Adj
+harın	-	-	P:Adj
+has	-	-	P:Adj
+haset	hased	-	P:Adj; +Voicing(inferred)
+hasis	-	-	P:Adj
+hassas	-	-	P:Adj
+hasta	-	-	P:Adj
+hasut	hasud	-	P:Adj; +Voicing(inferred)
+hasıl	-	-	P:Adj
+hasır	-	-	P:Adj
+hatif	-	-	P:Adj
+hatırşinas	-	-	P:Adj
+hava	-	-	P:Adj
+havadan	-	-	P:Adj
+havadar	-	-	P:Adj
+havi	-	-	P:Adj
+hayalperest	hayalperesd	-	P:Adj; +Voicing(inferred)
+hayalî	-	-	P:Adj
+hayatî	-	-	P:Adj
+haylaz	-	-	P:Adj
+hayli	-	-	P:Adj
+haymatlos	-	-	P:Adj
+hayran	-	-	P:Adj
+hayta	-	-	P:Adj
+hayvan	-	-	P:Adj
+hayvansever	-	-	P:Adj
+hayır	-	-	P:Adj
+hayırhah	-	-	P:Adj
+hayırperver	-	-	P:Adj
+hayırsever	-	-	P:Adj
+hazandide	-	-	P:Adj
+hazin	-	-	P:Adj
+hazık	-	-	P:Adj; A:NoVoicing
+hazır	-	-	P:Adj
+hazırcevap	hazırcevab	-	P:Adj; +Voicing(inferred)
+hazırlop	hazırlob	-	P:Adj; +Voicing(inferred)
+haçvari	-	-	P:Adj
+haşarı	-	-	P:Adj
+haşat	haşad	-	P:Adj; +Voicing(inferred)
+haşin	-	-	P:Adj
+haşlak	haşlağ	-	P:Adj; +Voicing(inferred)
+hedonist	-	-	P:Adj;A:NoVoicing
+hemayar	-	-	P:Adj
+hemcins	-	-	P:Adj
+hemdert	hemderd	-	P:Adj; +Voicing(inferred)
+hemen	-	-	P:Adj
+hemfikir	-	-	P:Adj
+hemhâl	-	-	P:Adj
+hemofil	-	-	P:Adj
+hemzemin	-	-	P:Adj
+hepatolojik	hepatolojiğ	-	P:Adj; +Voicing(inferred)
+hepçil	-	-	P:Adj
+her	-	-	P:Adj
+hercümerç	hercümerc	-	P:Adj; +Voicing(inferred)
+hergele	-	-	P:Adj
+herhangi	-	-	P:Adj
+hermetik	hermetiğ	-	P:Adj; +Voicing(inferred)
+herzevekil	-	-	P:Adj
+heterodoks	-	-	P:Adj
+heterojen	-	-	P:Adj
+heteroseksüel	-	-	P:Adj
+heterotrof	-	-	P:Adj
+heveskâr	-	-	P:Adj
+hibrit	hibrid	-	P:Adj; +Voicing(inferred)
+hicrî	-	-	P:Adj
+hidrobiyolojik	hidrobiyolojiğ	-	P:Adj; +Voicing(inferred)
+hidrodinamik	hidrodinamiğ	-	P:Adj; +Voicing(inferred)
+hidrofil	-	-	P:Adj
+hidrojeolojik	hidrojeolojiğ	-	P:Adj; +Voicing(inferred)
+hidrolik	hidroliğ	-	P:Adj; +Voicing(inferred)
+hidrolojik	hidrolojiğ	-	P:Adj; +Voicing(inferred)
+hidrosefal	-	-	P:Adj
+hidrostatik	hidrostatiğ	-	P:Adj; +Voicing(inferred)
+higrofil	-	-	P:Adj
+higrometrik	higrometriğ	-	P:Adj; +Voicing(inferred)
+higroskopik	higroskopiğ	-	P:Adj; +Voicing(inferred)
+hijyenik	hijyeniğ	-	P:Adj; +Voicing(inferred)
+hikemî	-	-	P:Adj
+hilafıhakikat	hilafıhakikad	-	P:Adj; +Voicing(inferred)
+hilalî	-	-	P:Adj
+hilebaz	-	-	P:Adj
+hilekâr	-	-	P:Adj
+hindi	-	-	P:Adj
+hinoğlu	-	-	P:Adj
+hinoğluhin	-	-	P:Adj
+hiperaktif	-	-	P:Adj
+hiperbolik	hiperboliğ	-	P:Adj; +Voicing(inferred)
+hiperboloidal	-	-	P:Adj
+hiperboloit	hiperboloid	-	P:Adj; +Voicing(inferred)
+hipermetrop	hipermetrob	-	P:Adj; +Voicing(inferred)
+hipnotize	-	-	P:Adj
+hipotetik	hipotetiğ	-	P:Adj; +Voicing(inferred)
+hissî	-	-	P:Adj
+histerik	histeriğ	-	P:Adj; +Voicing(inferred)
+histolojik	histolojiğ	-	P:Adj; +Voicing(inferred)
+hiyerarşik	hiyerarşiğ	-	P:Adj; +Voicing(inferred)
+hiçten	-	-	P:Adj
+hodbin	-	-	P:Adj
+hodkâm	-	-	P:Adj
+hodpesent	hodpesend	-	P:Adj; +Voicing(inferred)
+hokkabaz	-	-	P:Adj
+homojen	-	-	P:Adj
+homolog	homoloğ	-	P:Adj; +Voicing(inferred)
+homonim	-	-	P:Adj
+homotetik	homotetiğ	-	P:Adj; +Voicing(inferred)
+hoppa	-	-	P:Adj
+hor	-	-	P:Adj
+hormonal	-	i	P:Adj; A:InverseHarmony
+horozibiği	-	-	P:Adj
+hortlak	hortlağ	-	P:Adj; +Voicing(inferred)
+hovarda	-	-	P:Adj
+hoyrat	-	-	P:Adj; A:NoVoicing
+hoş	-	-	P:Adj
+hoşnut	hoşnud	-	P:Adj; +Voicing(inferred)
+hoşsohbet	hoşsohbed	-	P:Adj; +Voicing(inferred)
+hoşur	-	-	P:Adj
+hudayinabit	hudayinabid	-	P:Adj; +Voicing(inferred)
+hukukî	-	-	P:Adj
+huluskâr	-	-	P:Adj
+hulûskâr	-	-	P:Adj
+hunhar	-	-	P:Adj
+hunriz	-	-	P:Adj
+hurda	-	-	P:Adj
+hurdahaş	-	-	P:Adj
+huruşan	-	-	P:Adj
+husumetkâr	-	-	P:Adj
+hâkim	-	-	P:Adj
+hâkî	-	-	P:Adj
+hükümran	-	-	P:Adj
+hümanist	-	-	P:Adj;A:NoVoicing
+hümayun	-	-	P:Adj
+hünsa	-	-	P:Adj
+hür	-	-	P:Adj
+hürmetkâr	-	-	P:Adj
+hürriyetperver	-	-	P:Adj
+hüveyda	-	-	P:Adj
+hımbıl	-	-	P:Adj
+hımhım	-	-	P:Adj
+hınzır	-	-	P:Adj
+hırbo	-	-	P:Adj
+hırt	-	-	P:Adj
+hırtapoz	-	-	P:Adj
+hırtlamba	-	-	P:Adj
+hırçın	-	-	P:Adj
+hıyar	-	-	P:Adj
+hızlı	-	-	P:Adj
+hışır	-	-	P:Adj
+ibaret	ibared	-	P:Adj; +Voicing(inferred)
+ibiş	-	-	P:Adj
+iblisane	-	-	P:Adj
+ibret	ibred	-	P:Adj; +Voicing(inferred)
+ibretamiz	-	-	P:Adj
+ibrişim	-	-	P:Adj
+ideal	-	-	P:Adj
+idealist	-	-	P:Adj;A:NoVoicing
+idealize	-	-	P:Adj
+identik	identiğ	-	P:Adj; +Voicing(inferred)
+ideolojik	ideolojiğ	-	P:Adj; +Voicing(inferred)
+ihmalkâr	-	-	P:Adj
+ihtimalî	-	-	P:Adj
+ihtiyar	-	-	P:Adj
+ihtiyatkâr	-	-	P:Adj
+ikame	-	-	P:Adj
+ikincil	-	-	P:Adj
+ikircil	-	-	P:Adj
+ikiyüzlü	-	-	P:Adj
+ikiz	-	-	P:Adj
+ikizkenar	-	-	P:Adj
+iktisadî	-	-	P:Adj
+ileri	-	-	P:Adj
+ilerlek	ilerleğ	-	P:Adj; +Voicing(inferred)
+iletken	-	-	P:Adj
+ilgili	-	-	P:Adj
+ilginç	ilginc	-	P:Adj; +Voicing(inferred)
+ilişik	ilişiğ	-	P:Adj; +Voicing(inferred)
+ilk	-	-	P:Adj
+ilkel	-	-	P:Adj
+illegal	-	-	P:Adj
+illet	illed	-	P:Adj; +Voicing(inferred)
+illî	-	-	P:Adj
+ilmî	-	-	P:Adj
+iltifatkâr	-	-	P:Adj
+immoral	-	-	P:Adj
+immünolojik	immünolojiğ	-	P:Adj; +Voicing(inferred)
+inandırıcı	-	-	P:Adj
+inanılmaz	-	-	P:Adj
+inat	inad	-	P:Adj; +Voicing(inferred)
+inatçı	-	-	P:Adj
+ince	-	-	P:Adj
+inceden	-	-	P:Adj
+incerek	incereğ	-	P:Adj; +Voicing(inferred)
+inci	-	-	P:Adj
+indeterminist	-	-	P:Adj;A:NoVoicing
+indirgen	-	-	P:Adj
+indirgenebilir	-	-	P:Adj
+inek	ineğ	-	P:Adj; +Voicing(inferred)
+infinitezimal	-	-	P:Adj
+ingin	-	-	P:Adj
+inik	iniğ	-	P:Adj; +Voicing(inferred)
+inorganik	inorganiğ	-	P:Adj; +Voicing(inferred)
+insan	-	-	P:Adj
+insancıl	-	-	P:Adj
+insanî	-	-	P:Adj
+insanüstü	-	-	P:Adj
+interaktif	-	-	P:Adj
+ipek	ipeğ	-	P:Adj; +Voicing(inferred)
+ipsiz	-	-	P:Adj
+iptidaî	-	-	P:Adj
+iri	-	-	P:Adj
+ironik	ironiğ	-	P:Adj; +Voicing(inferred)
+irrasyonel	-	-	P:Adj
+irrealist	-	-	P:Adj; A:NoVoicing
+irsî	-	-	P:Adj
+irticaî	-	-	P:Adj
+isfendan	-	-	P:Adj
+iskelet	iskeled	-	P:Adj; +Voicing(inferred)
+istatistiki	-	-	P:Adj
+isterik	isteriğ	-	P:Adj; +Voicing(inferred)
+istisnaî	-	-	P:Adj
+isyankâr	-	-	P:Adj
+itaatkâr	-	-	P:Adj
+ivecen	-	-	P:Adj
+ivedi	-	-	P:Adj
+iveğen	-	-	P:Adj
+iyi	-	-	P:Adj
+iyicil	-	-	P:Adj
+iyilikbilir	-	-	P:Adj
+iyilikbilmez	-	-	P:Adj
+iyiliksever	-	-	P:Adj
+iyimser	-	-	P:Adj
+iyonik	iyoniğ	-	P:Adj; +Voicing(inferred)
+izafî	-	-	P:Adj
+izbandut	izbandud	-	P:Adj; +Voicing(inferred)
+izbe	-	-	P:Adj
+izdüşüren	-	-	P:Adj
+izole	-	-	P:Adj
+izomer	-	-	P:Adj
+izomerik	izomeriğ	-	P:Adj; +Voicing(inferred)
+izomorfik	izomorfiğ	-	P:Adj; +Voicing(inferred)
+izoterm	-	-	P:Adj
+iç	-	-	P:Adj
+içbükey	-	-	P:Adj
+içeri	-	-	P:Adj
+içerik	içeriğ	-	P:Adj; +Voicing(inferred)
+içerlek	içerleğ	-	P:Adj; +Voicing(inferred)
+içim	-	-	P:Adj
+içkin	-	-	P:Adj
+içrek	içreğ	-	P:Adj; +Voicing(inferred)
+içten	-	-	P:Adj
+iğdiş	-	-	P:Adj
+iğrengen	-	-	P:Adj
+iğrenç	iğrenc	-	P:Adj; +Voicing(inferred)
+iğreti	-	-	P:Adj
+işbu	-	-	P:Adj
+işgüzar	-	-	P:Adj
+işlek	işleğ	-	P:Adj; +Voicing(inferred)
+jakoben	-	-	P:Adj
+jandarma	-	-	P:Adj
+janjan	-	-	P:Adj
+japone	-	-	P:Adj
+jarse	-	-	P:Adj
+jelâtin	-	-	P:Adj
+jeolojik	jeolojiğ	-	P:Adj; +Voicing(inferred)
+jeomorfolojik	jeomorfolojiğ	-	P:Adj; +Voicing(inferred)
+jeosantrik	jeosantriğ	-	P:Adj; +Voicing(inferred)
+jeosismik	jeosismiğ	-	P:Adj; +Voicing(inferred)
+jeotermal	-	i	P:Adj;A:InverseHarmony
+jeotermik	jeotermiğ	-	P:Adj; +Voicing(inferred)
+jinekolojik	jinekolojiğ	-	P:Adj; +Voicing(inferred)
+joker	-	-	P:Adj
+jorjet	jorjed	-	P:Adj; +Voicing(inferred)
+jön	-	-	P:Adj
+jüt	-	-	P:Adj
+kaba	-	-	P:Adj
+kabadayı	-	-	P:Adj
+kabak	kabağ	-	P:Adj; +Voicing(inferred)
+kabarık	kabarığ	-	P:Adj; +Voicing(inferred)
+kabataslak	kabataslağ	-	P:Adj; +Voicing(inferred)
+kabil	-	-	P:Adj
+kadeh	-	-	P:Adj
+kadife	-	-	P:Adj
+kadim	-	-	P:Adj
+kadimî	-	-	P:Adj
+kadir	-	-	P:Adj
+kadirbilir	-	-	P:Adj
+kadirbilmez	-	-	P:Adj
+kadirşinas	-	-	P:Adj
+kadit	kadid	-	P:Adj; +Voicing(inferred)
+kadük	kadüğ	-	P:Adj; +Voicing(inferred)
+kadın	-	-	P:Adj
+kadıncıl	-	-	P:Adj
+kahhar	-	-	P:Adj
+kahir	-	-	P:Adj
+kahpe	-	-	P:Adj
+kahraman	-	-	P:Adj
+kahrolası	-	-	P:Adj
+kahverengi	-	-	P:Adj
+kail	-	-	P:Adj
+kaim	-	-	P:Adj
+kak	-	-	P:Adj
+kaka	-	-	P:Adj
+kakavan	-	-	P:Adj
+kaknem	-	-	P:Adj
+kalabalık	kalabalığ	-	P:Adj; +Voicing(inferred)
+kalas	-	-	P:Adj
+kalavra	-	-	P:Adj
+kalbiselim	-	-	P:Adj
+kalburüstü	-	-	P:Adj
+kalbî	-	-	P:Adj
+kalifiye	-	-	P:Adj
+kalitatif	-	-	P:Adj
+kalite	-	-	P:Adj
+kalkolitik	kalkolitiğ	-	P:Adj; +Voicing(inferred)
+kalkık	kalkığ	-	P:Adj; +Voicing(inferred)
+kallavi	-	-	P:Adj
+kalleş	-	-	P:Adj
+kalp	-	-	P:Adj; A:NoVoicing
+kaltaban	-	-	P:Adj
+kalın	-	-	P:Adj
+kalıp	kalıb	-	P:Adj; +Voicing(inferred)
+kalıtsal	-	-	P:Adj
+kambur	-	-	P:Adj
+kamerî	-	-	P:Adj
+kamu	-	-	P:Adj
+kamufle	-	-	P:Adj
+kamyon	-	-	P:Adj
+kamış	-	-	P:Adj
+kanaatkâr	-	-	P:Adj
+kanalize	-	-	P:Adj
+kancık	kancığ	-	P:Adj; +Voicing(inferred)
+kani	-	-	P:Adj
+kankırmızı	-	-	P:Adj
+kanserojen	-	-	P:Adj
+kantitatif	-	-	P:Adj
+kanık	kanığ	-	P:Adj; +Voicing(inferred)
+kaotik	kaotiğ	-	P:Adj; +Voicing(inferred)
+kapalı	-	-	P:Adj
+kapanık	kapanığ	-	P:Adj; +Voicing(inferred)
+kapitone	-	-	P:Adj
+kapkara	-	-	P:Adj
+kapkaranlık	kapkaranlığ	-	P:Adj; +Voicing(inferred)
+kaplama	-	-	P:Adj
+kaput	kapud	-	P:Adj; +Voicing(inferred)
+kapılgan	-	-	P:Adj
+kara	-	-	P:Adj
+karaca	-	-	P:Adj
+karafaki	-	-	P:Adj
+karakteristik	karakteristiğ	-	P:Adj; +Voicing(inferred)
+karakterize	-	-	P:Adj
+karakterolojik	karakterolojiğ	-	P:Adj; +Voicing(inferred)
+karamandola	-	-	P:Adj
+karamsar	-	-	P:Adj
+karanlık	karanlığ	-	P:Adj; +Voicing(inferred)
+karaşın	-	-	P:Adj
+karbonik	karboniğ	-	P:Adj; +Voicing(inferred)
+kardeş	-	-	P:Adj
+kardiyak	kardiyağ	-	P:Adj; +Voicing(inferred)
+kardiyolojik	kardiyolojiğ	-	P:Adj; +Voicing(inferred)
+kare	-	-	P:Adj
+kargasekmez	-	-	P:Adj
+karikatürize	-	-	P:Adj
+karizmatik	karizmatiğ	-	P:Adj; +Voicing(inferred)
+karma	-	-	P:Adj
+karmakarış	-	-	P:Adj
+karmakarışık	karmakarışığ	-	P:Adj; +Voicing(inferred)
+karmaşık	karmaşığ	-	P:Adj; +Voicing(inferred)
+karnivor	-	-	P:Adj
+karstik	karstiğ	-	P:Adj; +Voicing(inferred)
+kart	-	-	P:Adj
+kartaloz	-	-	P:Adj
+kartaloş	-	-	P:Adj
+kartografik	kartografiğ	-	P:Adj; +Voicing(inferred)
+kartopu	-	-	P:Adj
+karık	karığ	-	P:Adj; +Voicing(inferred)
+karıncaezmez	-	-	P:Adj
+karıncaincitmez	-	-	P:Adj
+karışık	karışığ	-	P:Adj; +Voicing(inferred)
+karşı	-	-	P:Adj
+karşıt	karşıd	-	P:Adj; +Voicing(inferred)
+kasap	kasab	-	P:Adj; +Voicing(inferred)
+kaskatı	-	-	P:Adj
+kassıl	-	-	P:Adj
+kastor	-	-	P:Adj
+kasılgan	-	-	P:Adj
+kataleptik	kataleptiğ	-	P:Adj; +Voicing(inferred)
+katalitik	katalitiğ	-	P:Adj; +Voicing(inferred)
+kategorik	kategoriğ	-	P:Adj; +Voicing(inferred)
+kategorize	-	-	P:Adj
+katil	-	-	P:Adj
+katı	-	-	P:Adj
+katıntı	-	-	P:Adj
+katır	-	-	P:Adj
+katışık	katışığ	-	P:Adj; +Voicing(inferred)
+kauçuk	kauçuğ	-	P:Adj; +Voicing(inferred)
+kavi	-	-	P:Adj
+kavlak	kavlağ	-	P:Adj; +Voicing(inferred)
+kavmî	-	-	P:Adj
+kavranılmaz	-	-	P:Adj
+kavruk	kavruğ	-	P:Adj; +Voicing(inferred)
+kavurma	-	-	P:Adj
+kayağan	-	-	P:Adj
+kaygan	-	-	P:Adj
+kaynar	-	-	P:Adj
+kaynaşık	kaynaşığ	-	P:Adj; +Voicing(inferred)
+kaypak	kaypağ	-	P:Adj; +Voicing(inferred)
+kaytaban	-	-	P:Adj
+kaytak	kaytağ	-	P:Adj; +Voicing(inferred)
+kayık	kayığ	-	P:Adj; +Voicing(inferred)
+kayın	-	-	P:Adj
+kayıp	kayıb	-	P:Adj; +Voicing(inferred)
+kaz	-	-	P:Adj
+kazak	kazağ	-	P:Adj; +Voicing(inferred)
+kazayağı	-	-	P:Adj
+kazboku	-	-	P:Adj
+kazulet	kazuled	-	P:Adj; +Voicing(inferred)
+kazık	kazığ	-	P:Adj; +Voicing(inferred)
+kaç	-	-	P:Adj
+kaçak	kaçağ	-	P:Adj; +Voicing(inferred)
+kaçamak	kaçamağ	-	P:Adj; +Voicing(inferred)
+kaçar	-	-	P:Adj
+kaçık	kaçığ	-	P:Adj; +Voicing(inferred)
+kaçımsar	-	-	P:Adj
+kaçıngan	-	-	P:Adj
+kaçınık	kaçınığ	-	P:Adj; +Voicing(inferred)
+kaçınılmaz	-	-	P:Adj
+kağşak	kağşağ	-	P:Adj; +Voicing(inferred)
+kaşalot	kaşalod	-	P:Adj; +Voicing(inferred)
+kaşkaval	-	-	P:Adj
+kaşmir	-	-	P:Adj
+kebap	kebab	-	P:Adj; +Voicing(inferred)
+kebir	-	-	P:Adj
+kehribar	-	-	P:Adj
+keke	-	-	P:Adj
+kekeme	-	-	P:Adj
+kekeç	kekec	-	P:Adj; +Voicing(inferred)
+kekre	-	-	P:Adj
+kel	-	-	P:Adj
+kelebek	kelebeğ	-	P:Adj; +Voicing(inferred)
+kelek	keleğ	-	P:Adj; +Voicing(inferred)
+keleş	-	-	P:Adj
+kem	-	-	P:Adj
+kemer	-	-	P:Adj
+kemik	kemiğ	-	P:Adj; +Voicing(inferred)
+kemirgen	-	-	P:Adj
+kendigelen	-	-	P:Adj
+kendiliğinden	-	-	P:Adj
+kendir	-	-	P:Adj
+kenef	-	-	P:Adj
+kenevir	-	-	P:Adj
+kenttaş	-	-	P:Adj
+kepaze	-	-	P:Adj
+kepçe	-	-	P:Adj
+kerih	-	-	P:Adj
+kerim	-	-	P:Adj
+kerpiç	kerpic	-	P:Adj; +Voicing(inferred)
+kerti	-	-	P:Adj
+kertik	kertiğ	-	P:Adj; +Voicing(inferred)
+kese	-	-	P:Adj
+kesif	-	-	P:Adj
+kesik	kesiğ	-	P:Adj; +Voicing(inferred)
+kesin	-	-	P:Adj
+keskin	-	-	P:Adj
+kesme	-	-	P:Adj
+kesmece	-	-	P:Adj
+keten	-	-	P:Adj
+ketum	-	-	P:Adj
+keyfî	-	-	P:Adj
+keçe	-	-	P:Adj
+keçi	-	-	P:Adj
+keş	-	-	P:Adj
+kibar	-	-	P:Adj
+kibernetik	kibernetiğ	-	P:Adj; +Voicing(inferred)
+kimyasal	-	-	P:Adj
+kinci	-	-	P:Adj
+kindar	-	-	P:Adj
+kinetik	kinetiğ	-	P:Adj; +Voicing(inferred)
+kinik	kiniğ	-	P:Adj; +Voicing(inferred)
+kip	-	-	P:Adj
+kipkirli	-	-	P:Adj
+kireçyeren	-	-	P:Adj
+kireççil	-	-	P:Adj
+kirloş	-	-	P:Adj
+kitapsever	-	-	P:Adj
+kişilik	kişiliğ	-	P:Adj; +Voicing(inferred)
+kişisel	-	-	P:Adj
+kişizade	-	-	P:Adj
+kişmiri	-	-	P:Adj
+klinik	kliniğ	-	P:Adj; +Voicing(inferred)
+klişe	-	-	P:Adj
+klostrofobik	klostrofobiğ	-	P:Adj; +Voicing(inferred)
+kloş	-	-	P:Adj
+koca	-	-	P:Adj
+kocaman	-	-	P:Adj
+kof	-	-	P:Adj
+kognitif	-	-	P:Adj
+kokak	kokağ	-	P:Adj; +Voicing(inferred)
+koket	koked	-	P:Adj; +Voicing(inferred)
+kokoz	-	-	P:Adj
+kokoş	-	-	P:Adj
+kokuşuk	kokuşuğ	-	P:Adj; +Voicing(inferred)
+kolay	-	-	P:Adj
+kolaycacık	kolaycacığ	-	P:Adj; +Voicing(inferred)
+kolektif	-	-	P:Adj
+kolektivist	-	-	P:Adj;A:NoVoicing
+koloidal	-	-	P:Adj
+kolonyal	-	-	P:Adj
+kombine	-	-	P:Adj
+komedyen	-	-	P:Adj
+komik	komiğ	-	P:Adj; +Voicing(inferred)
+kompetan	-	-	P:Adj
+komple	-	-	P:Adj
+kompleks	-	-	P:Adj
+komplike	-	-	P:Adj
+kompoze	-	-	P:Adj
+kompozit	kompozid	-	P:Adj; +Voicing(inferred)
+komşu	-	-	P:Adj
+konargöçer	-	-	P:Adj
+konfederatif	-	-	P:Adj
+konfedere	-	-	P:Adj
+konformist	-	-	P:Adj;A:NoVoicing
+koni	-	-	P:Adj
+konik	koniğ	-	P:Adj; +Voicing(inferred)
+konkav	-	-	P:Adj
+konkre	-	-	P:Adj
+konsantre	-	-	P:Adj
+konserve	-	-	P:Adj
+konsolide	-	-	P:Adj
+kontak	kontağ	-	P:Adj; +Voicing(inferred)
+kontra	-	-	P:Adj
+kontrast	kontrasd	-	P:Adj; +Voicing(inferred)
+konuksever	-	-	P:Adj
+konur	-	-	P:Adj
+konuşkan	-	-	P:Adj
+konvansiyonel	-	-	P:Adj
+konveks	-	-	P:Adj
+konvertibl	-	-	P:Adj
+koordine	-	-	P:Adj
+kopkoyu	-	-	P:Adj
+kopuk	kopuğ	-	P:Adj; +Voicing(inferred)
+kopya	-	-	P:Adj
+kor	-	-	P:Adj
+koral	-	-	P:Adj
+korkak	korkağ	-	P:Adj; +Voicing(inferred)
+korkunç	korkunc	-	P:Adj; +Voicing(inferred)
+koroner	-	-	P:Adj
+korporatif	-	-	P:Adj
+korsan	-	-	P:Adj
+koruk	koruğ	-	P:Adj; +Voicing(inferred)
+koskoca	-	-	P:Adj
+koskocaman	-	-	P:Adj
+kostak	kostağ	-	P:Adj; +Voicing(inferred)
+kostik	kostiğ	-	P:Adj; +Voicing(inferred)
+kot	-	-	P:Adj
+koton	-	-	P:Adj
+kova	-	-	P:Adj
+kovcu	-	-	P:Adj
+koygun	-	-	P:Adj
+koyu	-	-	P:Adj
+kozmetik	kozmetiğ	-	P:Adj; +Voicing(inferred)
+kozmik	kozmiğ	-	P:Adj; +Voicing(inferred)
+kozmogonik	kozmogoniğ	-	P:Adj; +Voicing(inferred)
+kozmolojik	kozmolojiğ	-	P:Adj; +Voicing(inferred)
+kozmopolit	kozmopolid	-	P:Adj; +Voicing(inferred)
+koçak	koçağ	-	P:Adj; +Voicing(inferred)
+koşa	-	-	P:Adj
+koşut	-	-	P:Adj;A:NoVoicing
+kral	-	-	P:Adj
+kraniyolojik	kraniyolojiğ	-	P:Adj; +Voicing(inferred)
+kreatif	-	-	P:Adj
+krem	-	-	P:Adj
+kriminolojik	kriminolojiğ	-	P:Adj; +Voicing(inferred)
+kriptolojik	kriptolojiğ	-	P:Adj; +Voicing(inferred)
+kristal	-	-	P:Adj
+kristaloit	kristaloid	-	P:Adj; +Voicing(inferred)
+kritik	kritiğ	-	P:Adj; +Voicing(inferred)
+krokodil	-	-	P:Adj
+krom	-	-	P:Adj
+kromatik	kromatiğ	-	P:Adj; +Voicing(inferred)
+kronik	kroniğ	-	P:Adj; +Voicing(inferred)
+kronolojik	kronolojiğ	-	P:Adj; +Voicing(inferred)
+kruvaze	-	-	P:Adj
+kubat	-	-	P:Adj; A:NoVoicing
+kucak	kucağ	-	P:Adj; +Voicing(inferred)
+kucakta	-	-	P:Adj
+kudurgan	-	-	P:Adj
+kuduruk	kuduruğ	-	P:Adj; +Voicing(inferred)
+kuduz	-	-	P:Adj
+kuka	-	-	P:Adj
+kuklavari	-	-	P:Adj
+kula	-	-	P:Adj
+kumarbaz	-	-	P:Adj
+kumaş	-	-	P:Adj
+kumcul	-	-	P:Adj
+kumral	-	-	P:Adj
+kumsal	-	-	P:Adj
+kunt	-	-	P:Adj
+kupa	-	-	P:Adj
+kupkuru	-	-	P:Adj
+kupon	-	-	P:Adj
+kurada	-	-	P:Adj
+kurak	kurağ	-	P:Adj; +Voicing(inferred)
+kurakçıl	-	-	P:Adj
+kurbağalama	-	-	P:Adj
+kurmay	-	-	P:Adj
+kurnaz	-	-	P:Adj
+kurt	-	-	P:Adj
+kurtçul	-	-	P:Adj
+kuru	-	-	P:Adj
+kurşun	-	-	P:Adj
+kurşungeçirmez	-	-	P:Adj
+kutlu	-	-	P:Adj
+kutsal	-	-	P:Adj
+kutu	-	-	P:Adj
+kuytu	-	-	P:Adj
+kuz	-	-	P:Adj
+kuzey	-	-	P:Adj
+kuzeybatı	-	-	P:Adj
+kuzeydoğu	-	-	P:Adj
+kuşbaşı	-	-	P:Adj
+kâfi	-	-	P:Adj
+kâfur	-	-	P:Adj
+kâgir	-	-	P:Adj
+kâhil	-	-	P:Adj
+kâin	-	-	P:Adj
+kâküllü	-	-	P:Adj
+kâmil	-	-	P:Adj
+kârgir	-	-	P:Adj
+kâğıt	kâğıd	-	P:Adj; +Voicing(inferred)
+köftehor	-	-	P:Adj
+köhne	-	-	P:Adj
+kökten	-	-	P:Adj
+kökteş	-	-	P:Adj
+kömür	-	-	P:Adj
+kör	-	-	P:Adj
+körfez	-	-	P:Adj
+körkütük	körkütüğ	-	P:Adj; +Voicing(inferred)
+körpe	-	-	P:Adj
+köse	-	-	P:Adj
+kösele	-	-	P:Adj
+köskötürüm	-	-	P:Adj
+kösnük	kösnüğ	-	P:Adj; +Voicing(inferred)
+kösnül	-	-	P:Adj
+kötü	-	-	P:Adj
+kötücül	-	-	P:Adj
+kötümser	-	-	P:Adj
+kötürüm	-	-	P:Adj
+kûhi	-	-	P:Adj
+kübik	kübiğ	-	P:Adj; +Voicing(inferred)
+küfe	-	-	P:Adj
+küfürbaz	-	-	P:Adj
+kükre	-	-	P:Adj
+külkedisi	-	-	P:Adj
+kültürel	-	-	P:Adj
+külyutmaz	-	-	P:Adj
+külçe	-	-	P:Adj
+külüstür	-	-	P:Adj
+kümülatif	-	-	P:Adj
+kür	-	-	P:Adj
+küresel	-	-	P:Adj
+kürk	-	-	P:Adj
+küs	-	-	P:Adj
+küseğen	-	-	P:Adj
+küskün	-	-	P:Adj
+küskütük	küskütüğ	-	P:Adj; +Voicing(inferred)
+küstah	-	-	P:Adj
+küt	-	-	P:Adj
+küçücük	küçücüğ	-	P:Adj; +Voicing(inferred)
+küçük	küçüğ	-	P:Adj; +Voicing(inferred)
+küçümen	-	-	P:Adj
+küçürek	küçüreğ	-	P:Adj; +Voicing(inferred)
+küşade	-	-	P:Adj
+küşat	küşad	-	P:Adj; +Voicing(inferred)
+kıl	-	-	P:Adj
+kılcal	-	-	P:Adj
+kılgın	-	-	P:Adj
+kılâptan	-	-	P:Adj
+kılıbık	kılıbığ	-	P:Adj; +Voicing(inferred)
+kımkım	-	-	P:Adj
+kıpkıp	kıpkıb	-	P:Adj; +Voicing(inferred)
+kıpkırmızı	-	-	P:Adj
+kıpkızıl	-	-	P:Adj
+kıpık	kıpığ	-	P:Adj; +Voicing(inferred)
+kıpırdak	kıpırdağ	-	P:Adj; +Voicing(inferred)
+kır	-	-	P:Adj
+kıran	-	-	P:Adj
+kıranta	-	-	P:Adj
+kıray	-	-	P:Adj
+kıraç	kırac	-	P:Adj; +Voicing(inferred)
+kırgın	-	-	P:Adj
+kırma	-	-	P:Adj
+kırmızı	-	-	P:Adj
+kırmızımtırak	kırmızımtırağ	-	P:Adj; +Voicing(inferred)
+kırnak	kırnağ	-	P:Adj; +Voicing(inferred)
+kırpık	kırpığ	-	P:Adj; +Voicing(inferred)
+kırtıpil	-	-	P:Adj
+kırçıl	-	-	P:Adj
+kırık	kırığ	-	P:Adj; +Voicing(inferred)
+kırılgan	-	-	P:Adj
+kırıtkan	-	-	P:Adj
+kırışık	kırışığ	-	P:Adj; +Voicing(inferred)
+kısa	-	-	P:Adj
+kısarak	kısarağ	-	P:Adj; +Voicing(inferred)
+kıskanç	kıskanc	-	P:Adj; +Voicing(inferred)
+kısmî	-	-	P:Adj
+kısmık	kısmığ	-	P:Adj; +Voicing(inferred)
+kısık	kısığ	-	P:Adj; +Voicing(inferred)
+kısır	-	-	P:Adj
+kıt	-	-	P:Adj
+kıtipiyoz	-	-	P:Adj
+kıvracık	kıvracığ	-	P:Adj; +Voicing(inferred)
+kıvrak	kıvrağ	-	P:Adj; +Voicing(inferred)
+kıvrık	kıvrığ	-	P:Adj; +Voicing(inferred)
+kıvırcık	kıvırcığ	-	P:Adj; +Voicing(inferred)
+kıyak	kıyağ	-	P:Adj; +Voicing(inferred)
+kıyasıya	-	-	P:Adj
+kıygın	-	-	P:Adj
+kıymettar	-	-	P:Adj
+kıytırık	kıytırığ	-	P:Adj; +Voicing(inferred)
+kızarık	kızarığ	-	P:Adj; +Voicing(inferred)
+kızgın	-	-	P:Adj
+kızıl	-	-	P:Adj
+kızıltı	-	-	P:Adj
+kızılşap	kızılşab	-	P:Adj; +Voicing(inferred)
+kızışık	kızışığ	-	P:Adj; +Voicing(inferred)
+kıç	-	-	P:Adj
+laciverdî	-	-	P:Adj
+lacivert	laciverd	-	P:Adj; +Voicing(inferred)
+ladinî	-	-	P:Adj
+laedri	-	-	P:Adj
+lafazan	-	-	P:Adj
+lagar	-	-	P:Adj
+lahuraki	-	-	P:Adj
+lahut	lahud	-	P:Adj; +Voicing(inferred)
+laik	laiğ	-	P:Adj; +Voicing(inferred)
+lain	-	-	P:Adj
+lakayt	lakayd	-	P:Adj; +Voicing(inferred)
+lakayıt	lakayıd	-	P:Adj; +Voicing(inferred)
+lake	-	-	P:Adj
+lakonik	lakoniğ	-	P:Adj; +Voicing(inferred)
+lakrimal	-	-	P:Adj
+laktik	laktiğ	-	P:Adj; +Voicing(inferred)
+lal	-	-	P:Adj
+lalettayin	-	-	P:Adj
+lalüebkem	-	-	P:Adj
+lame	-	-	P:Adj
+lamelif	-	-	P:Adj
+lanet	laned	-	P:Adj; +Voicing(inferred)
+lanse	-	-	P:Adj
+larvacıl	-	-	P:Adj
+laski	-	-	P:Adj
+lasteks	-	-	P:Adj
+lastik	lastiğ	-	P:Adj; +Voicing(inferred)
+lastikotin	-	-	P:Adj
+latif	-	-	P:Adj
+lavuk	lavuğ	-	P:Adj; +Voicing(inferred)
+layemut	layemud	-	P:Adj; +Voicing(inferred)
+layenkati	-	-	P:Adj
+layuhti	-	-	P:Adj
+layık	layığ	-	P:Adj; +Voicing(inferred)
+lazım	-	-	P:Adj
+laçka	-	-	P:Adj
+legal	-	-	P:Adj
+lejitimist	-	-	P:Adj; A:NoVoicing
+lenduha	-	-	P:Adj
+lenfatik	lenfatiğ	-	P:Adj; +Voicing(inferred)
+lenger	-	-	P:Adj
+lepiska	-	-	P:Adj
+lerzan	-	-	P:Adj
+letarjik	letarjiğ	-	P:Adj; +Voicing(inferred)
+levent	levend	-	P:Adj; +Voicing(inferred)
+lezbiyen	-	-	P:Adj
+leziz	-	-	P:Adj
+leş	-	-	P:Adj
+leşçil	-	-	P:Adj
+liberal	-	i	P:Adj; A:InverseHarmony
+liberalist	-	-	P:Adj; A:NoVoicing
+lider	-	-	P:Adj
+light	-	-	P:Adj
+likide	-	-	P:Adj
+likit	likid	-	P:Adj; +Voicing(inferred)
+limited	-	-	P:Adj
+limitet	limited	-	P:Adj; +Voicing(inferred)
+limonî	-	-	P:Adj
+lineer	-	-	P:Adj
+lirik	liriğ	-	P:Adj; +Voicing(inferred)
+lisani	-	-	P:Adj
+litografya	-	-	P:Adj
+litre	-	-	P:Adj
+logaritmik	logaritmiğ	-	P:Adj; +Voicing(inferred)
+lojik	lojiğ	-	P:Adj; +Voicing(inferred)
+lojistik	lojistiğ	-	P:Adj; +Voicing(inferred)
+lokal	-	-	P:Adj
+lop	-	-	P:Adj
+loş	-	-	P:Adj
+lustrin	-	-	P:Adj
+lutr	-	-	P:Adj
+lök	-	-	P:Adj
+löp	-	-	P:Adj
+lûtr	-	-	P:Adj; Ref:lutr_Adj
+lüks	-	-	P:Adj
+lümpen	-	-	P:Adj
+lütufkâr	-	-	P:Adj
+maceraperest	maceraperesd	-	P:Adj; +Voicing(inferred)
+madara	-	-	P:Adj
+maddî	-	-	P:Adj
+maden	-	-	P:Adj
+madenî	-	-	P:Adj
+maderzat	maderzad	-	P:Adj; +Voicing(inferred)
+maderşahî	-	-	P:Adj
+madrup	madrub	-	P:Adj; +Voicing(inferred)
+magmatik	magmatiğ	-	P:Adj; +Voicing(inferred)
+mahallî	-	-	P:Adj
+mahcup	mahcub	-	P:Adj; +Voicing(inferred)
+mahcur	-	-	P:Adj
+mahcuz	-	-	P:Adj
+mahdut	mahdud	-	P:Adj; +Voicing(inferred)
+mahfi	-	-	P:Adj
+mahfuz	-	-	P:Adj
+mahir	-	-	P:Adj
+mahirane	-	-	P:Adj
+mahkûk	mahkûğ	-	P:Adj; +Voicing(inferred)
+mahkûm	-	-	P:Adj
+mahlul	-	-	P:Adj
+mahlut	mahlud	-	P:Adj; +Voicing(inferred)
+mahmul	-	-	P:Adj
+mahmur	-	-	P:Adj
+mahpus	-	-	P:Adj
+mahrem	-	-	P:Adj
+mahrum	-	-	P:Adj
+mahrutî	-	-	P:Adj
+mahsuldar	-	-	P:Adj
+mahsup	mahsub	-	P:Adj; +Voicing(inferred)
+mahsur	-	-	P:Adj
+mahsus	-	-	P:Adj
+mahut	mahud	-	P:Adj; +Voicing(inferred)
+mahzun	-	-	P:Adj
+mahşerî	-	-	P:Adj
+mail	-	-	P:Adj
+majör	-	-	P:Adj
+makbul	-	-	P:Adj
+makro	-	-	P:Adj
+makroekonomik	makroekonomiğ	-	P:Adj; +Voicing(inferred)
+makrosefal	-	-	P:Adj
+maksi	-	-	P:Adj
+maksimal	-	i	P:Adj; A:InverseHarmony
+maksimum	-	-	P:Adj
+maksut	maksud	-	P:Adj; +Voicing(inferred)
+maktu	-	-	P:Adj
+maktul	-	-	P:Adj
+makul	-	ü	P:Adj; A:InverseHarmony
+makûs	-	-	P:Adj
+malayani	-	-	P:Adj
+malul	-	-	P:Adj
+malum	-	-	P:Adj
+malumatfuruş	-	-	P:Adj
+malumattar	-	-	P:Adj
+malî	-	-	P:Adj
+mamul	-	-	P:Adj
+mamur	-	-	P:Adj
+manevî	-	-	P:Adj
+manidar	-	-	P:Adj
+mankafa	-	-	P:Adj
+mankurt	mankurd	-	P:Adj; +Voicing(inferred)
+mantardoğuran	-	-	P:Adj
+mantıkî	-	-	P:Adj
+manuel	-	-	P:Adj
+manyak	manyağ	-	P:Adj; +Voicing(inferred)
+manyetik	manyetiğ	-	P:Adj; +Voicing(inferred)
+manyetize	-	-	P:Adj
+manzum	-	-	P:Adj
+maraz	-	-	P:Adj
+marazî	-	-	P:Adj
+marine	-	-	P:Adj
+mariz	-	-	P:Adj
+marjinal	-	-	P:Adj
+marke	-	-	P:Adj
+maroken	-	-	P:Adj
+maron	-	-	P:Adj
+marsık	marsığ	-	P:Adj; +Voicing(inferred)
+maruf	-	-	P:Adj
+maruz	-	-	P:Adj
+masabaşı	-	-	P:Adj
+masif	-	-	P:Adj
+maskara	-	-	P:Adj
+maskulen	-	-	P:Adj
+maslup	maslub	-	P:Adj; +Voicing(inferred)
+masmavi	-	-	P:Adj
+masnu	-	-	P:Adj
+masruf	-	-	P:Adj
+mastor	-	-	P:Adj
+mastur	-	-	P:Adj
+masum	-	-	P:Adj
+masun	-	-	P:Adj
+mat	-	-	P:Adj
+matah	-	-	P:Adj
+matbu	-	-	P:Adj
+matematik	matematiğ	-	P:Adj; +Voicing(inferred)
+materyalist	-	-	P:Adj;A:NoVoicing
+matiz	-	-	P:Adj
+matlup	matlub	-	P:Adj; +Voicing(inferred)
+matrak	matrağ	-	P:Adj; +Voicing(inferred)
+matriarkal	-	-	P:Adj
+matrut	matrud	-	P:Adj; +Voicing(inferred)
+matruş	-	-	P:Adj
+matuf	-	-	P:Adj
+matuh	-	-	P:Adj
+maun	-	-	P:Adj
+mavi	-	-	P:Adj
+mavimtırak	mavimtırağ	-	P:Adj; +Voicing(inferred)
+maviş	-	-	P:Adj
+mayhoş	-	-	P:Adj
+maymun	-	-	P:Adj
+mazbut	mazbud	-	P:Adj; +Voicing(inferred)
+mazhar	-	-	P:Adj
+mazi	-	-	P:Adj
+mazlum	-	-	P:Adj
+mazruf	-	-	P:Adj
+mazur	-	-	P:Adj
+mağdur	-	-	P:Adj
+mağfur	-	-	P:Adj
+mağlup	mağlub	-	P:Adj; +Voicing(inferred)
+mağmum	-	-	P:Adj
+mağrur	-	-	P:Adj
+mağşuş	-	-	P:Adj
+maşerî	-	-	P:Adj
+maşuk	maşuğ	-	P:Adj; +Voicing(inferred)
+mebni	-	-	P:Adj
+mebzul	-	-	P:Adj
+mecaz	-	-	P:Adj
+mecazî	-	-	P:Adj
+mecbur	-	-	P:Adj
+mecburi	-	-	P:Adj
+mecburî	-	-	P:Adj; Ref:mecburi_Adj
+meccanî	-	-	P:Adj
+meclisara	-	-	P:Adj
+meclup	meclub	-	P:Adj; +Voicing(inferred)
+mecmu	-	-	P:Adj
+mecnun	-	-	P:Adj
+mecnunane	-	-	P:Adj
+mecruh	-	-	P:Adj
+medenî	-	-	P:Adj
+medikal	-	i	P:Adj; A:InverseHarmony
+medyatik	medyatiğ	-	P:Adj; +Voicing(inferred)
+medyun	-	-	P:Adj
+medyunuşükran	-	-	P:Adj
+mefluç	-	-	P:Adj; A:NoVoicing
+mefret	mefred	-	P:Adj; +Voicing(inferred)
+mefruş	-	-	P:Adj
+mefsuh	-	-	P:Adj
+meftun	-	-	P:Adj
+meful	-	-	P:Adj
+mekanik	mekaniğ	-	P:Adj; +Voicing(inferred)
+mekanize	-	-	P:Adj
+meknuz	-	-	P:Adj
+mekruh	-	-	P:Adj
+melamin	-	-	P:Adj
+melankolik	melankoliğ	-	P:Adj; +Voicing(inferred)
+melez	-	-	P:Adj
+melfuf	-	-	P:Adj
+melhuz	-	-	P:Adj
+melodik	melodiğ	-	P:Adj; +Voicing(inferred)
+melodram	-	-	P:Adj
+melon	-	-	P:Adj
+melul	-	-	P:Adj
+melun	-	-	P:Adj
+memeli	-	-	P:Adj
+memnu	-	-	P:Adj
+memnun	-	-	P:Adj
+memul	-	-	P:Adj
+memur	-	-	P:Adj
+mendebur	-	-	P:Adj
+menfaatperest	menfaatperesd	-	P:Adj; +Voicing(inferred)
+menfaatperver	-	-	P:Adj
+menfaattar	-	-	P:Adj
+menfi	-	-	P:Adj
+menfur	-	-	P:Adj
+menhus	-	-	P:Adj
+menkul	-	-	P:Adj
+menkıbevi	-	-	P:Adj
+mensup	mensub	-	P:Adj; +Voicing(inferred)
+menus	-	-	P:Adj
+menşur	-	-	P:Adj
+merbut	merbud	-	P:Adj; +Voicing(inferred)
+mercan	-	-	P:Adj
+merdane	-	-	P:Adj
+merdümgiriz	-	-	P:Adj
+meret	mered	-	P:Adj; +Voicing(inferred)
+mergup	mergub	-	P:Adj; +Voicing(inferred)
+meri	-	-	P:Adj
+merinos	-	-	P:Adj
+merkezcil	-	-	P:Adj
+merkezkaç	merkezkac	-	P:Adj; +Voicing(inferred)
+merkezî	-	-	P:Adj
+merkum	-	-	P:Adj
+merkûp	merkûb	-	P:Adj; +Voicing(inferred)
+mermer	-	-	P:Adj
+merserize	-	-	P:Adj
+mert	-	-	P:Adj
+meskûn	-	-	P:Adj
+meskût	meskûd	-	P:Adj; +Voicing(inferred)
+meslekî	-	-	P:Adj
+mesmu	-	-	P:Adj
+mesrur	-	-	P:Adj
+mest	-	-	P:Adj
+mestur	-	-	P:Adj
+mesture	-	-	P:Adj
+mesul	-	-	P:Adj
+mesut	mesud	-	P:Adj; +Voicing(inferred)
+metaforik	metaforiğ	-	P:Adj; +Voicing(inferred)
+metal	-	-	P:Adj
+metalik	metaliğ	-	P:Adj; +Voicing(inferred)
+metalürjik	metalürjiğ	-	P:Adj; +Voicing(inferred)
+metamorfik	metamorfiğ	-	P:Adj; +Voicing(inferred)
+metapsişik	metapsişiğ	-	P:Adj; +Voicing(inferred)
+metbu	-	-	P:Adj
+meteorolojik	meteorolojiğ	-	P:Adj; +Voicing(inferred)
+metfun	-	-	P:Adj
+methaldar	-	-	P:Adj
+metis	-	-	P:Adj
+metodik	metodiğ	-	P:Adj; +Voicing(inferred)
+metodolojik	metodolojiğ	-	P:Adj; +Voicing(inferred)
+metrik	metriğ	-	P:Adj; +Voicing(inferred)
+metrolojik	metrolojiğ	-	P:Adj; +Voicing(inferred)
+metropoliten	-	-	P:Adj
+metroseksüel	-	-	P:Adj
+metruk	metruğ	-	P:Adj; +Voicing(inferred)
+metruke	-	-	P:Adj
+metîn	-	-	P:Adj
+mevcut	mevcud	-	P:Adj; +Voicing(inferred)
+mevdu	-	-	P:Adj
+mevhum	-	-	P:Adj
+mevkuf	-	-	P:Adj
+mevkut	mevkud	-	P:Adj; +Voicing(inferred)
+mevrut	mevrud	-	P:Adj; +Voicing(inferred)
+mevsuf	-	-	P:Adj
+mevsuk	mevsuğ	-	P:Adj; +Voicing(inferred)
+mevut	mevud	-	P:Adj; +Voicing(inferred)
+mevziî	-	-	P:Adj
+mevzubahis	-	-	P:Adj
+mevzun	-	-	P:Adj
+meydanda	-	-	P:Adj
+meymenet	-	-	P:Adj; A:NoVoicing
+meyus	-	-	P:Adj
+meyvedar	-	-	P:Adj
+meyyal	-	-	P:Adj
+mezkûr	-	-	P:Adj
+mezru	-	-	P:Adj
+mezun	-	-	P:Adj
+meçhul	-	ü	P:Adj; A:InverseHarmony
+meşbu	-	-	P:Adj
+meşe	-	-	P:Adj
+meşgul	-	-	P:Adj
+meşhur	-	-	P:Adj
+meşhut	meşhud	-	P:Adj; +Voicing(inferred)
+meşin	-	-	P:Adj
+meşkûk	meşkûğ	-	P:Adj; +Voicing(inferred)
+meşkûr	-	-	P:Adj
+meşru	-	-	P:Adj
+meşrut	meşrud	-	P:Adj; +Voicing(inferred)
+meşrutî	-	-	P:Adj
+meşum	-	-	P:Adj
+midevî	-	-	P:Adj
+midi	-	-	P:Adj
+mihaniki	-	-	P:Adj
+mihman	-	-	P:Adj
+mihver	-	-	P:Adj
+mika	-	-	P:Adj
+mikro	-	-	P:Adj
+mikrobik	mikrobiğ	-	P:Adj; +Voicing(inferred)
+mikrobiyolojik	mikrobiyolojiğ	-	P:Adj; +Voicing(inferred)
+mikroekonomik	mikroekonomiğ	-	P:Adj; +Voicing(inferred)
+mikrofonik	mikrofoniğ	-	P:Adj; +Voicing(inferred)
+mikrosefal	-	-	P:Adj
+mikroskobik	mikroskobiğ	-	P:Adj; +Voicing(inferred)
+milimetrik	milimetriğ	-	P:Adj; +Voicing(inferred)
+milletlerarası	-	-	P:Adj
+milletsever	-	-	P:Adj
+milliyetperver	-	-	P:Adj
+milliyetsever	-	-	P:Adj
+millî	-	-	P:Adj
+milyarder	-	-	P:Adj
+milyarlarca	-	-	P:Adj
+milyonlarca	-	-	P:Adj
+milâdî	-	-	P:Adj
+mimarî	-	-	P:Adj
+mineral	-	-	P:Adj
+mini	-	-	P:Adj
+minicik	miniciğ	-	P:Adj; +Voicing(inferred)
+minik	miniğ	-	P:Adj; A:Voicing
+minimal	-	-	P:Adj
+minimini	-	-	P:Adj
+minimum	-	-	P:Adj
+minnacık	minnacığ	-	P:Adj; +Voicing(inferred)
+minnettar	-	-	P:Adj
+minyon	-	-	P:Adj
+minör	-	-	P:Adj
+mirî	-	-	P:Adj
+misafirperver	-	-	P:Adj
+miskin	-	-	P:Adj
+mistik	mistiğ	-	P:Adj; +Voicing(inferred)
+mitolojik	mitolojiğ	-	P:Adj; +Voicing(inferred)
+mitral	-	-	P:Adj
+miyop	miyob	-	P:Adj; +Voicing(inferred)
+miyosen	-	-	P:Adj
+mizahî	-	-	P:Adj
+mizantrop	mizantrob	-	P:Adj; +Voicing(inferred)
+mizaçgir	-	-	P:Adj
+mobil	-	-	P:Adj
+mobilize	-	-	P:Adj
+moda	-	-	P:Adj
+modern	-	-	P:Adj
+modernize	-	-	P:Adj
+modüler	-	-	P:Adj
+moher	-	-	P:Adj
+moleküler	-	-	P:Adj
+moloz	-	-	P:Adj
+monarşik	monarşiğ	-	P:Adj; +Voicing(inferred)
+monarşist	-	-	P:Adj; A:NoVoicing
+monden	-	-	P:Adj
+monist	-	-	P:Adj; A:NoVoicing
+monogam	-	-	P:Adj
+monoteist	-	-	P:Adj; A:NoVoicing
+monoton	-	-	P:Adj
+monşer	-	-	P:Adj
+mor	-	-	P:Adj
+moralist	-	-	P:Adj; A:NoVoicing
+morfolojik	morfolojiğ	-	P:Adj; +Voicing(inferred)
+moruk	moruğ	-	P:Adj; +Voicing(inferred)
+morumtırak	morumtırağ	-	P:Adj; +Voicing(inferred)
+mosmor	-	-	P:Adj
+motamot	motamod	-	P:Adj; +Voicing(inferred)
+motorize	-	-	P:Adj
+mozaik	mozaiğ	-	P:Adj; +Voicing(inferred)
+muaccel	-	-	P:Adj
+muacciz	-	-	P:Adj
+muaddel	-	-	P:Adj
+muadil	-	-	P:Adj
+muaf	-	-	P:Adj
+muahhar	-	-	P:Adj
+muakkip	muakkib	-	P:Adj; +Voicing(inferred)
+mualla	-	-	P:Adj
+muallel	-	-	P:Adj
+muallâk	muallâğ	-	P:Adj; +Voicing(inferred)
+muamma	-	-	P:Adj
+muammer	-	-	P:Adj
+muannit	muannid	-	P:Adj; +Voicing(inferred)
+muare	-	-	P:Adj
+muarız	-	-	P:Adj
+muasır	-	-	P:Adj
+muattal	-	-	P:Adj
+muattar	-	-	P:Adj
+muayyen	-	-	P:Adj
+muazzam	-	-	P:Adj
+muazzep	muazzeb	-	P:Adj; +Voicing(inferred)
+muazzez	-	-	P:Adj
+mucip	mucib	-	P:Adj; +Voicing(inferred)
+mucit	mucid	-	P:Adj; +Voicing(inferred)
+mucize	-	-	P:Adj
+mucizevi	-	-	P:Adj
+mufassal	-	-	P:Adj
+mugaddi	-	-	P:Adj
+mugayir	-	-	P:Adj
+muhacir	-	-	P:Adj
+muhaddep	muhaddeb	-	P:Adj; +Voicing(inferred)
+muhafazakâr	-	-	P:Adj
+muhakkak	-	-	P:Adj;A:NoVoicing
+muhakkik	muhakkiğ	-	P:Adj; +Voicing(inferred)
+muhal	-	-	P:Adj
+muhalif	-	-	P:Adj
+muhammen	-	-	P:Adj
+muhammes	-	-	P:Adj
+muhammin	-	-	P:Adj
+muharrer	-	-	P:Adj
+muharrik	muharriğ	-	P:Adj; +Voicing(inferred)
+muharriş	-	-	P:Adj
+muhassas	-	-	P:Adj
+muhat	-	-	P:Adj; A:NoVoicing
+muhavvil	-	-	P:Adj
+muhayyel	-	-	P:Adj
+muhayyer	-	-	P:Adj
+muhik	muhiğ	-	P:Adj; +Voicing(inferred)
+muhil	-	-	P:Adj
+muhip	muhib	-	P:Adj; +Voicing(inferred)
+muhkem	-	-	P:Adj
+muhlis	-	-	P:Adj
+muhrik	muhriğ	-	P:Adj; +Voicing(inferred)
+muhtar	-	-	P:Adj
+muhtasar	-	-	P:Adj
+muhtaç	muhtac	-	P:Adj; +Voicing(inferred)
+muhtekir	-	-	P:Adj
+muhtel	-	-	P:Adj
+muhtelif	-	-	P:Adj
+muhtelis	-	-	P:Adj
+muhtelit	muhtelid	-	P:Adj; +Voicing(inferred)
+muhtemel	-	-	P:Adj
+muhterem	-	-	P:Adj
+muhteri	-	-	P:Adj
+muhteris	-	-	P:Adj
+muhteriz	-	-	P:Adj
+muhtevi	-	-	P:Adj
+muhteşem	-	-	P:Adj
+mukaar	-	-	P:Adj
+mukabil	-	-	P:Adj
+mukaddem	-	-	P:Adj
+mukadder	-	-	P:Adj
+mukaddes	-	-	P:Adj
+mukaffa	-	-	P:Adj
+mukannen	-	-	P:Adj
+mukarrer	-	-	P:Adj
+mukassem	-	-	P:Adj
+mukassi	-	-	P:Adj
+mukattar	-	-	P:Adj
+mukavim	-	-	P:Adj
+mukavves	-	-	P:Adj
+mukavvi	-	-	P:Adj
+mukayyet	mukayyed	-	P:Adj; +Voicing(inferred)
+mukim	-	-	P:Adj
+mukni	-	-	P:Adj
+mukriz	-	-	P:Adj
+muktebes	-	-	P:Adj
+muktedir	-	-	P:Adj
+muktesit	muktesid	-	P:Adj; +Voicing(inferred)
+mukteza	-	-	P:Adj
+muktezi	-	-	P:Adj
+multimilyoner	-	-	P:Adj
+multipleks	-	-	P:Adj
+mundar	-	-	P:Adj
+munfasıl	-	-	P:Adj
+munis	-	-	P:Adj
+munkabız	-	-	P:Adj
+munkalip	munkalib	-	P:Adj; +Voicing(inferred)
+munsap	munsab	-	P:Adj; +Voicing(inferred)
+muntazam	-	-	P:Adj
+muntazır	-	-	P:Adj
+munzam	-	-	P:Adj
+murabba	-	-	P:Adj
+murassa	-	-	P:Adj
+murdar	-	-	P:Adj
+muris	-	-	P:Adj
+musaddak	musaddağ	-	P:Adj; +Voicing(inferred)
+musaffa	-	-	P:Adj
+musallat	musallad	-	P:Adj; +Voicing(inferred)
+musalli	-	-	P:Adj
+musanna	-	-	P:Adj
+musap	musab	-	P:Adj; +Voicing(inferred)
+musavver	-	-	P:Adj
+musibet	musibed	-	P:Adj; +Voicing(inferred)
+musikişinas	-	-	P:Adj
+muslin	-	-	P:Adj
+mustarip	mustarib	-	P:Adj; +Voicing(inferred)
+musır	-	-	P:Adj
+mutaassıp	mutaassıb	-	P:Adj; +Voicing(inferred)
+mutabık	-	-	P:Adj; A:NoVoicing
+mutantan	-	-	P:Adj
+mutasarrıf	-	-	P:Adj
+mutasavver	-	-	P:Adj
+mutasyonist	-	-	P:Adj; A:NoVoicing
+mutat	-	-	P:Adj; A:NoVoicing
+mutavaat	mutavaad	-	P:Adj; +Voicing(inferred)
+mutazarrır	-	-	P:Adj
+muteber	-	-	P:Adj
+mutedil	-	-	P:Adj
+mutekit	mutekid	-	P:Adj; +Voicing(inferred)
+mutena	-	-	P:Adj
+muteriz	-	-	P:Adj
+muti	-	-	P:Adj
+mutlak	-	-	P:Adj; A:NoVoicing
+mutlu	-	-	P:Adj
+mutmain	-	-	P:Adj
+mutsuz	-	-	P:Adj
+muttali	-	-	P:Adj
+muttarit	muttarid	-	P:Adj; +Voicing(inferred)
+muttasıf	-	-	P:Adj
+muttasıl	-	-	P:Adj
+muvaffak	muvaffağ	-	P:Adj; +Voicing(inferred)
+muvafık	muvafığ	-	P:Adj; +Voicing(inferred)
+muvahhit	muvahhid	-	P:Adj; +Voicing(inferred)
+muvakkat	-	i	P:Adj; A:InverseHarmony, NoVoicing
+muvazi	-	-	P:Adj
+muvazzaf	-	-	P:Adj
+muzaffer	-	-	P:Adj
+muzdarip	-	-	P:Adj; A:NoVoicing
+muzip	muzib	-	P:Adj; +Voicing(inferred)
+muzlim	-	-	P:Adj
+muzmahil	-	-	P:Adj
+muzur	-	-	P:Adj
+muzır	-	-	P:Adj
+muğber	-	-	P:Adj
+muşamba	-	-	P:Adj
+mübadil	-	-	P:Adj
+mübah	-	-	P:Adj
+mübarek	mübareğ	-	P:Adj; +Voicing(inferred)
+mübeşşir	-	-	P:Adj
+mübrem	-	-	P:Adj
+mücavir	-	-	P:Adj
+mücbir	-	-	P:Adj
+mücehhez	-	-	P:Adj
+mücerrep	mücerreb	-	P:Adj; +Voicing(inferred)
+mücerret	mücerred	-	P:Adj; +Voicing(inferred)
+mücessem	-	-	P:Adj
+mücmel	-	-	P:Adj
+mücrim	-	-	P:Adj
+müdahil	-	-	P:Adj
+müdavi	-	-	P:Adj
+müdavim	-	-	P:Adj
+müddea	-	-	P:Adj
+müddei	-	-	P:Adj
+müddeialeyh	-	-	P:Adj
+müddeiumumî	-	-	P:Adj
+müdebbir	-	-	P:Adj
+müdellel	-	-	P:Adj
+müdevven	-	-	P:Adj
+müdevver	-	-	P:Adj
+müdrik	müdriğ	-	P:Adj; +Voicing(inferred)
+müdrir	-	-	P:Adj
+müebbet	müebbed	-	P:Adj; +Voicing(inferred)
+müeccel	-	-	P:Adj
+müeddep	müeddeb	-	P:Adj; +Voicing(inferred)
+müemmen	-	-	P:Adj
+müennes	-	-	P:Adj
+müesses	-	-	P:Adj
+müessif	-	-	P:Adj
+müessir	-	-	P:Adj
+müessis	-	-	P:Adj
+müferrih	-	-	P:Adj
+müfessir	-	-	P:Adj
+müfit	müfid	-	P:Adj; +Voicing(inferred)
+müflis	-	-	P:Adj
+müfrez	-	-	P:Adj
+müfrit	müfrid	-	P:Adj; +Voicing(inferred)
+müfsit	müfsid	-	P:Adj; +Voicing(inferred)
+müft	-	-	P:Adj
+müftehir	-	-	P:Adj
+müfteri	-	-	P:Adj
+müheyya	-	-	P:Adj
+müheyyiç	müheyyic	-	P:Adj; +Voicing(inferred)
+mühim	-	-	P:Adj
+mühlik	mühliğ	-	P:Adj; +Voicing(inferred)
+mühmel	-	-	P:Adj
+mühtedi	-	-	P:Adj
+mükedder	-	-	P:Adj
+mükellef	-	-	P:Adj
+mükemmel	-	-	P:Adj
+mükerrer	-	-	P:Adj
+mükrim	-	-	P:Adj
+müktesep	mükteseb	-	P:Adj; +Voicing(inferred)
+mülahham	-	-	P:Adj
+mülaki	-	-	P:Adj
+mülayim	-	-	P:Adj
+mülazım	-	-	P:Adj
+mülemma	-	-	P:Adj
+mülevven	-	-	P:Adj
+mülevves	-	-	P:Adj
+müleyyin	-	-	P:Adj
+mülga	-	-	P:Adj
+mülhak	mülhağ	-	P:Adj; +Voicing(inferred)
+mülhem	-	-	P:Adj
+mülhit	mülhid	-	P:Adj; +Voicing(inferred)
+mülkî	-	-	P:Adj
+mültefit	mültefid	-	P:Adj; +Voicing(inferred)
+mümas	-	-	P:Adj
+mümasil	-	-	P:Adj
+mümbit	mümbid	-	P:Adj; +Voicing(inferred)
+mümeyyiz	-	-	P:Adj
+mümin	-	-	P:Adj
+mümkün	-	-	P:Adj
+mümtaz	-	-	P:Adj
+mümteni	-	-	P:Adj
+münafık	münafığ	-	P:Adj; +Voicing(inferred)
+münasip	münasib	-	P:Adj; +Voicing(inferred)
+müncer	-	-	P:Adj
+mündemiç	mündemic	-	P:Adj; +Voicing(inferred)
+münderiç	münderic	-	P:Adj; +Voicing(inferred)
+münebbih	-	-	P:Adj
+münevver	-	-	P:Adj
+münezzeh	-	-	P:Adj
+münfail	-	-	P:Adj
+münferit	münferid	-	P:Adj; +Voicing(inferred)
+münfesih	-	-	P:Adj
+münhal	-	-	P:Adj
+münhani	-	-	P:Adj
+münharif	-	-	P:Adj
+münhasır	-	-	P:Adj
+münhat	münhad	-	P:Adj; +Voicing(inferred)
+münhezim	-	-	P:Adj
+münkesir	-	-	P:Adj
+münkir	-	-	P:Adj
+münteha	-	-	P:Adj
+müntehap	müntehab	-	P:Adj; +Voicing(inferred)
+müntehir	-	-	P:Adj
+müntesip	müntesib	-	P:Adj; +Voicing(inferred)
+münteşir	-	-	P:Adj
+münzevi	-	-	P:Adj
+münşi	-	-	P:Adj
+müphem	-	-	P:Adj
+müptedi	-	-	P:Adj
+müptezel	-	-	P:Adj
+müradif	-	-	P:Adj
+mürai	-	-	P:Adj
+müreccah	-	-	P:Adj
+müreffeh	-	-	P:Adj
+mürekkep	mürekkeb	-	P:Adj; +Voicing(inferred)
+mürettep	müretteb	-	P:Adj; +Voicing(inferred)
+mürettip	mürettib	-	P:Adj; +Voicing(inferred)
+mürt	-	-	P:Adj
+mürteci	-	-	P:Adj
+mürtefi	-	-	P:Adj
+mürtekip	mürtekib	-	P:Adj; +Voicing(inferred)
+mürtet	mürted	-	P:Adj; +Voicing(inferred)
+müsabık	müsabığ	-	P:Adj; +Voicing(inferred)
+müsadif	-	-	P:Adj
+müsait	-	-	P:Adj; A:NoVoicing
+müsamahakâr	-	-	P:Adj
+müsavi	-	-	P:Adj
+müsebbip	müsebbib	-	P:Adj; +Voicing(inferred)
+müseccel	-	-	P:Adj
+müsekkin	-	-	P:Adj
+müsellem	-	-	P:Adj
+müselles	-	-	P:Adj
+müselsel	-	-	P:Adj
+müsemma	-	-	P:Adj
+müsemmen	-	-	P:Adj
+müsmir	-	-	P:Adj
+müspet	-	-	P:Adj; A:NoVoicing
+müsrif	-	-	P:Adj
+müstacel	-	-	P:Adj
+müstafi	-	-	P:Adj
+müstahak	müstahağ	-	P:Adj; +Voicing(inferred)
+müstahkem	-	-	P:Adj
+müstahsil	-	-	P:Adj
+müstahzar	-	-	P:Adj
+müstait	müstaid	-	P:Adj; +Voicing(inferred)
+müstakar	-	-	P:Adj
+müstakbel	-	-	P:Adj
+müstakil	-	-	P:Adj
+müstakim	-	-	P:Adj
+müstamel	-	-	P:Adj
+müstağni	-	-	P:Adj
+müstear	-	-	P:Adj
+müstebat	-	-	P:Adj ; A:NoVoicing
+müstebit	müstebid	-	P:Adj; +Voicing(inferred)
+müstefit	müstefid	-	P:Adj; +Voicing(inferred)
+müstehcen	-	-	P:Adj
+müstehzi	-	-	P:Adj
+müstekreh	-	-	P:Adj
+müstelzim	-	-	P:Adj
+müstenit	müstenid	-	P:Adj; +Voicing(inferred)
+müstenkif	-	-	P:Adj
+müsterih	-	-	P:Adj
+müstesna	-	-	P:Adj
+müstevi	-	-	P:Adj
+müstevli	-	-	P:Adj
+müteaddi	-	-	P:Adj
+müteaddit	müteaddid	-	P:Adj; +Voicing(inferred)
+müteaffin	-	-	P:Adj
+müteakip	müteakib	-	P:Adj; +Voicing(inferred)
+müteallik	mütealliğ	-	P:Adj; +Voicing(inferred)
+müteammim	-	-	P:Adj
+mütebahhir	-	-	P:Adj
+mütebaki	-	-	P:Adj
+mütebasbıs	-	-	P:Adj
+mütebeddil	-	-	P:Adj
+mütebessim	-	-	P:Adj
+mütecanis	-	-	P:Adj
+mütecasir	-	-	P:Adj
+mütecaviz	-	-	P:Adj
+mütecessis	-	-	P:Adj
+mütedair	-	-	P:Adj
+mütedavil	-	-	P:Adj
+mütedeyyin	-	-	P:Adj
+müteessif	-	-	P:Adj
+müteessir	-	-	P:Adj
+müteferrik	müteferriğ	-	P:Adj; +Voicing(inferred)
+mütegallibe	-	-	P:Adj
+mütehakkim	-	-	P:Adj
+mütehammil	-	-	P:Adj
+müteharrik	müteharriğ	-	P:Adj; +Voicing(inferred)
+mütehassis	-	-	P:Adj
+mütehassıs	-	-	P:Adj
+mütehavvil	-	-	P:Adj
+mütehayyir	-	-	P:Adj
+mütehevvir	-	-	P:Adj
+müteheyyiç	müteheyyic	-	P:Adj; +Voicing(inferred)
+mütekabil	-	-	P:Adj
+mütekait	mütekaid	-	P:Adj; +Voicing(inferred)
+mütekebbir	-	-	P:Adj
+mütekellim	-	-	P:Adj
+mütekâmil	-	-	P:Adj
+mütekâsif	-	-	P:Adj
+mütelezziz	-	-	P:Adj
+mütemadi	-	-	P:Adj
+mütemayil	-	-	P:Adj
+mütemayiz	-	-	P:Adj
+mütemekkin	-	-	P:Adj
+mütemerkiz	-	-	P:Adj
+mütemmim	-	-	P:Adj
+mütenakıs	-	-	P:Adj
+mütenakız	-	-	P:Adj
+mütenasip	mütenasib	-	P:Adj; +Voicing(inferred)
+mütenavip	mütenavib	-	P:Adj; +Voicing(inferred)
+mütenazır	-	-	P:Adj
+mütenebbih	-	-	P:Adj
+müteneffir	-	-	P:Adj
+mütenekkir	-	-	P:Adj
+mütenevvi	-	-	P:Adj
+müteradif	-	-	P:Adj
+müterakim	-	-	P:Adj
+müterakki	-	-	P:Adj
+mütercem	-	-	P:Adj
+mütereddi	-	-	P:Adj
+mütereddit	mütereddid	-	P:Adj; +Voicing(inferred)
+mütesanit	mütesanid	-	P:Adj; +Voicing(inferred)
+müteselli	-	-	P:Adj
+müteselsil	-	-	P:Adj
+mütetebbi	-	-	P:Adj
+mütevakkıf	-	-	P:Adj
+mütevali	-	-	P:Adj
+mütevazi	-	-	P:Adj
+mütevazin	-	-	P:Adj
+mütevazı	-	-	P:Adj
+müteveccih	-	-	P:Adj
+mütevehhim	-	-	P:Adj
+mütevekkil	-	-	P:Adj
+mütevellit	mütevellid	-	P:Adj; +Voicing(inferred)
+müteverrim	-	-	P:Adj
+müteyakkız	-	-	P:Adj
+mütezayit	mütezayid	-	P:Adj; +Voicing(inferred)
+müteşekkil	-	-	P:Adj
+müteşekkir	-	-	P:Adj
+müthiş	-	-	P:Adj
+müttefik	müttefiğ	-	P:Adj; +Voicing(inferred)
+müttehit	müttehid	-	P:Adj; +Voicing(inferred)
+müvesvis	-	-	P:Adj
+müyesser	-	-	P:Adj
+müzahir	-	-	P:Adj
+müzebzep	müzebzeb	-	P:Adj; +Voicing(inferred)
+müzehhep	müzehheb	-	P:Adj; +Voicing(inferred)
+müzekker	-	-	P:Adj
+müzevir	-	-	P:Adj
+müzeyyen	-	-	P:Adj
+müzikal	-	-	P:Adj
+müziksever	-	-	P:Adj
+müziç	müzic	-	P:Adj; +Voicing(inferred)
+müzmin	-	-	P:Adj
+müşabih	-	-	P:Adj
+müşahhas	-	-	P:Adj
+müşebbeh	-	-	P:Adj
+müşekkel	-	-	P:Adj
+müşerref	-	-	P:Adj
+müşevveş	-	-	P:Adj
+müşevvik	müşevviğ	-	P:Adj; +Voicing(inferred)
+müşfik	müşfiğ	-	P:Adj; +Voicing(inferred)
+müşir	-	-	P:Adj
+müşkül	-	-	P:Adj
+müşkülpesent	müşkülpesend	-	P:Adj; +Voicing(inferred)
+müşrik	müşriğ	-	P:Adj; +Voicing(inferred)
+müştak	müştağ	-	P:Adj; +Voicing(inferred)
+müştehi	-	-	P:Adj
+müşteki	-	-	P:Adj
+müşterek	müştereğ	-	P:Adj; +Voicing(inferred)
+mıhsıçtı	-	-	P:Adj
+mıknatısî	-	-	P:Adj
+mıncırık	mıncırığ	-	P:Adj; +Voicing(inferred)
+mırmırık	mırmırığ	-	P:Adj; +Voicing(inferred)
+mısmıl	-	-	P:Adj
+mıymıntı	-	-	P:Adj
+mızmız	-	-	P:Adj
+mızıkçı	-	-	P:Adj
+nabekâr	-	-	P:Adj
+nadan	-	-	P:Adj
+nadide	-	-	P:Adj
+nadim	-	-	P:Adj
+nadir	-	-	P:Adj
+nafi	-	-	P:Adj
+nafile	-	-	P:Adj
+nafiz	-	-	P:Adj
+nahak	nahağ	-	P:Adj; +Voicing(inferred)
+nahif	-	-	P:Adj
+nahoş	-	-	P:Adj
+naif	-	-	P:Adj
+nail	-	-	P:Adj
+nakdî	-	-	P:Adj
+naklî	-	-	P:Adj
+nakıs	-	-	P:Adj
+nalan	-	-	P:Adj
+nalayık	nalayığ	-	P:Adj; +Voicing(inferred)
+namahrem	-	-	P:Adj
+namağlup	namağlub	-	P:Adj; +Voicing(inferred)
+namdar	-	-	P:Adj
+namert	namerd	-	P:Adj; +Voicing(inferred)
+namevcut	namevcud	-	P:Adj; +Voicing(inferred)
+namuskâr	-	-	P:Adj
+namünasip	namünasib	-	P:Adj; +Voicing(inferred)
+namüsait	namüsaid	-	P:Adj; +Voicing(inferred)
+namütenahi	-	-	P:Adj
+nanemolla	-	-	P:Adj
+nankör	-	-	P:Adj
+nanoteknolojik	nanoteknolojiğ	-	P:Adj; +Voicing(inferred)
+narin	-	-	P:Adj
+narkotik	narkotiğ	-	P:Adj; +Voicing(inferred)
+narsist	-	-	P:Adj; A:NoVoicing
+narçiçeği	-	-	P:Adj
+nasıl	-	-	P:Adj
+natamam	-	-	P:Adj
+nato	-	-	P:Adj
+natuk	natuğ	-	P:Adj; +Voicing(inferred)
+natüralist	-	-	P:Adj; A:NoVoicing
+natürel	-	-	P:Adj
+natürist	-	-	P:Adj; A:NoVoicing
+naylon	-	-	P:Adj
+nazal	-	-	P:Adj
+nazarî	-	-	P:Adj
+nazenin	-	-	P:Adj
+nazik	naziğ	-	P:Adj; +Voicing(inferred)
+nazil	-	-	P:Adj
+nazir	-	-	P:Adj
+nazır	-	-	P:Adj
+naçar	-	-	P:Adj
+naçiz	-	-	P:Adj
+naşir	-	-	P:Adj
+ne	-	-	P:Adj
+nebatî	-	-	P:Adj
+nebevî	-	-	P:Adj
+necip	necib	-	P:Adj; +Voicing(inferred)
+nefis	-	-	P:Adj
+nefsanî	-	-	P:Adj
+neftî	-	-	P:Adj
+negatif	-	-	P:Adj
+neharî	-	-	P:Adj
+nekes	-	-	P:Adj
+nekre	-	-	P:Adj
+nekrofil	-	-	P:Adj
+nekrotik	nekrotiğ	-	P:Adj; +Voicing(inferred)
+nemcil	-	-	P:Adj
+nemrut	nemrud	-	P:Adj; +Voicing(inferred)
+nemçeker	-	-	P:Adj
+neojen	-	-	P:Adj
+neoklasik	neoklasiğ	-	P:Adj; +Voicing(inferred)
+neolitik	neolitiğ	-	P:Adj; +Voicing(inferred)
+neozoik	neozoiğ	-	P:Adj; +Voicing(inferred)
+neritik	neritiğ	-	P:Adj; +Voicing(inferred)
+nesnel	-	-	P:Adj
+net	-	-	P:Adj
+nevmit	nevmid	-	P:Adj; +Voicing(inferred)
+nevraljik	nevraljiğ	-	P:Adj; +Voicing(inferred)
+nevrotik	nevrotiğ	-	P:Adj; +Voicing(inferred)
+nevyunanî	-	-	P:Adj
+nezih	-	-	P:Adj
+nice	-	-	P:Adj
+nicel	-	-	P:Adj
+nihan	-	-	P:Adj
+nihaî	-	-	P:Adj
+nihilist	-	-	P:Adj; A:NoVoicing
+nikbin	-	-	P:Adj
+nim	-	-	P:Adj
+nimetşinas	-	-	P:Adj
+nisaî	-	-	P:Adj
+nispî	-	-	P:Adj
+nitel	-	-	P:Adj
+nizamî	-	-	P:Adj
+nobran	-	-	P:Adj
+nohudî	-	-	P:Adj
+noksan	-	-	P:Adj
+nominal	-	-	P:Adj
+nonfigüratif	-	-	P:Adj
+normal	-	-	P:Adj
+normalaltı	-	-	P:Adj
+normalüstü	-	-	P:Adj
+normatif	-	-	P:Adj
+nostaljik	nostaljiğ	-	P:Adj; +Voicing(inferred)
+numerik	numeriğ	-	P:Adj; +Voicing(inferred)
+nuranî	-	-	P:Adj
+nâkil	-	-	P:Adj
+nârıbeyza	-	-	P:Adj
+nâzım	-	-	P:Adj
+nörolojik	nörolojiğ	-	P:Adj; +Voicing(inferred)
+nörotik	nörotiğ	-	P:Adj; +Voicing(inferred)
+nötr	-	-	P:Adj
+nü	-	-	P:Adj
+nüdist	-	-	P:Adj;A:NoVoicing
+nüfuzkâr	-	-	P:Adj
+nükleer	-	-	P:Adj
+nüktedan	-	-	P:Adj
+nümayişkâr	-	-	P:Adj
+nüsha	-	-	P:Adj
+o	-	-	P:Adj
+obez	-	-	P:Adj
+objektif	-	-	P:Adj
+objektivist	-	-	P:Adj;A:NoVoicing
+obruk	obruğ	-	P:Adj; +Voicing(inferred)
+obsesif	-	-	P:Adj
+obur	-	-	P:Adj
+odalık	odalığ	-	P:Adj; +Voicing(inferred)
+odun	-	-	P:Adj
+odyovizüel	-	-	P:Adj
+ofans	-	-	P:Adj
+ofansif	-	-	P:Adj
+oflaz	-	-	P:Adj
+okazyon	-	-	P:Adj
+okunaklı	-	-	P:Adj
+okunaksız	-	-	P:Adj
+okuryazar	-	-	P:Adj
+olanca	-	-	P:Adj
+olası	-	-	P:Adj
+olağan	-	-	P:Adj
+olağanüstü	-	-	P:Adj
+oldurgan	-	-	P:Adj
+olgun	-	-	P:Adj
+olimpik	-	-	P:Adj; A:NoVoicing
+olmadık	olmadığ	-	P:Adj; +Voicing(inferred)
+olmaz	-	-	P:Adj
+olumlu	-	-	P:Adj
+olumsuz	-	-	P:Adj
+olur	-	-	P:Adj
+oluşuk	oluşuğ	-	P:Adj; +Voicing(inferred)
+onat	-	-	P:Adj; A:NoVoicing
+onca	-	-	P:Adj
+ondüle	-	-	P:Adj
+ongun	-	-	P:Adj
+onkolojik	onkolojiğ	-	P:Adj; +Voicing(inferred)
+onlarca	-	-	P:Adj
+onmadık	onmadığ	-	P:Adj; +Voicing(inferred)
+onomatopeik	onomatopeiğ	-	P:Adj; +Voicing(inferred)
+ontolojik	ontolojiğ	-	P:Adj; +Voicing(inferred)
+opak	opağ	-	P:Adj; +Voicing(inferred)
+operasyonel	-	-	P:Adj
+opsiyonel	-	-	P:Adj
+optik	optiğ	-	P:Adj; +Voicing(inferred)
+optimal	-	-	P:Adj
+optimist	-	-	P:Adj;A:NoVoicing
+optimum	-	-	P:Adj
+oral	-	-	P:Adj
+ordubozan	-	-	P:Adj
+organik	organiğ	-	P:Adj; +Voicing(inferred)
+organize	-	-	P:Adj
+organtin	-	-	P:Adj
+organze	-	-	P:Adj
+orijinal	-	-	P:Adj
+orlon	-	-	P:Adj
+orta	-	-	P:Adj
+ortak	ortağ	-	P:Adj; +Voicing(inferred)
+ortakyaşar	-	-	P:Adj
+ortalama	-	-	P:Adj
+ortanca	-	-	P:Adj
+ortay	-	-	P:Adj
+ortopedik	ortopediğ	-	P:Adj; +Voicing(inferred)
+oryantal	-	-	P:Adj
+osurgan	-	-	P:Adj
+ot	-	-	P:Adj
+otantik	otantiğ	-	P:Adj; +Voicing(inferred)
+otistik	otistiğ	-	P:Adj; +Voicing(inferred)
+otobiyografik	otobiyografiğ	-	P:Adj; +Voicing(inferred)
+otobur	-	-	P:Adj
+otodidakt	otodidakd	-	P:Adj; +Voicing(inferred)
+otograf	-	-	P:Adj
+otokrat	otokrad	-	P:Adj; +Voicing(inferred)
+otokratik	otokratiğ	-	P:Adj; +Voicing(inferred)
+otokton	-	-	P:Adj
+otomatik	otomatiğ	-	P:Adj; +Voicing(inferred)
+otonom	-	-	P:Adj
+otoriter	-	-	P:Adj
+ototrof	-	-	P:Adj
+otsul	-	-	P:Adj
+oturak	oturağ	-	P:Adj; +Voicing(inferred)
+otçul	-	-	P:Adj
+oval	-	-	P:Adj
+oylum	-	-	P:Adj
+oynak	oynağ	-	P:Adj; +Voicing(inferred)
+oyunbaz	-	-	P:Adj
+oyunbozan	-	-	P:Adj
+oğuz	-	-	P:Adj
+padişahi	-	-	P:Adj
+pagan	-	-	P:Adj
+pahal	-	-	P:Adj
+pahalı	-	-	P:Adj
+pak	-	-	P:Adj
+paket	paked	-	P:Adj; +Voicing(inferred)
+palas	-	-	P:Adj
+paleontolojik	paleontolojiğ	-	P:Adj; +Voicing(inferred)
+paleozoik	paleozoiğ	-	P:Adj; +Voicing(inferred)
+palmitik	palmitiğ	-	P:Adj; +Voicing(inferred)
+palyatif	-	-	P:Adj
+pamuk	pamuğ	-	P:Adj; +Voicing(inferred)
+panoramik	panoramiğ	-	P:Adj; +Voicing(inferred)
+panteist	-	-	P:Adj;A:NoVoicing
+papazi	-	-	P:Adj
+parabolik	paraboliğ	-	P:Adj; +Voicing(inferred)
+paradoksal	-	-	P:Adj
+paragöz	-	-	P:Adj
+paralel	-	-	P:Adj
+paralojik	paralojiğ	-	P:Adj; +Voicing(inferred)
+parametrik	parametriğ	-	P:Adj; +Voicing(inferred)
+paramparça	-	-	P:Adj
+paranoyak	paranoyağ	-	P:Adj; +Voicing(inferred)
+parapsikolojik	parapsikolojiğ	-	P:Adj; +Voicing(inferred)
+parasempatik	parasempatiğ	-	P:Adj; +Voicing(inferred)
+paravan	-	-	P:Adj
+parlak	parlağ	-	P:Adj; +Voicing(inferred)
+parmak	parmağ	-	P:Adj; +Voicing(inferred)
+partal	-	-	P:Adj
+partilerüstü	-	-	P:Adj
+pasif	-	-	P:Adj
+paskal	-	-	P:Adj
+paslanmaz	-	-	P:Adj
+paspal	-	-	P:Adj
+pastel	-	-	P:Adj
+pastoral	-	-	P:Adj
+pastörize	-	-	P:Adj
+patavatsız	-	-	P:Adj
+patetik	patetiğ	-	P:Adj; +Voicing(inferred)
+patiska	-	-	P:Adj
+patlak	patlağ	-	P:Adj; +Voicing(inferred)
+patlıcanî	-	-	P:Adj
+patojen	-	-	P:Adj
+patolojik	patolojiğ	-	P:Adj; +Voicing(inferred)
+patriarkal	-	-	P:Adj
+payen	-	-	P:Adj
+payidar	-	-	P:Adj
+paytak	paytağ	-	P:Adj; +Voicing(inferred)
+paçarız	-	-	P:Adj
+paşa	-	-	P:Adj
+pedagojik	pedagojiğ	-	P:Adj; +Voicing(inferred)
+pederşahî	-	-	P:Adj
+pediyatrik	pediyatriğ	-	P:Adj; +Voicing(inferred)
+pejmürde	-	-	P:Adj
+pejoratif	-	-	P:Adj
+pek	-	-	P:Adj
+pekiyi	-	-	P:Adj
+pekmezkefi	-	-	P:Adj
+pekmezköpüğü	-	-	P:Adj
+pektoral	-	-	P:Adj
+pekâlâ	-	-	P:Adj
+peltek	pelteğ	-	P:Adj; +Voicing(inferred)
+pembe	-	-	P:Adj
+pembemtırak	pembemtırağ	-	P:Adj; +Voicing(inferred)
+pembezar	-	-	P:Adj
+penye	-	-	P:Adj
+pepe	-	-	P:Adj
+pepeme	-	-	P:Adj
+perakende	-	-	P:Adj
+perestişkâr	-	-	P:Adj
+perhizkâr	-	-	P:Adj
+periyodik	periyodiğ	-	P:Adj; +Voicing(inferred)
+perişan	-	-	P:Adj
+pervane	-	-	P:Adj
+pes	-	-	P:Adj
+pesimist	-	-	P:Adj;A:NoVoicing
+pespaye	-	-	P:Adj
+pespembe	-	-	P:Adj
+pest	-	-	P:Adj
+pestenkerani	-	-	P:Adj
+pestil	-	-	P:Adj
+petrolojik	petrolojiğ	-	P:Adj; +Voicing(inferred)
+peyda	-	-	P:Adj
+peydah	-	-	P:Adj
+peygambervari	-	-	P:Adj
+peyk	-	-	P:Adj
+peşin	-	-	P:Adj
+pike	-	-	P:Adj
+pilot	pilod	-	P:Adj; +Voicing(inferred)
+pimpirik	pimpiriğ	-	P:Adj; +Voicing(inferred)
+pinhan	-	-	P:Adj
+pinpon	-	-	P:Adj
+pinti	-	-	P:Adj
+piramidal	-	-	P:Adj
+pirinç	pirinc	-	P:Adj; +Voicing(inferred)
+pirüpak	pirüpağ	-	P:Adj; +Voicing(inferred)
+pis	-	-	P:Adj
+pisboğaz	-	-	P:Adj
+pitoresk	pitoresğ	-	P:Adj; +Voicing(inferred)
+piyata	-	-	P:Adj
+pişek	pişeğ	-	P:Adj; +Voicing(inferred)
+pişeğen	-	-	P:Adj
+pişim	-	-	P:Adj
+pişkin	-	-	P:Adj
+pişman	-	-	P:Adj
+plastik	plastiğ	-	P:Adj; +Voicing(inferred)
+platonik	platoniğ	-	P:Adj; +Voicing(inferred)
+plüralist	-	-	P:Adj;A:NoVoicing
+podösüet	podösüed	-	P:Adj; +Voicing(inferred)
+poetik	poetiğ	-	P:Adj; +Voicing(inferred)
+pog	poğ	-	P:Adj; +Voicing(inferred)
+polifonik	polifoniğ	-	P:Adj; +Voicing(inferred)
+poligam	-	-	P:Adj
+polimer	-	-	P:Adj
+polinom	-	-	P:Adj
+polisiye	-	-	P:Adj
+politeist	-	-	P:Adj;A:NoVoicing
+politik	politiğ	-	P:Adj; +Voicing(inferred)
+politize	-	-	P:Adj
+pop	-	-	P:Adj
+poplin	-	-	P:Adj
+popüler	-	-	P:Adj
+porno	-	-	P:Adj
+pornografik	pornografiğ	-	P:Adj; +Voicing(inferred)
+porselen	-	-	P:Adj
+porsuk	porsuğ	-	P:Adj; +Voicing(inferred)
+portatif	-	-	P:Adj
+pos	-	-	P:Adj
+postmodern	-	-	P:Adj
+postmodernist	-	-	P:Adj;A:NoVoicing
+potansiyel	-	-	P:Adj
+potuk	potuğ	-	P:Adj; +Voicing(inferred)
+potur	-	-	P:Adj
+pozitif	-	-	P:Adj
+pozitivist	-	-	P:Adj;A:NoVoicing
+pragmatik	pragmatiğ	-	P:Adj; +Voicing(inferred)
+pragmatist	-	-	P:Adj;A:NoVoicing
+pratik	pratiğ	-	P:Adj; +Voicing(inferred)
+pratisyen	-	-	P:Adj
+prefabrik	prefabriğ	-	P:Adj; +Voicing(inferred)
+prehistorik	prehistoriğ	-	P:Adj; +Voicing(inferred)
+prematüre	-	-	P:Adj
+presbit	presbid	-	P:Adj; +Voicing(inferred)
+presbiteryen	-	-	P:Adj
+prese	-	-	P:Adj
+prezantabl	-	-	P:Adj
+prezante	-	-	P:Adj
+primitif	-	-	P:Adj
+problem	-	-	P:Adj
+problematik	problematiğ	-	P:Adj; +Voicing(inferred)
+profesyonel	-	-	P:Adj
+protez	-	-	P:Adj
+provokatör	-	-	P:Adj
+provoke	-	-	P:Adj
+psikolojik	psikolojiğ	-	P:Adj; +Voicing(inferred)
+psikopatolojik	psikopatolojiğ	-	P:Adj; +Voicing(inferred)
+psişik	psişiğ	-	P:Adj; +Voicing(inferred)
+puluç	puluc	-	P:Adj; +Voicing(inferred)
+pumba	-	-	P:Adj
+pusarık	pusarığ	-	P:Adj; +Voicing(inferred)
+putperest	putperesd	-	P:Adj; +Voicing(inferred)
+puşt	-	-	P:Adj
+pörsük	pörsüğ	-	P:Adj; +Voicing(inferred)
+pörtlek	pörtleğ	-	P:Adj; +Voicing(inferred)
+pötikare	-	-	P:Adj
+pür	-	-	P:Adj
+pürdikkat	-	i	P:Adj; A:InverseHarmony
+pürhiddet	pürhidded	-	P:Adj; +Voicing(inferred)
+püriten	-	-	P:Adj
+pürneşe	-	-	P:Adj
+pürsıhhat	pürsıhhad	-	P:Adj; +Voicing(inferred)
+püskürük	püskürüğ	-	P:Adj; +Voicing(inferred)
+püsür	-	-	P:Adj
+pırlanta	-	-	P:Adj
+pırpırı	-	-	P:Adj
+pırpıt	pırpıd	-	P:Adj; +Voicing(inferred)
+pırtlak	pırtlağ	-	P:Adj; +Voicing(inferred)
+pısırık	pısırığ	-	P:Adj; +Voicing(inferred)
+pıtrak	pıtrağ	-	P:Adj; +Voicing(inferred)
+rabbanî	-	-	P:Adj
+raci	-	-	P:Adj
+radikal	-	-	P:Adj
+radyan	-	-	P:Adj
+radyoaktif	-	-	P:Adj
+radyobiyolojik	radyobiyolojiğ	-	P:Adj; +Voicing(inferred)
+radyofonik	radyofoniğ	-	P:Adj; +Voicing(inferred)
+radyolojik	radyolojiğ	-	P:Adj; +Voicing(inferred)
+radyometrik	radyometriğ	-	P:Adj; +Voicing(inferred)
+rafadan	-	-	P:Adj
+rafine	-	-	P:Adj
+rafya	-	-	P:Adj
+rahat	-	-	P:Adj; A:NoVoicing
+rahman	-	-	P:Adj
+rahmanî	-	-	P:Adj
+rahmetlik	rahmetliğ	-	P:Adj; +Voicing(inferred)
+rahvan	-	-	P:Adj
+rahîm	-	-	P:Adj
+rakik	rakiğ	-	P:Adj; +Voicing(inferred)
+rakit	rakid	-	P:Adj; +Voicing(inferred)
+ram	-	-	P:Adj
+randımanlı	-	-	P:Adj
+rantabl	-	-	P:Adj
+rast	-	-	P:Adj
+rastgele	-	-	P:Adj
+rasyonalist	-	-	P:Adj;A:NoVoicing
+rasyonel	-	-	P:Adj
+rate	-	-	P:Adj
+ratıp	ratıb	-	P:Adj; +Voicing(inferred)
+razı	-	-	P:Adj
+raşitik	raşitiğ	-	P:Adj; +Voicing(inferred)
+realist	-	-	P:Adj;A:NoVoicing
+rebabi	-	-	P:Adj
+reel	-	-	P:Adj
+reformist	-	-	P:Adj;A:NoVoicing
+rencide	-	-	P:Adj
+rengârenk	rengâreng	-	P:Adj; +Voicing(inferred)
+renksemez	-	-	P:Adj
+renkser	-	-	P:Adj
+resesif	-	-	P:Adj
+resmî	-	-	P:Adj
+restore	-	-	P:Adj
+reva	-	-	P:Adj
+revan	-	-	P:Adj
+revaç	revac	-	P:Adj; +Voicing(inferred)
+revize	-	-	P:Adj
+reybî	-	-	P:Adj
+reye	-	-	P:Adj
+reyhani	-	-	P:Adj
+rezil	-	-	P:Adj
+reşit	reşid	-	P:Adj; +Voicing(inferred)
+riayetkâr	-	-	P:Adj
+rijit	rijid	-	P:Adj; +Voicing(inferred)
+rindane	-	-	P:Adj
+ritmik	ritmiğ	-	P:Adj; +Voicing(inferred)
+ritüel	-	-	P:Adj
+riyakâr	-	-	P:Adj
+riyasız	-	-	P:Adj
+riyazî	-	-	P:Adj
+rokoko	-	-	P:Adj
+romanesk	romanesğ	-	P:Adj; +Voicing(inferred)
+romantik	romantiğ	-	P:Adj; +Voicing(inferred)
+roza	-	-	P:Adj
+rugan	-	-	P:Adj
+ruhanî	-	-	P:Adj
+ruhî	-	-	P:Adj
+ruhötesi	-	-	P:Adj
+rulo	-	-	P:Adj
+runik	runiğ	-	P:Adj; +Voicing(inferred)
+rustik	rustiğ	-	P:Adj; +Voicing(inferred)
+rutin	-	-	P:Adj
+rüküş	-	-	P:Adj
+rüsva	-	-	P:Adj
+sabi	-	-	P:Adj
+sabit	sabid	-	P:Adj; +Voicing(inferred)
+sabitkadem	-	-	P:Adj
+sabur	-	-	P:Adj
+sabık	sabığ	-	P:Adj; +Voicing(inferred)
+sac	-	-	P:Adj
+sadakor	-	-	P:Adj
+sade	-	-	P:Adj
+sadik	sadiğ	-	P:Adj; +Voicing(inferred)
+sadist	-	-	P:Adj;A:NoVoicing
+sadık	sadığ	-	P:Adj; +Voicing(inferred)
+saf	-	-	P:Adj
+safderun	-	-	P:Adj
+safdil	-	-	P:Adj
+safi	-	-	P:Adj
+safkan	-	-	P:Adj
+saftirik	saftiriğ	-	P:Adj; +Voicing(inferred)
+saftorik	saftoriğ	-	P:Adj; +Voicing(inferred)
+sahici	-	-	P:Adj
+sahih	-	-	P:Adj
+sahte	-	-	P:Adj
+sahtekâr	-	-	P:Adj
+sair	-	-	P:Adj
+sairfilmenam	-	-	P:Adj
+sak	-	-	P:Adj
+sakar	-	-	P:Adj
+sakat	sakad	-	P:Adj; +Voicing(inferred)
+sakil	-	-	P:Adj
+sakim	-	-	P:Adj
+sakin	-	-	P:Adj
+sakit	sakid	-	P:Adj; +Voicing(inferred)
+saklı	-	-	P:Adj
+sakıngan	-	-	P:Adj
+sakıt	-	-	P:Adj; A:NoVoicing
+salak	salağ	-	P:Adj; +Voicing(inferred)
+salamura	-	-	P:Adj
+salatalık	salatalığ	-	P:Adj; +Voicing(inferred)
+salaş	-	-	P:Adj
+saldırgan	-	-	P:Adj
+salgın	-	-	P:Adj
+salim	-	-	P:Adj
+salisilik	salisiliğ	-	P:Adj; +Voicing(inferred)
+sallabaş	-	-	P:Adj
+sallapati	-	-	P:Adj
+saloz	-	-	P:Adj
+salpa	-	-	P:Adj
+salpak	salpağ	-	P:Adj; +Voicing(inferred)
+salt	-	-	P:Adj
+saltık	saltığ	-	P:Adj; +Voicing(inferred)
+samanî	-	-	P:Adj
+samimi	-	-	P:Adj
+samimî	-	-	P:Adj;Ref:samimi_Adj
+samur	-	-	P:Adj
+samut	samud	-	P:Adj; +Voicing(inferred)
+sanal	-	-	P:Adj
+sanatkâr	-	-	P:Adj
+sanatsever	-	-	P:Adj
+sangı	-	-	P:Adj
+sansasyonel	-	-	P:Adj
+santimantal	-	-	P:Adj
+santrifüj	-	-	P:Adj
+sapa	-	-	P:Adj
+sapak	sapağ	-	P:Adj; +Voicing(inferred)
+sapasağlam	-	-	P:Adj
+sapkın	-	-	P:Adj
+saprofit	saprofid	-	P:Adj; +Voicing(inferred)
+sapsarı	-	-	P:Adj
+sapsağlam	-	-	P:Adj
+sapık	sapığ	-	P:Adj; +Voicing(inferred)
+sarartı	-	-	P:Adj
+sarhoş	-	-	P:Adj
+sarih	-	-	P:Adj
+sarkık	sarkığ	-	P:Adj; +Voicing(inferred)
+sarkıl	-	-	P:Adj
+sarma	-	-	P:Adj
+sarmal	-	-	P:Adj
+sarman	-	-	P:Adj
+sarmaşan	-	-	P:Adj
+sarp	-	-	P:Adj
+sarsak	sarsağ	-	P:Adj; +Voicing(inferred)
+sarsık	sarsığ	-	P:Adj; +Voicing(inferred)
+sarı	-	-	P:Adj
+sarılgan	-	-	P:Adj
+sarımtırak	sarımtırağ	-	P:Adj; +Voicing(inferred)
+sarışın	-	-	P:Adj
+sası	-	-	P:Adj
+sataşkan	-	-	P:Adj
+saten	-	-	P:Adj
+sathî	-	-	P:Adj
+satirik	satiriğ	-	P:Adj; +Voicing(inferred)
+satrançlı	-	-	P:Adj
+satı	-	-	P:Adj
+satılık	satılığ	-	P:Adj; +Voicing(inferred)
+savak	savağ	-	P:Adj; +Voicing(inferred)
+savaşkan	-	-	P:Adj
+savaşçı	-	-	P:Adj
+savruk	savruğ	-	P:Adj; +Voicing(inferred)
+savsak	savsağ	-	P:Adj; +Voicing(inferred)
+savurgan	-	-	P:Adj
+saydam	-	-	P:Adj
+saygıdeğer	-	-	P:Adj
+saygın	-	-	P:Adj
+sayrı	-	-	P:Adj
+sayrıl	-	-	P:Adj
+sayrımsak	sayrımsağ	-	P:Adj; +Voicing(inferred)
+sayılı	-	-	P:Adj
+sayın	-	-	P:Adj
+sayısal	-	-	P:Adj
+saz	-	-	P:Adj
+saçma	-	-	P:Adj
+saçmalık	saçmalığ	-	P:Adj; +Voicing(inferred)
+saçık	saçığ	-	P:Adj; +Voicing(inferred)
+sağ	-	-	P:Adj
+sağcı	-	-	P:Adj
+sağlam	-	-	P:Adj
+sağlamcı	-	-	P:Adj
+sağmal	-	-	P:Adj
+sağın	-	-	P:Adj
+sağır	-	-	P:Adj
+sebatkâr	-	-	P:Adj
+sedef	-	-	P:Adj
+seferber	-	-	P:Adj
+seferî	-	-	P:Adj
+sefih	-	-	P:Adj
+sefil	-	-	P:Adj
+sek	-	-	P:Adj
+sekizgen	-	-	P:Adj
+sekiziz	-	-	P:Adj
+seklem	-	-	P:Adj
+seksi	-	-	P:Adj
+seksolojik	seksolojiğ	-	P:Adj; +Voicing(inferred)
+seksüel	-	-	P:Adj
+sekter	-	-	P:Adj
+sektörel	-	-	P:Adj
+sekunder	-	-	P:Adj
+seküler	-	-	P:Adj
+selek	seleğ	-	P:Adj; +Voicing(inferred)
+selektif	-	-	P:Adj
+selim	-	-	P:Adj
+selis	-	-	P:Adj
+selofan	-	-	P:Adj
+selüloz	-	-	P:Adj
+selülozik	selüloziğ	-	P:Adj; +Voicing(inferred)
+semantik	semantiğ	-	P:Adj; +Voicing(inferred)
+semavi	-	-	P:Adj
+semavî	-	-	P:Adj; Ref:semavi_Adj
+sembolik	semboliğ	-	P:Adj; +Voicing(inferred)
+sembolist	-	-	P:Adj;A:NoVoicing
+semih	-	-	P:Adj
+semirgin	-	-	P:Adj
+semiyolojik	semiyolojiğ	-	P:Adj; +Voicing(inferred)
+semiyotik	semiyotiğ	-	P:Adj; +Voicing(inferred)
+semiz	-	-	P:Adj
+sempatik	sempatiğ	-	P:Adj; +Voicing(inferred)
+sendikal	-	-	P:Adj
+senevî	-	-	P:Adj
+senfonik	senfoniğ	-	P:Adj; +Voicing(inferred)
+senkron	-	-	P:Adj
+senkronik	senkroniğ	-	P:Adj; +Voicing(inferred)
+sentaktik	sentaktiğ	-	P:Adj; +Voicing(inferred)
+sentetik	sentetiğ	-	P:Adj; +Voicing(inferred)
+sepet	seped	-	P:Adj; +Voicing(inferred)
+septik	septiğ	-	P:Adj; +Voicing(inferred)
+sepya	-	-	P:Adj
+seramik	seramiğ	-	P:Adj; +Voicing(inferred)
+serazat	-	-	P:Adj; A:NoVoicing
+serbaz	-	-	P:Adj
+serbest	-	-	P:Adj;A:NoVoicing
+sergin	-	-	P:Adj
+seri	-	-	P:Adj
+serin	-	-	P:Adj
+serinkanlı	-	-	P:Adj
+serkeş	-	-	P:Adj
+sermayedar	-	-	P:Adj
+sermest	sermesd	-	P:Adj; +Voicing(inferred)
+sersefil	-	-	P:Adj
+sersem	-	-	P:Adj
+serseri	-	-	P:Adj
+sert	-	-	P:Adj
+serçin	-	-	P:Adj
+sesteş	-	-	P:Adj
+sesçil	-	-	P:Adj
+sevap	sevab	-	P:Adj; +Voicing(inferred)
+sevecen	-	-	P:Adj
+sever	-	-	P:Adj
+sevgili	-	-	P:Adj
+sevimli	-	-	P:Adj
+seyirlik	seyirliğ	-	P:Adj; +Voicing(inferred)
+seyrek	seyreğ	-	P:Adj; +Voicing(inferred)
+seyreltik	seyreltiğ	-	P:Adj; +Voicing(inferred)
+seyyal	-	-	P:Adj
+seyyar	-	-	P:Adj
+seyyibe	-	-	P:Adj
+seza	-	-	P:Adj
+seçkin	-	-	P:Adj
+sikatif	-	-	P:Adj
+silik	siliğ	-	P:Adj; +Voicing(inferred)
+silindirik	silindiriğ	-	P:Adj; +Voicing(inferred)
+silisseven	-	-	P:Adj
+silisçil	-	-	P:Adj
+sim	-	-	P:Adj
+simetrik	simetriğ	-	P:Adj; +Voicing(inferred)
+simgesel	-	-	P:Adj
+simsiyah	-	-	P:Adj
+simultane	-	-	P:Adj
+sincabî	-	-	P:Adj
+sinekkaydı	-	-	P:Adj
+sinekolojik	sinekolojiğ	-	P:Adj; +Voicing(inferred)
+sinemasever	-	-	P:Adj
+sinematografik	sinematografiğ	-	P:Adj; +Voicing(inferred)
+sinerjik	sinerjiğ	-	P:Adj; +Voicing(inferred)
+singin	-	-	P:Adj
+sinik	siniğ	-	P:Adj; +Voicing(inferred)
+sinir	-	-	P:Adj
+sinirli	-	-	P:Adj
+sinonim	-	-	P:Adj
+sinsi	-	-	P:Adj
+sinüzoidal	-	-	P:Adj
+siper	-	-	P:Adj
+sipsivri	-	-	P:Adj
+sismik	sismiğ	-	P:Adj; +Voicing(inferred)
+sistematik	sistematiğ	-	P:Adj; +Voicing(inferred)
+sistemik	sistemiğ	-	P:Adj; +Voicing(inferred)
+sitayişkâr	-	-	P:Adj
+sitemkâr	-	-	P:Adj
+sitotoksik	sitotoksiğ	-	P:Adj; +Voicing(inferred)
+sivil	-	-	P:Adj
+sivilize	-	-	P:Adj
+sivri	-	-	P:Adj
+siyah	-	-	P:Adj
+siyahî	-	-	P:Adj
+siyahımtırak	siyahımtırağ	-	P:Adj; +Voicing(inferred)
+siyasal	-	-	P:Adj
+siyasî	-	-	P:Adj
+siyonist	-	-	P:Adj;A:NoVoicing
+skorer	-	-	P:Adj
+snop	-	-	P:Adj
+sof	-	-	P:Adj
+sofist	-	-	P:Adj;A:NoVoicing
+sofistik	sofistiğ	-	P:Adj; +Voicing(inferred)
+sofistike	-	-	P:Adj
+sofu	-	-	P:Adj
+sofî	-	-	P:Adj
+sokulgan	-	-	P:Adj
+sokulu	-	-	P:Adj
+sokur	-	-	P:Adj
+sol	-	-	P:Adj
+solcu	-	-	P:Adj
+solgun	-	-	P:Adj
+solidarist	-	-	P:Adj;A:NoVoicing
+soluk	soluğ	-	P:Adj; +Voicing(inferred)
+soluğan	-	-	P:Adj
+som	-	-	P:Adj
+somaki	-	-	P:Adj
+somurtkan	-	-	P:Adj
+somurtuk	somurtuğ	-	P:Adj; +Voicing(inferred)
+somut	somud	-	P:Adj; +Voicing(inferred)
+son	-	-	P:Adj
+soncul	-	-	P:Adj
+sonlu	-	-	P:Adj
+sonsuz	-	-	P:Adj
+sonuçsuz	-	-	P:Adj
+sopsoğuk	sopsoğuğ	-	P:Adj; +Voicing(inferred)
+sorumlu	-	-	P:Adj
+sorumsuz	-	-	P:Adj
+sorutkan	-	-	P:Adj
+sosyal	-	-	P:Adj
+sosyalistik	sosyalistiğ	-	P:Adj; +Voicing(inferred)
+sosyetik	sosyetiğ	-	P:Adj; +Voicing(inferred)
+sosyoekonomik	sosyoekonomiğ	-	P:Adj; +Voicing(inferred)
+sosyokültürel	-	-	P:Adj
+sosyolojik	sosyolojiğ	-	P:Adj; +Voicing(inferred)
+soy	-	-	P:Adj
+soylu	-	-	P:Adj
+soysal	-	-	P:Adj
+soysuz	-	-	P:Adj
+soyuntu	-	-	P:Adj
+soyut	soyud	-	P:Adj; +Voicing(inferred)
+soğuk	soğuğ	-	P:Adj; +Voicing(inferred)
+soğukkanlı	-	-	P:Adj
+soğurgan	-	-	P:Adj
+soğutkan	-	-	P:Adj
+spesifik	spesifiğ	-	P:Adj; +Voicing(inferred)
+spesiyal	-	-	P:Adj
+spiral	-	-	P:Adj
+spiritüel	-	-	P:Adj
+spontane	-	-	P:Adj
+spor	-	-	P:Adj
+sporsever	-	-	P:Adj
+sportif	-	-	P:Adj
+sportmen	-	-	P:Adj
+stabil	-	-	P:Adj
+stabilize	-	-	P:Adj
+standart	standard	-	P:Adj; +Voicing(inferred)
+statik	statiğ	-	P:Adj; +Voicing(inferred)
+stereofonik	stereofoniğ	-	P:Adj; +Voicing(inferred)
+stereografik	stereografiğ	-	P:Adj; +Voicing(inferred)
+stereoskopik	stereoskopiğ	-	P:Adj; +Voicing(inferred)
+stereotip	stereotib	-	P:Adj; +Voicing(inferred)
+steril	-	-	P:Adj
+sterilize	-	-	P:Adj
+stilistik	stilistiğ	-	P:Adj; +Voicing(inferred)
+stratejik	stratejiğ	-	P:Adj; +Voicing(inferred)
+streç	-	-	P:Adj
+strüktüralist	-	-	P:Adj;A:NoVoicing
+strüktürel	-	-	P:Adj
+subjektif	-	-	P:Adj
+sucul	-	-	P:Adj
+sudan	-	-	P:Adj
+sulak	sulağ	-	P:Adj; +Voicing(inferred)
+sulhperver	-	-	P:Adj
+sulhsever	-	-	P:Adj
+sulp	-	-	P:Adj
+sultanî	-	-	P:Adj
+sulu	-	-	P:Adj
+suni	-	-	P:Adj
+sunta	-	-	P:Adj
+sunturlu	-	-	P:Adj
+sunî	-	-	P:Adj; Ref:suni_Adj
+sura	-	-	P:Adj
+susak	susağ	-	P:Adj; +Voicing(inferred)
+suskun	-	-	P:Adj
+suspus	-	-	P:Adj
+susturucu	-	-	P:Adj
+susuz	-	-	P:Adj
+suçlu	-	-	P:Adj
+suçsuz	-	-	P:Adj
+sâdır	-	-	P:Adj
+sâri	-	-	P:Adj
+söbe	-	-	P:Adj
+sökel	-	-	P:Adj
+sökük	söküğ	-	P:Adj; +Voicing(inferred)
+sölpük	sölpüğ	-	P:Adj; +Voicing(inferred)
+sömürgen	-	-	P:Adj
+sönük	sönüğ	-	P:Adj; +Voicing(inferred)
+sözde	-	-	P:Adj
+sözel	-	-	P:Adj
+sözgötürmez	-	-	P:Adj
+sözlü	-	-	P:Adj
+sözsüz	-	-	P:Adj
+sözünübilmez	-	-	P:Adj
+sübjektif	-	-	P:Adj
+süflî	-	-	P:Adj
+sükûtî	-	-	P:Adj
+sülfürik	sülfüriğ	-	P:Adj; +Voicing(inferred)
+sülüs	-	-	P:Adj
+sümbülî	-	-	P:Adj
+sümmettedarik	sümmettedariğ	-	P:Adj; +Voicing(inferred)
+sümsük	sümsüğ	-	P:Adj; +Voicing(inferred)
+sünepe	-	-	P:Adj
+süper	-	-	P:Adj
+süreduran	-	-	P:Adj
+sürek	süreğ	-	P:Adj; +Voicing(inferred)
+sürekli	-	-	P:Adj
+süreğen	-	-	P:Adj
+sürfile	-	-	P:Adj
+sürgülü	-	-	P:Adj
+sürme	-	-	P:Adj
+sürmeli	-	-	P:Adj
+sürnatüralist	-	-	P:Adj;A:NoVoicing
+sürrealist	-	-	P:Adj;A:NoVoicing
+sürücül	-	-	P:Adj
+sürükleyici	-	-	P:Adj
+sürüngen	-	-	P:Adj
+süslü	-	-	P:Adj
+sütliman	-	-	P:Adj
+sütlü	-	-	P:Adj
+süzgün	-	-	P:Adj
+süzük	süzüğ	-	P:Adj; +Voicing(inferred)
+sıcacık	sıcacığ	-	P:Adj; +Voicing(inferred)
+sıcak	sıcağ	-	P:Adj; +Voicing(inferred)
+sıcakkanlı	-	-	P:Adj
+sıhhî	-	-	P:Adj
+sık	-	-	P:Adj
+sıkkın	-	-	P:Adj
+sıkı	-	-	P:Adj
+sıkıcı	-	-	P:Adj
+sıkılgan	-	-	P:Adj
+sıkılmaz	-	-	P:Adj
+sıkışık	sıkışığ	-	P:Adj; +Voicing(inferred)
+sımsıcak	sımsıcağ	-	P:Adj; +Voicing(inferred)
+sımsıkı	-	-	P:Adj
+sınaî	-	-	P:Adj
+sıngın	-	-	P:Adj
+sınık	sınığ	-	P:Adj; +Voicing(inferred)
+sınıraşan	-	-	P:Adj
+sınırsız	-	-	P:Adj
+sıpsıcak	sıpsıcağ	-	P:Adj; +Voicing(inferred)
+sıradan	-	-	P:Adj
+sırlı	-	-	P:Adj
+sırma	-	-	P:Adj
+sırnaşık	sırnaşığ	-	P:Adj; +Voicing(inferred)
+sırsıklam	-	-	P:Adj
+sırça	-	-	P:Adj
+sırılsıklam	-	-	P:Adj
+sırıtkan	-	-	P:Adj
+sırıtık	sırıtığ	-	P:Adj; +Voicing(inferred)
+sıska	-	-	P:Adj
+sıvık	sıvığ	-	P:Adj; +Voicing(inferred)
+sıvışık	sıvışığ	-	P:Adj; +Voicing(inferred)
+sıyrık	sıyrığ	-	P:Adj; +Voicing(inferred)
+sıçırgan	-	-	P:Adj
+sığ	-	-	P:Adj
+sığamsal	-	-	P:Adj
+taba	-	-	P:Adj
+tabak	tabağ	-	P:Adj; +Voicing(inferred)
+tabi	-	-	P:Adj
+tabiatüstü	-	-	P:Adj
+tabiî	-	-	P:Adj
+tabu	-	-	P:Adj
+tafta	-	-	P:Adj
+tahammülfersa	-	-	P:Adj
+tahinî	-	-	P:Adj
+tahlilî	-	-	P:Adj
+tahmini	-	-	P:Adj
+tahminî	-	-	P:Adj; Ref:tahmini_Adj
+tahripkâr	-	-	P:Adj
+tahrirî	-	-	P:Adj
+tahta	-	-	P:Adj
+takdirkâr	-	-	P:Adj
+taklidî	-	-	P:Adj
+takribî	-	-	P:Adj
+takık	takığ	-	P:Adj; +Voicing(inferred)
+takılgan	-	-	P:Adj
+talepkâr	-	-	P:Adj
+tali	-	-	P:Adj
+talik	taliğ	-	P:Adj; +Voicing(inferred)
+talip	talib	-	P:Adj; +Voicing(inferred)
+tam	-	-	P:Adj
+tamahkâr	-	-	P:Adj
+tamam	-	-	P:Adj
+tamburî	-	-	P:Adj
+tamtakır	-	-	P:Adj
+tanecil	-	-	P:Adj
+tanjant	tanjand	-	P:Adj; +Voicing(inferred)
+tannan	-	-	P:Adj
+tanrıtanımaz	-	-	P:Adj
+tanıdık	tanıdığ	-	P:Adj; +Voicing(inferred)
+tanık	tanığ	-	P:Adj; +Voicing(inferred)
+tanınmış	-	-	P:Adj
+tanış	-	-	P:Adj
+tanışık	tanışığ	-	P:Adj; +Voicing(inferred)
+tapon	-	-	P:Adj
+taptaze	-	-	P:Adj
+tarafgir	-	-	P:Adj
+tarihî	-	-	P:Adj
+tartarik	tartariğ	-	P:Adj; +Voicing(inferred)
+tarumar	-	-	P:Adj
+tas	-	-	P:Adj
+tastamam	-	-	P:Adj
+tasvirî	-	-	P:Adj
+tatarı	-	-	P:Adj
+tatbikî	-	-	P:Adj
+tatlı	-	-	P:Adj
+tatminkâr	-	-	P:Adj
+tatsız	-	-	P:Adj
+tava	-	-	P:Adj
+tavizkâr	-	-	P:Adj
+tavsız	-	-	P:Adj
+tavşankanı	-	-	P:Adj
+tayyar	-	-	P:Adj
+taze	-	-	P:Adj
+taş	-	-	P:Adj
+taşkın	-	-	P:Adj
+taşlık	taşlığ	-	P:Adj; +Voicing(inferred)
+taşçıl	-	-	P:Adj
+taşım	-	-	P:Adj
+taşınmaz	-	-	P:Adj
+tebelleş	-	-	P:Adj
+tecavüzkâr	-	-	P:Adj
+tedirgin	-	-	P:Adj
+tedricî	-	-	P:Adj
+tefrika	-	-	P:Adj
+tehditkâr	-	-	P:Adj
+tehi	-	-	P:Adj
+teist	-	-	P:Adj;A:NoVoicing
+tek	-	-	P:Adj
+tekbenci	-	-	P:Adj
+tekdüze	-	-	P:Adj
+teker	-	-	P:Adj
+tekerlek	tekerleğ	-	P:Adj; +Voicing(inferred)
+tekgövde	-	-	P:Adj
+tekil	-	-	P:Adj
+tekin	-	-	P:Adj
+tekir	-	-	P:Adj
+tekmil	-	-	P:Adj
+teknik	tekniğ	-	P:Adj; +Voicing(inferred)
+teknokrat	teknokrad	-	P:Adj; +Voicing(inferred)
+teknolojik	teknolojiğ	-	P:Adj; +Voicing(inferred)
+tektaş	-	-	P:Adj
+tel	-	-	P:Adj
+teleolojik	teleolojiğ	-	P:Adj; +Voicing(inferred)
+telepatik	telepatiğ	-	P:Adj; +Voicing(inferred)
+teles	-	-	P:Adj
+teleskobik	teleskobiğ	-	P:Adj; +Voicing(inferred)
+telif	-	-	P:Adj
+telkâri	-	-	P:Adj
+telkârî	-	-	P:Adj
+telsiz	-	-	P:Adj
+tematik	tematiğ	-	P:Adj; +Voicing(inferred)
+tembel	-	-	P:Adj
+temel	-	-	P:Adj
+temiz	-	-	P:Adj
+temsilî	-	-	P:Adj
+tendürüst	tendürüsd	-	P:Adj; +Voicing(inferred)
+teneke	-	-	P:Adj
+tenha	-	-	P:Adj
+tenkidî	-	-	P:Adj
+teokratik	teokratiğ	-	P:Adj; +Voicing(inferred)
+teolojik	teolojiğ	-	P:Adj; +Voicing(inferred)
+teorik	teoriğ	-	P:Adj; +Voicing(inferred)
+teorisyen	-	-	P:Adj
+tepegöz	-	-	P:Adj
+tepkin	-	-	P:Adj
+tepsi	-	-	P:Adj
+terakkiperver	-	-	P:Adj
+terelelli	-	-	P:Adj
+tergal	-	-	P:Adj
+terilen	-	-	P:Adj
+terkibî	-	-	P:Adj
+terliksi	-	-	P:Adj
+termik	termiğ	-	P:Adj; +Voicing(inferred)
+terminolojik	terminolojiğ	-	P:Adj; +Voicing(inferred)
+termonükleer	-	-	P:Adj
+ters	-	-	P:Adj
+tersinir	-	-	P:Adj
+tersiyer	-	-	P:Adj
+tertemiz	-	-	P:Adj
+terütaze	-	-	P:Adj
+testi	-	-	P:Adj
+tetik	tetiğ	-	P:Adj; +Voicing(inferred)
+tevekkel	-	-	P:Adj
+tez	-	-	P:Adj
+tezyifkâr	-	-	P:Adj
+tezyinî	-	-	P:Adj
+teşne	-	-	P:Adj
+ticarî	-	-	P:Adj
+tiftik	tiftiğ	-	P:Adj; +Voicing(inferred)
+tikel	-	-	P:Adj
+tiksinç	tiksinc	-	P:Adj; +Voicing(inferred)
+tilki	-	-	P:Adj
+timsah	-	-	P:Adj
+tip	-	-	P:Adj
+tipik	tipiğ	-	P:Adj; +Voicing(inferred)
+tipografik	tipografiğ	-	P:Adj; +Voicing(inferred)
+tipolojik	tipolojiğ	-	P:Adj; +Voicing(inferred)
+tiran	-	-	P:Adj
+tire	-	-	P:Adj
+tirendaz	-	-	P:Adj
+tirit	tirid	-	P:Adj; +Voicing(inferred)
+tiryaki	-	-	P:Adj
+tirşe	-	-	P:Adj
+titiz	-	-	P:Adj
+titrek	titreğ	-	P:Adj; +Voicing(inferred)
+tiz	-	-	P:Adj
+tok	-	-	P:Adj
+toksikolojik	toksikolojiğ	-	P:Adj; +Voicing(inferred)
+tokuz	-	-	P:Adj
+tombak	tombağ	-	P:Adj; +Voicing(inferred)
+tombalak	tombalağ	-	P:Adj; +Voicing(inferred)
+tombul	-	-	P:Adj
+tonla	-	-	P:Adj
+tonlarca	-	-	P:Adj
+tonton	-	-	P:Adj
+top	-	-	P:Adj
+topal	-	-	P:Adj
+toparlacık	toparlacığ	-	P:Adj; +Voicing(inferred)
+toparlak	toparlağ	-	P:Adj; +Voicing(inferred)
+toplanık	toplanığ	-	P:Adj; +Voicing(inferred)
+toplu	-	-	P:Adj
+topolojik	topolojiğ	-	P:Adj; +Voicing(inferred)
+topoğrafik	topoğrafiğ	-	P:Adj; +Voicing(inferred)
+toprak	toprağ	-	P:Adj; +Voicing(inferred)
+toptan	-	-	P:Adj
+topçeker	-	-	P:Adj
+tor	-	-	P:Adj
+toraman	-	-	P:Adj
+torlak	torlağ	-	P:Adj; +Voicing(inferred)
+tortop	tortob	-	P:Adj; +Voicing(inferred)
+tortul	-	-	P:Adj
+tostoparlak	tostoparlağ	-	P:Adj; +Voicing(inferred)
+total	-	-	P:Adj
+totaliter	-	-	P:Adj
+toy	-	-	P:Adj
+toz	-	-	P:Adj
+tozkoparan	-	-	P:Adj
+tozpembe	-	-	P:Adj
+tradisyonel	-	-	P:Adj
+trajik	trajiğ	-	P:Adj; +Voicing(inferred)
+trajikomik	trajikomiğ	-	P:Adj; +Voicing(inferred)
+transatlantik	transatlantiğ	-	P:Adj; +Voicing(inferred)
+transit	transid	-	P:Adj; +Voicing(inferred)
+transparan	-	-	P:Adj
+transseksüel	-	-	P:Adj
+travmatik	travmatiğ	-	P:Adj; +Voicing(inferred)
+travmatolojik	travmatolojiğ	-	P:Adj; +Voicing(inferred)
+trigonometrik	trigonometriğ	-	P:Adj; +Voicing(inferred)
+triko	-	-	P:Adj
+trio	-	-	P:Adj
+tripleks	-	-	P:Adj
+tropik	tropiğ	-	P:Adj; +Voicing(inferred)
+tropikal	-	i	P:Adj; A:InverseHarmony
+troyka	-	-	P:Adj
+truakar	-	-	P:Adj
+tubeless	-	-	P:Adj
+tuhaf	-	-	P:Adj
+tulum	-	-	P:Adj
+tumbadız	-	-	P:Adj
+tunç	-	-	P:Adj
+turbo	-	-	P:Adj
+turfa	-	-	P:Adj
+turfanda	-	-	P:Adj
+turistik	turistiğ	-	P:Adj; +Voicing(inferred)
+turkuaz	-	-	P:Adj
+turnagözü	-	-	P:Adj
+turuncu	-	-	P:Adj
+turuncumtırak	turuncumtırağ	-	P:Adj; +Voicing(inferred)
+turşu	-	-	P:Adj
+tutam	-	-	P:Adj
+tutkun	-	-	P:Adj
+tutsak	tutsağ	-	P:Adj; +Voicing(inferred)
+tutuk	tutuğ	-	P:Adj; +Voicing(inferred)
+tutuklu	-	-	P:Adj
+tutulmaz	-	-	P:Adj
+tuturuk	tuturuğ	-	P:Adj; +Voicing(inferred)
+tuzcul	-	-	P:Adj
+tuzlak	tuzlağ	-	P:Adj; +Voicing(inferred)
+tâbi	-	-	P:Adj
+törel	-	-	P:Adj
+töretanımaz	-	-	P:Adj
+tövbekâr	-	-	P:Adj
+tözel	-	-	P:Adj
+tükenik	tükeniğ	-	P:Adj; +Voicing(inferred)
+tükenmez	-	-	P:Adj
+tül	-	-	P:Adj
+tüm	-	-	P:Adj
+tümel	-	-	P:Adj
+tümen	-	-	P:Adj
+tümleşik	tümleşiğ	-	P:Adj; +Voicing(inferred)
+tür	-	-	P:Adj
+türedi	-	-	P:Adj
+türel	-	-	P:Adj
+türlü	-	-	P:Adj
+tüvana	-	-	P:Adj
+tüvit	tüvid	-	P:Adj; +Voicing(inferred)
+tüzel	-	-	P:Adj
+tıfıl	-	-	P:Adj
+tıkalı	-	-	P:Adj
+tıkanık	tıkanığ	-	P:Adj; +Voicing(inferred)
+tıknaz	-	-	P:Adj
+tıknefes	-	-	P:Adj
+tıkırında	-	-	P:Adj
+tıkız	-	-	P:Adj
+tıkışık	tıkışığ	-	P:Adj; +Voicing(inferred)
+tımtıkız	-	-	P:Adj
+tıntın	-	-	P:Adj
+tırıl	-	-	P:Adj
+tırışka	-	-	P:Adj
+ucube	-	-	P:Adj
+ucuz	-	-	P:Adj
+ufacık	ufacığ	-	P:Adj; +Voicing(inferred)
+ufak	ufağ	-	P:Adj; +Voicing(inferred)
+ufarak	ufarağ	-	P:Adj; +Voicing(inferred)
+ukalâ	-	-	P:Adj
+ukubet	ukubed	-	P:Adj; +Voicing(inferred)
+ultramodern	-	-	P:Adj
+ulu	-	-	P:Adj
+uluslararası	-	-	P:Adj
+ulussever	-	-	P:Adj
+ulusötesi	-	-	P:Adj
+ummadık	ummadığ	-	P:Adj; +Voicing(inferred)
+umum	-	-	P:Adj
+umumî	-	-	P:Adj
+umursamaz	-	-	P:Adj
+unutkan	-	-	P:Adj
+unutulmaz	-	-	P:Adj
+upuslu	-	-	P:Adj
+upuygun	-	-	P:Adj
+upuzun	-	-	P:Adj
+usangın	-	-	P:Adj
+uslu	-	-	P:Adj
+usta	-	-	P:Adj
+usturuplu	-	-	P:Adj
+utangan	-	-	P:Adj
+utangaç	utangac	-	P:Adj; +Voicing(inferred)
+utanmaz	-	-	P:Adj
+uyanık	uyanığ	-	P:Adj; +Voicing(inferred)
+uydu	-	-	P:Adj
+uydurma	-	-	P:Adj
+uydurmaca	-	-	P:Adj
+uyduruk	uyduruğ	-	P:Adj; +Voicing(inferred)
+uygar	-	-	P:Adj
+uygulayım	-	-	P:Adj
+uygun	-	-	P:Adj
+uymaz	-	-	P:Adj
+uysal	-	-	P:Adj
+uyuntu	-	-	P:Adj
+uyur	-	-	P:Adj
+uyurgezer	-	-	P:Adj
+uyuz	-	-	P:Adj
+uyuşkan	-	-	P:Adj
+uyuşuk	uyuşuğ	-	P:Adj; +Voicing(inferred)
+uz	-	-	P:Adj
+uzak	uzağ	-	P:Adj; +Voicing(inferred)
+uzgören	-	-	P:Adj
+uzgörür	-	-	P:Adj
+uzlaşmaz	-	-	P:Adj
+uzman	-	-	P:Adj
+uzun	-	-	P:Adj
+uç	-	-	P:Adj
+uçar	-	-	P:Adj
+uçarı	-	-	P:Adj
+uçkun	-	-	P:Adj
+uçuk	uçuğ	-	P:Adj; +Voicing(inferred)
+uğrak	uğrağ	-	P:Adj; +Voicing(inferred)
+vabeste	-	-	P:Adj
+vacip	vacib	-	P:Adj; +Voicing(inferred)
+vahi	-	-	P:Adj
+vahim	-	-	P:Adj
+vahit	vahid	-	P:Adj; +Voicing(inferred)
+vahşî	-	-	P:Adj
+vaki	-	-	P:Adj
+vakum	-	-	P:Adj
+vakur	-	-	P:Adj
+vantrilok	vantriloğ	-	P:Adj; +Voicing(inferred)
+var	-	-	P:Adj
+vardakosta	-	-	P:Adj
+vareste	-	-	P:Adj
+varit	varid	-	P:Adj; +Voicing(inferred)
+varoluşçu	-	-	P:Adj
+varsıl	-	-	P:Adj
+varyemez	-	-	P:Adj
+vasat	-	-	P:Adj; A:NoVoicing
+vasatî	-	-	P:Adj
+vasıl	-	-	P:Adj
+vatanperver	-	-	P:Adj
+vatansever	-	-	P:Adj
+vatanî	-	-	P:Adj
+vazifeşinas	-	-	P:Adj
+vazıh	-	-	P:Adj
+vazııkanun	-	-	P:Adj
+veciz	-	-	P:Adj
+vefakâr	-	-	P:Adj
+velut	velud	-	P:Adj; +Voicing(inferred)
+verem	-	-	P:Adj
+verev	-	-	P:Adj
+verimkâr	-	-	P:Adj
+vesair	-	-	P:Adj
+vicahî	-	-	P:Adj
+viral	-	-	P:Adj
+viran	-	-	P:Adj
+virolojik	virolojiğ	-	P:Adj; +Voicing(inferred)
+virütik	virütiğ	-	P:Adj; +Voicing(inferred)
+vitrifiye	-	-	P:Adj
+vizon	-	-	P:Adj
+vişneçürüğü	-	-	P:Adj
+vokal	-	-	P:Adj
+volkanik	volkaniğ	-	P:Adj; +Voicing(inferred)
+vulgarize	-	-	P:Adj
+vurdumduymaz	-	-	P:Adj
+vurgun	-	-	P:Adj
+vuruk	vuruğ	-	P:Adj; +Voicing(inferred)
+vuruşkan	-	-	P:Adj
+vâkıf	-	-	P:Adj
+vâsi	-	-	P:Adj
+vıcık	vıcığ	-	P:Adj; +Voicing(inferred)
+yaban	-	-	P:Adj
+yabancı	-	-	P:Adj
+yabancıl	-	-	P:Adj
+yabanıl	-	-	P:Adj
+yahşi	-	-	P:Adj
+yaklaşık	yaklaşığ	-	P:Adj; +Voicing(inferred)
+yakut	yakud	-	P:Adj; +Voicing(inferred)
+yakın	-	-	P:Adj
+yakınsak	yakınsağ	-	P:Adj; +Voicing(inferred)
+yakışıklı	-	-	P:Adj
+yalabık	yalabığ	-	P:Adj; +Voicing(inferred)
+yalak	yalağ	-	P:Adj; +Voicing(inferred)
+yalaka	-	-	P:Adj
+yalan	-	-	P:Adj
+yaldırak	yaldırağ	-	P:Adj; +Voicing(inferred)
+yalman	-	-	P:Adj
+yalnız	-	-	P:Adj
+yalpak	yalpağ	-	P:Adj; +Voicing(inferred)
+yalpık	yalpığ	-	P:Adj; +Voicing(inferred)
+yaltak	yaltağ	-	P:Adj; +Voicing(inferred)
+yalçın	-	-	P:Adj
+yalın	-	-	P:Adj
+yalıncak	yalıncağ	-	P:Adj; +Voicing(inferred)
+yalıngaç	yalıngac	-	P:Adj; +Voicing(inferred)
+yalınç	yalınc	-	P:Adj; +Voicing(inferred)
+yalıtkan	-	-	P:Adj
+yalız	-	-	P:Adj
+yaman	-	-	P:Adj
+yampiri	-	-	P:Adj
+yamuk	yamuğ	-	P:Adj; +Voicing(inferred)
+yamyam	-	-	P:Adj
+yamyaş	-	-	P:Adj
+yanal	-	-	P:Adj
+yanardöner	-	-	P:Adj
+yanaz	-	-	P:Adj
+yanaşık	yanaşığ	-	P:Adj; +Voicing(inferred)
+yangın	-	-	P:Adj
+yanlı	-	-	P:Adj
+yanlış	-	-	P:Adj
+yantutmaz	-	-	P:Adj
+yanık	yanığ	-	P:Adj; +Voicing(inferred)
+yanşak	yanşağ	-	P:Adj; +Voicing(inferred)
+yapay	-	-	P:Adj
+yapayalnız	-	-	P:Adj
+yapmacık	yapmacığ	-	P:Adj; +Voicing(inferred)
+yaprakkurusu	-	-	P:Adj
+yaprakçıl	-	-	P:Adj
+yapyalnız	-	-	P:Adj
+yapışkan	-	-	P:Adj
+yapışık	yapışığ	-	P:Adj; +Voicing(inferred)
+yaramaz	-	-	P:Adj
+yarar	-	-	P:Adj
+yaraşır	-	-	P:Adj
+yardımcı	-	-	P:Adj
+yardımsever	-	-	P:Adj
+yarma	-	-	P:Adj
+yarı	-	-	P:Adj
+yarık	yarığ	-	P:Adj; +Voicing(inferred)
+yarım	-	-	P:Adj
+yasak	yasağ	-	P:Adj; +Voicing(inferred)
+yasal	-	-	P:Adj
+yasemin	-	-	P:Adj
+yassı	-	-	P:Adj
+yatalak	yatalağ	-	P:Adj; +Voicing(inferred)
+yatay	-	-	P:Adj
+yatkın	-	-	P:Adj
+yatık	yatığ	-	P:Adj; +Voicing(inferred)
+yatılı	-	-	P:Adj
+yatıştırıcı	-	-	P:Adj
+yavan	-	-	P:Adj
+yavaş	-	-	P:Adj
+yavruağzı	-	-	P:Adj
+yavuz	-	-	P:Adj
+yayan	-	-	P:Adj
+yaygın	-	-	P:Adj
+yayvan	-	-	P:Adj
+yayık	yayığ	-	P:Adj; +Voicing(inferred)
+yayınık	yayınığ	-	P:Adj; +Voicing(inferred)
+yazar	-	-	P:Adj
+yazarçizer	-	-	P:Adj
+yazlık	yazlığ	-	P:Adj; +Voicing(inferred)
+yazma	-	-	P:Adj
+yazılı	-	-	P:Adj
+yağma	-	-	P:Adj
+yağız	-	-	P:Adj
+yaş	-	-	P:Adj
+yaşatkan	-	-	P:Adj
+yedek	yedeğ	-	P:Adj; +Voicing(inferred)
+yedigen	-	-	P:Adj
+yediveren	-	-	P:Adj
+yediz	-	-	P:Adj
+yegâne	-	-	P:Adj
+yek	-	-	P:Adj
+yeknesak	yeknesağ	-	P:Adj; +Voicing(inferred)
+yekpare	-	-	P:Adj
+yeksan	-	-	P:Adj
+yekta	-	-	P:Adj
+yeleken	-	-	P:Adj
+yelengeç	yelengec	-	P:Adj; +Voicing(inferred)
+yeleç	yelec	-	P:Adj; +Voicing(inferred)
+yelloz	-	-	P:Adj
+yelpaze	-	-	P:Adj
+yeltek	yelteğ	-	P:Adj; +Voicing(inferred)
+yemişçil	-	-	P:Adj
+yemyeşil	-	-	P:Adj
+yeni	-	-	P:Adj
+yenik	yeniğ	-	P:Adj; +Voicing(inferred)
+yepelek	yepeleğ	-	P:Adj; +Voicing(inferred)
+yepyeni	-	-	P:Adj
+yeraltı	-	-	P:Adj
+yerel	-	-	P:Adj
+yerinde	-	-	P:Adj
+yerleşik	yerleşiğ	-	P:Adj; +Voicing(inferred)
+yerli	-	-	P:Adj
+yersiz	-	-	P:Adj
+yesyeni	-	-	P:Adj
+yeter	-	-	P:Adj
+yeterli	-	-	P:Adj
+yetersiz	-	-	P:Adj
+yetik	yetiğ	-	P:Adj; +Voicing(inferred)
+yetim	-	-	P:Adj
+yetingen	-	-	P:Adj
+yetişkin	-	-	P:Adj
+yetkili	-	-	P:Adj
+yetkin	-	-	P:Adj
+yezit	yezid	-	P:Adj; +Voicing(inferred)
+yeğ	-	-	P:Adj
+yeğin	-	-	P:Adj
+yeğni	-	-	P:Adj
+yeğrek	yeğreğ	-	P:Adj; +Voicing(inferred)
+yeşil	-	-	P:Adj
+yeşilimtırak	yeşilimtırağ	-	P:Adj; +Voicing(inferred)
+yirik	yiriğ	-	P:Adj; +Voicing(inferred)
+yitik	yitiğ	-	P:Adj; +Voicing(inferred)
+yiyecek	yiyeceğ	-	P:Adj; +Voicing(inferred)
+yiyici	-	-	P:Adj
+yiğit	yiğid	-	P:Adj; +Voicing(inferred)
+yobaz	-	-	P:Adj
+yok	-	-	P:Adj; A:NoVoicing ; Index:1
+yok	yoğ	-	P:Adj; A:Voicing
+yoksul	-	-	P:Adj
+yoksun	-	-	P:Adj
+yokuş	-	-	P:Adj
+yolkesen	-	-	P:Adj
+yolsuz	-	-	P:Adj
+yoluk	yoluğ	-	P:Adj; +Voicing(inferred)
+yontuk	yontuğ	-	P:Adj; +Voicing(inferred)
+yorgun	-	-	P:Adj
+yosma	-	-	P:Adj
+yosuncul	-	-	P:Adj
+yoz	-	-	P:Adj
+yoğun	-	-	P:Adj
+yudum	-	-	P:Adj
+yufka	-	-	P:Adj
+yukarı	-	-	P:Adj
+yumak	yumağ	-	P:Adj; +Voicing(inferred)
+yumru	-	-	P:Adj
+yumuk	yumuğ	-	P:Adj; +Voicing(inferred)
+yumuşacık	yumuşacığ	-	P:Adj; +Voicing(inferred)
+yumuşak	yumuşağ	-	P:Adj; +Voicing(inferred)
+yumuşakça	-	-	P:Adj
+yurtsever	-	-	P:Adj
+yusyumru	-	-	P:Adj
+yusyuvarlak	yusyuvarlağ	-	P:Adj; +Voicing(inferred)
+yuvarlak	yuvarlağ	-	P:Adj; +Voicing(inferred)
+yöndeş	-	-	P:Adj
+yönetsel	-	-	P:Adj
+yüce	-	-	P:Adj
+yüksek	yükseğ	-	P:Adj; +Voicing(inferred)
+yülük	yülüğ	-	P:Adj; +Voicing(inferred)
+yün	-	-	P:Adj
+yürük	yürüğ	-	P:Adj; +Voicing(inferred)
+yüsrü	-	-	P:Adj
+yüzergezer	-	-	P:Adj
+yüzgeç	yüzgec	-	P:Adj; +Voicing(inferred)
+yüzlerce	-	-	P:Adj
+yüzlük	yüzlüğ	-	P:Adj; +Voicing(inferred)
+yüzsüz	-	-	P:Adj
+yüğrük	yüğrüğ	-	P:Adj; +Voicing(inferred)
+yıkkın	-	-	P:Adj
+yıkık	yıkığ	-	P:Adj; +Voicing(inferred)
+yılan	-	-	P:Adj
+yılankavi	-	-	P:Adj
+yıldırak	yıldırağ	-	P:Adj; +Voicing(inferred)
+yıldırım	-	-	P:Adj
+yıldız	-	-	P:Adj
+yılgın	-	-	P:Adj
+yıllık	yıllığ	-	P:Adj; +Voicing(inferred)
+yılmaz	-	-	P:Adj
+yılık	yılığ	-	P:Adj; +Voicing(inferred)
+yılışkan	-	-	P:Adj
+yılışık	yılışığ	-	P:Adj; +Voicing(inferred)
+yıprak	yıprağ	-	P:Adj; +Voicing(inferred)
+yırtlak	yırtlağ	-	P:Adj; +Voicing(inferred)
+yırtıcı	-	-	P:Adj
+yırtık	yırtığ	-	P:Adj; +Voicing(inferred)
+yırık	yırığ	-	P:Adj; +Voicing(inferred)
+yıvışık	yıvışığ	-	P:Adj; +Voicing(inferred)
+yığınla	-	-	P:Adj
+yığışık	yığışığ	-	P:Adj; +Voicing(inferred)
+zabit	zabid	-	P:Adj; +Voicing(inferred)
+zade	-	-	P:Adj
+zahir	-	-	P:Adj
+zahirî	-	-	P:Adj
+zahit	zahid	-	P:Adj; +Voicing(inferred)
+zail	-	-	P:Adj
+zait	zaid	-	P:Adj; +Voicing(inferred)
+zalim	-	-	P:Adj
+zampara	-	-	P:Adj
+zanlı	-	-	P:Adj
+zarif	-	-	P:Adj
+zarurî	-	-	P:Adj
+zatî	-	-	P:Adj
+zavallı	-	-	P:Adj
+zaviyevi	-	-	P:Adj
+zayi	-	-	P:Adj
+zayıf	-	-	P:Adj
+zebun	-	-	P:Adj
+zebunküş	-	-	P:Adj
+zecrî	-	-	P:Adj
+zeki	-	-	P:Adj
+zelil	-	-	P:Adj
+zendost	zendosd	-	P:Adj; +Voicing(inferred)
+zengin	-	-	P:Adj
+zerrin	-	-	P:Adj
+zevalî	-	-	P:Adj
+zevzek	zevzeğ	-	P:Adj; +Voicing(inferred)
+zeyrek	zeyreğ	-	P:Adj; +Voicing(inferred)
+zeytin	-	-	P:Adj
+zeytunî	-	-	P:Adj
+zibidi	-	-	P:Adj
+zifirî	-	-	P:Adj
+zifos	-	-	P:Adj
+zihayat	zihayad	-	P:Adj; +Voicing(inferred)
+zihnî	-	-	P:Adj
+zikzak	zikzağ	-	P:Adj; +Voicing(inferred)
+zikıymet	zikıymed	-	P:Adj; +Voicing(inferred)
+zil	-	-	P:Adj
+zilzurna	-	-	P:Adj
+zinde	-	-	P:Adj
+zirzop	zirzob	-	P:Adj; +Voicing(inferred)
+ziyadar	-	-	P:Adj
+ziyade	-	-	P:Adj
+ziyankâr	-	-	P:Adj
+zom	-	-	P:Adj
+zoolojik	zoolojiğ	-	P:Adj; +Voicing(inferred)
+zor	-	-	P:Adj
+zoraki	-	-	P:Adj
+zorba	-	-	P:Adj
+zorunlu	-	-	P:Adj
+züccaciye	-	-	P:Adj
+zümrüt	zümrüd	-	P:Adj; +Voicing(inferred)
+züppe	-	-	P:Adj
+züğürt	züğürd	-	P:Adj; +Voicing(inferred)
+zındık	zındığ	-	P:Adj; +Voicing(inferred)
+zıpçıktı	-	-	P:Adj
+zıpır	-	-	P:Adj
+zırcahil	-	-	P:Adj
+zırdeli	-	-	P:Adj
+zırlak	zırlağ	-	P:Adj; +Voicing(inferred)
+zırtapoz	-	-	P:Adj
+zırtlak	zırtlağ	-	P:Adj; +Voicing(inferred)
+zıt	zıdd	-	P:Adj; A:Voicing, Doubling
+zıypak	zıypağ	-	P:Adj; +Voicing(inferred)
+âciz	-	-	P:Adj
+âkit	âkid	-	P:Adj; +Voicing(inferred)
+âlemşümul	-	ü	P:Adj; A:InverseHarmony
+âlim	-	-	P:Adj
+âlimane	-	-	P:Adj
+âlâ	-	-	P:Adj
+âmâ	-	-	P:Adj
+âyan	-	-	P:Adj
+âşıkane	-	-	P:Adj
+çabuk	çabuğ	-	P:Adj; +Voicing(inferred)
+çak	-	-	P:Adj
+çakal	-	-	P:Adj
+çakaralmaz	-	-	P:Adj
+çakma	-	-	P:Adj
+çakır	-	-	P:Adj
+çakırkeyif	çakırkeyf	-	P:Adj ; A:LastVowelDrop
+çakışık	çakışığ	-	P:Adj; +Voicing(inferred)
+çala	-	-	P:Adj
+çalak	çalağ	-	P:Adj; +Voicing(inferred)
+çalgın	-	-	P:Adj
+çalma	-	-	P:Adj
+çalçene	-	-	P:Adj
+çalık	çalığ	-	P:Adj; +Voicing(inferred)
+çalıntı	-	-	P:Adj
+çalışkan	-	-	P:Adj
+çamur	-	-	P:Adj
+çanak	çanağ	-	P:Adj; +Voicing(inferred)
+çandır	-	-	P:Adj
+çap	-	-	P:Adj
+çapar	-	-	P:Adj
+çapaçul	-	-	P:Adj
+çapkın	-	-	P:Adj
+çapraz	-	-	P:Adj
+çapraşık	çapraşığ	-	P:Adj; +Voicing(inferred)
+çarkıt	çarkıd	-	P:Adj; +Voicing(inferred)
+çarliston	-	-	P:Adj
+çarpık	çarpığ	-	P:Adj; +Voicing(inferred)
+çatak	çatağ	-	P:Adj; +Voicing(inferred)
+çatal	-	-	P:Adj
+çatkın	-	-	P:Adj
+çatlak	çatlağ	-	P:Adj; +Voicing(inferred)
+çatık	çatığ	-	P:Adj; +Voicing(inferred)
+çatışık	çatışığ	-	P:Adj; +Voicing(inferred)
+çaylak	çaylağ	-	P:Adj; +Voicing(inferred)
+çaçaron	-	-	P:Adj
+çağcıl	-	-	P:Adj
+çağdaş	-	-	P:Adj
+çekici	-	-	P:Adj
+çekik	çekiğ	-	P:Adj; +Voicing(inferred)
+çekimser	-	-	P:Adj
+çekingen	-	-	P:Adj
+çekinik	çekiniğ	-	P:Adj; +Voicing(inferred)
+çekirdek	çekirdeğ	-	P:Adj; +Voicing(inferred)
+çekişken	-	-	P:Adj
+çekme	-	-	P:Adj
+çelebi	-	-	P:Adj
+çelik	çeliğ	-	P:Adj; +Voicing(inferred)
+çelişik	çelişiğ	-	P:Adj; +Voicing(inferred)
+çelişken	-	-	P:Adj
+çemrek	çemreğ	-	P:Adj; +Voicing(inferred)
+çenebaz	-	-	P:Adj
+çentik	çentiğ	-	P:Adj; +Voicing(inferred)
+çençen	-	-	P:Adj
+çepel	-	-	P:Adj
+çepeçevre	-	-	P:Adj
+çetin	-	-	P:Adj
+çetrefil	-	-	P:Adj
+çevik	çeviğ	-	P:Adj; +Voicing(inferred)
+çevirme	-	-	P:Adj
+çevrik	çevriğ	-	P:Adj; +Voicing(inferred)
+çeyrek	çeyreğ	-	P:Adj; +Voicing(inferred)
+çeğmel	-	-	P:Adj
+çeşit	çeşid	-	P:Adj; +Voicing(inferred)
+çeşitkenar	-	-	P:Adj
+çeşitli	-	-	P:Adj
+çift	-	-	P:Adj
+çifte	-	-	P:Adj
+çifter	-	-	P:Adj
+çil	-	-	P:Adj
+çilekeş	-	-	P:Adj
+çimdik	çimdiğ	-	P:Adj; +Voicing(inferred)
+çini	-	-	P:Adj
+çinko	-	-	P:Adj
+çipil	-	-	P:Adj
+çirkef	-	-	P:Adj
+çirkin	-	-	P:Adj
+çiroz	-	-	P:Adj
+çiskin	-	-	P:Adj
+çividi	-	-	P:Adj
+çizik	çiziğ	-	P:Adj; +Voicing(inferred)
+çiçeksever	-	-	P:Adj
+çiğ	-	-	P:Adj
+çiğnem	-	-	P:Adj
+çocuk	çocuğ	-	P:Adj; +Voicing(inferred)
+çocuklu	-	-	P:Adj
+çocukça	-	-	P:Adj
+çok	çoğ	-	P:Adj; A:Voicing
+çokbilmiş	-	-	P:Adj
+çolak	çolağ	-	P:Adj; +Voicing(inferred)
+çolpa	-	-	P:Adj
+çopur	-	-	P:Adj
+çorak	çorağ	-	P:Adj; +Voicing(inferred)
+çorlu	-	-	P:Adj
+çoğu	-	-	P:Adj
+çoğul	-	-	P:Adj
+çoğulcu	-	-	P:Adj
+çulsuz	-	-	P:Adj
+çurçur	-	-	P:Adj
+çuval	-	-	P:Adj
+çökkün	-	-	P:Adj
+çökük	çöküğ	-	P:Adj; +Voicing(inferred)
+çöllük	çöllüğ	-	P:Adj; +Voicing(inferred)
+çözgün	-	-	P:Adj
+çözük	çözüğ	-	P:Adj; +Voicing(inferred)
+çürük	çürüğ	-	P:Adj; +Voicing(inferred)
+çürükçül	-	-	P:Adj
+çıfıt	-	-	P:Adj;A:NoVoicing
+çıkarcı	-	-	P:Adj
+çıkkın	-	-	P:Adj
+çıkma	-	-	P:Adj
+çıkmaz	-	-	P:Adj
+çıkık	çıkığ	-	P:Adj; +Voicing(inferred)
+çılgın	-	-	P:Adj
+çın	-	-	P:Adj
+çınlak	çınlağ	-	P:Adj; +Voicing(inferred)
+çıplak	çıplağ	-	P:Adj; +Voicing(inferred)
+çırçıplak	çırçıplağ	-	P:Adj; +Voicing(inferred)
+çırılçıplak	çırılçıplağ	-	P:Adj; +Voicing(inferred)
+çıtak	çıtağ	-	P:Adj; +Voicing(inferred)
+çıtkırıldım	-	-	P:Adj
+çıtırbom	-	-	P:Adj
+çıyan	-	-	P:Adj
+öbür	-	-	P:Adj
+ödevcil	-	-	P:Adj
+ödlek	ödleğ	-	P:Adj; +Voicing(inferred)
+ödünç	ödünc	-	P:Adj; +Voicing(inferred)
+öksüz	-	-	P:Adj
+ölgün	-	-	P:Adj
+ölmez	-	-	P:Adj
+ölçek	ölçeğ	-	P:Adj; +Voicing(inferred)
+ölçün	-	-	P:Adj
+ölü	-	-	P:Adj
+ölümcül	-	-	P:Adj
+ölümsek	ölümseğ	-	P:Adj; +Voicing(inferred)
+ön	-	-	P:Adj
+öncü	-	-	P:Adj
+öncül	-	-	P:Adj
+ördekbaşı	-	-	P:Adj
+ördekgagası	-	-	P:Adj
+örfî	-	-	P:Adj
+örgü	-	-	P:Adj
+örgün	-	-	P:Adj
+örnek	örneğ	-	P:Adj; +Voicing(inferred)
+örtük	örtüğ	-	P:Adj; +Voicing(inferred)
+öteki	-	-	P:Adj
+ötümlü	-	-	P:Adj
+ötümsüz	-	-	P:Adj
+övüngen	-	-	P:Adj
+öyle	-	-	P:Adj
+öylesi	-	-	P:Adj
+öz	-	-	P:Adj
+özbeöz	-	-	P:Adj
+özden	-	-	P:Adj
+özdeş	-	-	P:Adj
+özel	-	-	P:Adj
+özengen	-	-	P:Adj
+özerk	özerğ	-	P:Adj; +Voicing(inferred)
+özge	-	-	P:Adj
+özgecil	-	-	P:Adj
+özgü	-	-	P:Adj
+özgül	-	-	P:Adj
+özgün	-	-	P:Adj
+özgür	-	-	P:Adj
+öznel	-	-	P:Adj
+özsever	-	-	P:Adj
+özveren	-	-	P:Adj
+özürlü	-	-	P:Adj
+öğür	-	-	P:Adj
+ücra	-	-	P:Adj
+ümitvar	-	-	P:Adj
+ünik	üniğ	-	P:Adj; +Voicing(inferred)
+üniter	-	-	P:Adj
+üniversal	-	-	P:Adj
+üremik	üremiğ	-	P:Adj; +Voicing(inferred)
+üretken	-	-	P:Adj
+ürkek	ürkeğ	-	P:Adj; +Voicing(inferred)
+ürkünç	ürkünc	-	P:Adj; +Voicing(inferred)
+ürolojik	ürolojiğ	-	P:Adj; +Voicing(inferred)
+üryan	-	-	P:Adj
+üst	-	-	P:Adj
+üstel	-	-	P:Adj
+üstelik	üsteliğ	-	P:Adj; +Voicing(inferred)
+üstün	-	-	P:Adj
+üstünkörü	-	-	P:Adj
+ütopik	ütopiğ	-	P:Adj; +Voicing(inferred)
+ütopist	-	-	P:Adj;A:NoVoicing
+üvey	-	-	P:Adj
+üye	-	-	P:Adj
+üzgün	-	-	P:Adj
+üçer	-	-	P:Adj
+üçgen	-	-	P:Adj
+üçüncül	-	-	P:Adj
+üçüz	-	-	P:Adj
+üşengen	-	-	P:Adj
+üşengeç	üşengec	-	P:Adj; +Voicing(inferred)
+üşütük	üşütüğ	-	P:Adj; +Voicing(inferred)
+ılgın	-	-	P:Adj
+ılıcak	ılıcağ	-	P:Adj; +Voicing(inferred)
+ılık	ılığ	-	P:Adj; +Voicing(inferred)
+ılıman	-	-	P:Adj
+ıpıslak	ıpıslağ	-	P:Adj; +Voicing(inferred)
+ıpıssız	-	-	P:Adj
+ırak	ırağ	-	P:Adj; +Voicing(inferred)
+ıraksak	ıraksağ	-	P:Adj; +Voicing(inferred)
+ıslak	ıslağ	-	P:Adj; +Voicing(inferred)
+ıssız	-	-	P:Adj
+ısıalan	-	-	P:Adj
+ısıl	-	-	P:Adj
+ısıveren	-	-	P:Adj
+ızgara	-	-	P:Adj
+ışkın	-	-	P:Adj
+ışıl	-	-	P:Adj
+ışıldak	ışıldağ	-	P:Adj; +Voicing(inferred)
+şad	-	-	P:Adj
+şah	-	-	P:Adj
+şahane	-	-	P:Adj
+şahbaz	-	-	P:Adj
+şaheser	-	-	P:Adj
+şahsi	-	-	P:Adj
+şahsî	-	-	P:Adj; Ref:şahsi_Adj
+şair	-	-	P:Adj
+şairane	-	-	P:Adj
+şakrak	-	-	P:Adj;A:NoVoicing
+şali	-	-	P:Adj
+şallak	şallağ	-	P:Adj; +Voicing(inferred)
+şamil	-	-	P:Adj
+şapşal	-	-	P:Adj
+şapşalak	şapşalağ	-	P:Adj; +Voicing(inferred)
+şarabî	-	-	P:Adj
+şarkî	-	-	P:Adj
+şatır	-	-	P:Adj
+şavalak	şavalağ	-	P:Adj; +Voicing(inferred)
+şavk	-	-	P:Adj
+şayan	-	-	P:Adj
+şayeste	-	-	P:Adj
+şayi	-	-	P:Adj
+şaz	-	-	P:Adj
+şaşkaloz	-	-	P:Adj
+şaşkın	-	-	P:Adj
+şaşmaz	-	-	P:Adj
+şaşı	-	-	P:Adj
+şebek	şebeğ	-	P:Adj; +Voicing(inferred)
+şeci	-	-	P:Adj
+şedit	şedid	-	P:Adj; +Voicing(inferred)
+şeffaf	-	-	P:Adj
+şefik	şefiğ	-	P:Adj; +Voicing(inferred)
+şehevî	-	-	P:Adj
+şehvanî	-	-	P:Adj
+şehvetperest	şehvetperesd	-	P:Adj; +Voicing(inferred)
+şeker	-	-	P:Adj
+şekerrenk	şekerreng	-	P:Adj; +Voicing(inferred)
+şekilperest	şekilperesd	-	P:Adj; +Voicing(inferred)
+şeklî	-	-	P:Adj
+şematik	şematiğ	-	P:Adj; +Voicing(inferred)
+şemsî	-	-	P:Adj
+şen	-	-	P:Adj
+şeni	-	-	P:Adj
+şer	-	-	P:Adj
+şerefyap	şerefyab	-	P:Adj; +Voicing(inferred)
+şerif	-	-	P:Adj
+şeriye	-	-	P:Adj
+şerî	-	-	P:Adj
+şetlant	şetland	-	P:Adj; +Voicing(inferred)
+şev	-	-	P:Adj
+şeytan	-	-	P:Adj
+şeytanî	-	-	P:Adj
+şifahî	-	-	P:Adj
+şifon	-	-	P:Adj
+şikemperver	-	-	P:Adj
+şikesiz	-	-	P:Adj
+şikeste	-	-	P:Adj
+şimalî	-	-	P:Adj
+şimşir	-	-	P:Adj
+şinanay	-	-	P:Adj
+şinik	şiniğ	-	P:Adj; +Voicing(inferred)
+şipşak	şipşağ	-	P:Adj; +Voicing(inferred)
+şipşirin	-	-	P:Adj
+şirin	-	-	P:Adj
+şirret	-	-	P:Adj; A:NoVoicing
+şivekâr	-	-	P:Adj
+şizofrenik	şizofreniğ	-	P:Adj; +Voicing(inferred)
+şiş	-	-	P:Adj
+şişe	-	-	P:Adj
+şişik	şişiğ	-	P:Adj; +Voicing(inferred)
+şişkin	-	-	P:Adj
+şişko	-	-	P:Adj
+şişman	-	-	P:Adj
+şok	-	-	P:Adj
+şoke	-	-	P:Adj
+şom	-	-	P:Adj
+şopar	-	-	P:Adj
+şu	-	-	P:Adj
+şuh	-	-	P:Adj
+şuncacık	şuncacığ	-	P:Adj; +Voicing(inferred)
+şık	-	-	P:Adj
+şıllık	şıllığ	-	P:Adj; +Voicing(inferred)
+şımarık	şımarığ	-	P:Adj; +Voicing(inferred)
+şırfıntı	-	-	P:Adj

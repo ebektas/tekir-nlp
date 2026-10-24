@@ -1,0 +1,48 @@
+# Tekir seed noun lexicon.
+# Columns (tab-separated): lemma	vowel_stem	harmony_vowel	gloss
+#
+# vowel_stem: the stem used before vowel-initial suffixes ("-" = same as lemma).
+#   This one mechanism encodes final voicing (kitap/kitab), vowel ellipsis
+#   (burun/burn), consonant doubling (hak/hakk), nk->ng (renk/reng), and
+#   y-stems (su/suy) from Oflazer (1994) rules 10, 13, 15-17, 20-21.
+# harmony_vowel: vowel-harmony override for non-harmonizing loans ("-" = none).
+#   The override stands in for the (front) quality of the root-final consonant
+#   cluster, e.g. saat -> saati, alkol -> alkolü.
+ev	-	-	house
+okul	-	-	school
+araba	-	-	car
+anne	-	-	mother
+kedi	-	-	cat
+kapı	-	-	door
+göz	-	-	eye
+gün	-	-	day
+yol	-	-	road
+deniz	-	-	sea
+masa	-	-	table
+erk	-	-	power (final k never voices)
+kitap	kitab	-	book
+dolap	dolab	-	cupboard
+ağaç	ağac	-	tree
+çocuk	çocuğ	-	child
+ayak	ayağ	-	foot
+tarak	tarağ	-	comb
+renk	reng	-	color (nk -> ng)
+kalp	kalb	i	heart (loan, front harmony)
+burun	burn	-	nose (vowel ellipsis)
+ağız	ağz	-	mouth (vowel ellipsis)
+alın	aln	-	forehead (vowel ellipsis)
+oğul	oğl	-	son (vowel ellipsis)
+şehir	şehr	-	city (vowel ellipsis)
+akıl	akl	-	mind (vowel ellipsis)
+gönül	gönl	-	heart/feeling (vowel ellipsis)
+vakit	vakt	-	time (vowel ellipsis)
+hak	hakk	-	right (consonant doubling)
+tıp	tıbb	-	medicine (doubling + voicing)
+şık	-	-	chic (loan, no doubling)
+şık	şıkk	-	choice item (consonant doubling)
+su	suy	-	water (y-stem)
+saat	-	i	hour (loan, front harmony)
+alkol	-	ü	alcohol (loan, front rounded harmony)
+gol	-	ü	goal (loan, front rounded harmony)
+harf	-	i	letter (loan, front harmony)
+petrol	-	ü	petroleum (loan, front rounded harmony)

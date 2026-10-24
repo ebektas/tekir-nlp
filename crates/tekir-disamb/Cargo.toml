@@ -1,0 +1,12 @@
+[package]
+name = "tekir-disamb"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+tekir-morph = { path = "../tekir-morph" }
+tekir-tokenize = { path = "../tekir-tokenize" }
+serde.workspace = true

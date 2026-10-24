@@ -1,0 +1,11 @@
+[package]
+name = "tekir-core"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde.workspace = true
+unicode-segmentation = "1.12"
