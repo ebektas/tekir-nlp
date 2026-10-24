@@ -758,6 +758,7 @@ name = "tekir-prep"
 version = "0.1.0"
 dependencies = [
  "serde",
+ "tekir-core",
  "tekir-morph",
 ]
 

@@ -262,13 +262,13 @@ impl QualityScorer {
         if let Some(&covered) = scratch.coverage.get(scratch.lower.as_str()) {
             return covered;
         }
-        let response = self.morph.analyze(scratch.lower.clone());
-        let covered = response
-            .output
+        let covered = self
+            .morph
+            .analyze_word(&scratch.lower)
             .analyses
             .iter()
             .any(|analysis| analysis.source != AnalysisSource::Guessed);
-        scratch.coverage.insert(response.original, covered);
+        scratch.coverage.insert(scratch.lower.clone(), covered);
         covered
     }
 }

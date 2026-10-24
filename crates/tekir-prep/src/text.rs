@@ -1,6 +1,6 @@
-//! Shared text helpers: Turkish-correct lowercasing and fixed,
-//! seed-free hashing (FNV-1a + murmur3 finalizer) so results never depend
-//! on OS randomness.
+//! Shared text helpers: Turkish-correct lowercasing into reused buffers and
+//! fixed, seed-free hashing (FNV-1a + murmur3 finalizer) so results never
+//! depend on OS randomness.
 
 use std::collections::{HashMap, HashSet};
 use std::hash::{BuildHasherDefault, Hasher};
@@ -8,18 +8,7 @@ use std::hash::{BuildHasherDefault, Hasher};
 const FNV_OFFSET: u64 = 0xcbf2_9ce4_8422_2325;
 const FNV_PRIME: u64 = 0x0000_0100_0000_01b3;
 
-/// Calls `f` with the Turkish lowercase form of `ch` (`I -> ı`, `İ -> i`).
-/// `tekir-normalize` only exposes whole-string normalization, so the
-/// per-char rule lives here to keep hot loops allocation-free.
-#[inline]
-pub(crate) fn for_each_lower(ch: char, mut f: impl FnMut(char)) {
-    match ch {
-        'I' => f('ı'),
-        'İ' => f('i'),
-        _ if ch.is_ascii() => f(ch.to_ascii_lowercase()),
-        _ => ch.to_lowercase().for_each(f),
-    }
-}
+use tekir_core::for_each_turkish_lower as for_each_lower;
 
 /// Appends the Turkish lowercase form of `word` to `out`.
 pub(crate) fn push_lower(word: &str, out: &mut String) {

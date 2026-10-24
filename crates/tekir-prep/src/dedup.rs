@@ -12,7 +12,7 @@
 //! [`exact_duplicates`] first (it is cheap and keeps LSH buckets small),
 //! then [`MinHasher::signatures`] and [`near_duplicates`].
 
-use std::thread;
+use tekir_morph::batch::parallel_map;
 
 use serde::Serialize;
 
@@ -111,25 +111,7 @@ impl MinHasher {
     /// threads (`0` = available parallelism). Output is identical for every
     /// thread count.
     pub fn signatures<T: AsRef<str> + Sync>(&self, texts: &[T], threads: usize) -> Vec<Signature> {
-        let threads = match threads {
-            0 => thread::available_parallelism().map_or(1, usize::from),
-            n => n,
-        };
-        let mut out = vec![Signature(Vec::new()); texts.len()];
-        if texts.is_empty() {
-            return out;
-        }
-        let chunk = texts.len().div_ceil(threads.min(texts.len()));
-        thread::scope(|scope| {
-            for (inputs, outputs) in texts.chunks(chunk).zip(out.chunks_mut(chunk)) {
-                scope.spawn(move || {
-                    for (text, slot) in inputs.iter().zip(outputs) {
-                        *slot = self.signature(text.as_ref());
-                    }
-                });
-            }
-        });
-        out
+        parallel_map(texts, threads, |text| self.signature(text.as_ref()))
     }
 }
 

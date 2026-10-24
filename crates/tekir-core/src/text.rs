@@ -2,13 +2,21 @@
 pub fn turkish_lowercase(input: &str) -> String {
     let mut output = String::with_capacity(input.len());
     for ch in input.chars() {
-        match ch {
-            'I' => output.push('ı'),
-            'İ' => output.push('i'),
-            _ => output.extend(ch.to_lowercase()),
-        }
+        for_each_turkish_lower(ch, |lower| output.push(lower));
     }
     output
+}
+
+/// Call `f` with each char of the Turkish lowercase form of `ch`, without
+/// allocating (for hashing and other hot loops).
+#[inline]
+pub fn for_each_turkish_lower(ch: char, mut f: impl FnMut(char)) {
+    match ch {
+        'I' => f('ı'),
+        'İ' => f('i'),
+        _ if ch.is_ascii() => f(ch.to_ascii_lowercase()),
+        _ => ch.to_lowercase().for_each(f),
+    }
 }
 
 /// Whether `input` is already lowercase in the Turkish sense, so
