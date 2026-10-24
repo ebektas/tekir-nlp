@@ -1341,21 +1341,14 @@ mod tests {
     fn generates_expected_gold_noun_surfaces() {
         let lexicon = seed();
 
-        for case in GOLD_GENERATION_CASES {
+        for &(lemma, number, possessive, case, expected) in GOLD_GENERATION_CASES {
             let entry = lexicon
-                .entry_by_lemma(case.lemma)
+                .entry_by_lemma(lemma)
                 .expect("gold lemma should exist in seed lexicon");
             assert_eq!(
-                generate_noun_surface(
-                    entry,
-                    &NounPath::new(case.number, case.possessive, case.case)
-                ),
-                case.expected_surface,
-                "unexpected surface for lemma={} path=({:?},{:?},{:?})",
-                case.lemma,
-                case.number,
-                case.possessive,
-                case.case
+                generate_noun_surface(entry, &NounPath::new(number, possessive, case)),
+                expected,
+                "unexpected surface for lemma={lemma} path=({number:?},{possessive:?},{case:?})"
             );
         }
     }

@@ -100,15 +100,14 @@ mod tests {
     fn matches_shared_preference_expectations() {
         let lexicon = Lexicon::seed();
 
-        for case in GOLD_PREFERENCE_CASES {
-            let analyses = analyze_word(&lexicon, case.surface);
+        for &(surface, expected_best_gloss) in GOLD_PREFERENCE_CASES {
+            let analyses = analyze_word(&lexicon, surface);
             let best = choose_best_noun_analysis(&analyses)
                 .expect("shared preference case should have at least one analysis");
 
             assert_eq!(
-                best.lexical_form, case.expected_best_gloss,
-                "unexpected best analysis for {}",
-                case.surface
+                best.lexical_form, expected_best_gloss,
+                "unexpected best analysis for {surface}"
             );
         }
     }

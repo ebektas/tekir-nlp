@@ -2,7 +2,8 @@ pub mod analysis;
 pub mod analyzer;
 pub mod closed;
 pub mod generator;
-pub mod gold;
+#[cfg(test)]
+mod gold;
 pub mod guess;
 pub mod lexical;
 pub mod lexicon;

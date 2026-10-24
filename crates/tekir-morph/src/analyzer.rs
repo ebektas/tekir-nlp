@@ -2102,15 +2102,13 @@ mod tests {
     fn analyzes_expected_gold_cases() {
         let lexicon = seed();
 
-        for case in GOLD_ANALYSIS_CASES {
-            let analyses = analyze_word(&lexicon, case.surface);
+        for &(surface, expected_gloss) in GOLD_ANALYSIS_CASES {
+            let analyses = analyze_word(&lexicon, surface);
             assert!(
                 analyses
                     .iter()
-                    .any(|analysis| analysis.lexical_form == case.expected_gloss),
-                "surface {} should include analysis {}; got {:?}",
-                case.surface,
-                case.expected_gloss,
+                    .any(|analysis| analysis.lexical_form == expected_gloss),
+                "surface {surface} should include analysis {expected_gloss}; got {:?}",
                 analyses
                     .iter()
                     .map(|analysis| analysis.lexical_form.as_str())
