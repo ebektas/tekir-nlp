@@ -1,20 +1,7 @@
 use serde::Serialize;
 
-#[derive(Debug, Clone, PartialEq, Eq, Serialize)]
-pub struct TextRequest<Options> {
-    pub input: String,
-    pub options: Options,
-}
-
-impl<Options> TextRequest<Options> {
-    pub fn new(input: impl Into<String>, options: Options) -> Self {
-        Self {
-            input: input.into(),
-            options,
-        }
-    }
-}
-
+/// Response envelope shared by the text services: the original input, its
+/// byte length, and the service-specific output.
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct TextTransformResponse<Output> {
     pub original: String,
@@ -32,11 +19,4 @@ impl<Output> TextTransformResponse<Output> {
             input_len_bytes,
         }
     }
-}
-
-pub trait TextTransformer {
-    type Options;
-    type Output;
-
-    fn execute(&self, request: TextRequest<Self::Options>) -> TextTransformResponse<Self::Output>;
 }

@@ -38,18 +38,11 @@ layer over those services.
 
 ## Core Design
 
-The shared service contract is defined in [crates/tekir-core/src/service.rs](crates/tekir-core/src/service.rs).
-
-Key types:
-
-- `TextRequest<Options>`
-  - Carries raw input text plus service-specific options
-- `TextTransformResponse<Output>`
-  - Carries the original input, structured output, and `input_len_bytes`
-- `TextTransformer`
-  - Trait implemented by service crates
-
-This pattern keeps services uniform even when their outputs differ.
+Each service exposes plain methods (`MorphService::analyze`,
+`TokenizeService::tokenize`, ...) that return a shared
+`TextTransformResponse<Output>` envelope, defined in
+[crates/tekir-core/src/service.rs](crates/tekir-core/src/service.rs): the
+original input, its `input_len_bytes`, and the service-specific output.
 
 ## Data Model
 
@@ -109,14 +102,13 @@ When adding a new NLP crate:
 
 - Put reusable data structures in `tekir-core` only if multiple crates need them
 - Expose a small service type such as `XService`
-- Use `TextRequest<Options>` and `TextTransformResponse<Output>`
+- Return a `TextTransformResponse<Output>` from its methods
 - Keep deterministic logic in the crate itself, not in the CLI
 - Add focused unit tests in the crate before wiring new CLI behavior
 
 Recommended naming pattern:
 
 - `XMode`
-- `XRequest`
 - `XOutput`
 - `XResponse`
 - `XService`

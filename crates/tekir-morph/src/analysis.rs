@@ -1,7 +1,7 @@
 use std::sync::Arc;
 
 use serde::Serialize;
-use tekir_core::{TextRequest, TextTransformResponse, TextTransformer};
+use tekir_core::TextTransformResponse;
 
 use crate::{
     analyzer::Analyzer,
@@ -9,8 +9,6 @@ use crate::{
     preference::choose_best_noun_analysis,
     state::{IgPos, InflectionGroup},
 };
-
-pub type MorphRequest = TextRequest<()>;
 
 /// Where an analysis came from: the lexicon, the unknown-word guesser,
 /// apostrophe suffixation, or the question particle.
@@ -126,30 +124,22 @@ impl MorphService {
     }
 
     pub fn analyze(&self, input: impl Into<String>) -> MorphResponse {
-        self.execute(MorphRequest::new(input, ()))
-    }
-}
-
-impl TextTransformer for MorphService {
-    type Options = ();
-    type Output = MorphOutput;
-
-    fn execute(&self, request: MorphRequest) -> MorphResponse {
-        let analyses = if let Some(apostrophe) = crate::guess::apostrophe_analyses(&request.input) {
+        let input = input.into();
+        let analyses = if let Some(apostrophe) = crate::guess::apostrophe_analyses(&input) {
             apostrophe
         } else {
-            let mut analyses = Analyzer::new(&self.lexicon).analyze(&request.input);
-            analyses.extend(crate::closed::closed_analyses(&request.input));
-            analyses.extend(crate::guess::question_particle_analyses(&request.input));
+            let mut analyses = Analyzer::new(&self.lexicon).analyze(&input);
+            analyses.extend(crate::closed::closed_analyses(&input));
+            analyses.extend(crate::guess::question_particle_analyses(&input));
             if analyses.is_empty() {
-                analyses = crate::guess::guessed_analyses(&request.input);
+                analyses = crate::guess::guessed_analyses(&input);
             }
             analyses
         };
         let best_analysis = choose_best_noun_analysis(&analyses);
 
         TextTransformResponse::new(
-            request.input,
+            input,
             MorphOutput {
                 best_analysis,
                 analysis_count: analyses.len(),

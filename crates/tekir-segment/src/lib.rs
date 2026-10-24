@@ -1,7 +1,5 @@
 use serde::Serialize;
-use tekir_core::{
-    SegmentKind, SegmentSpan, TextRequest, TextTransformResponse, TextTransformer, TokenKind,
-};
+use tekir_core::{SegmentKind, SegmentSpan, TextTransformResponse, TokenKind};
 use tekir_tokenize::{TokenizeMode, TokenizeService};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
@@ -9,8 +7,6 @@ use tekir_tokenize::{TokenizeMode, TokenizeService};
 pub enum SegmentMode {
     Turkish,
 }
-
-pub type SegmentRequest = TextRequest<SegmentMode>;
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct SegmentOutput {
@@ -24,27 +20,19 @@ pub type SegmentResponse = TextTransformResponse<SegmentOutput>;
 #[derive(Debug, Default, Clone, Copy)]
 pub struct SegmentService;
 
-impl TextTransformer for SegmentService {
-    type Options = SegmentMode;
-    type Output = SegmentOutput;
-
-    fn execute(&self, request: SegmentRequest) -> SegmentResponse {
-        let segments = split_segments(&request.input, request.options);
+impl SegmentService {
+    pub fn split(&self, input: impl Into<String>, mode: SegmentMode) -> SegmentResponse {
+        let input = input.into();
+        let segments = split_segments(&input, mode);
 
         TextTransformResponse::new(
-            request.input,
+            input,
             SegmentOutput {
                 segment_count: segments.len(),
                 segments,
-                mode: request.options,
+                mode: mode,
             },
         )
-    }
-}
-
-impl SegmentService {
-    pub fn split(&self, input: impl Into<String>, mode: SegmentMode) -> SegmentResponse {
-        self.execute(SegmentRequest::new(input, mode))
     }
 }
 
@@ -272,16 +260,13 @@ fn with_kind(mut span: SegmentSpan, kind: SegmentKind) -> SegmentSpan {
 
 #[cfg(test)]
 mod tests {
-    use super::{SegmentMode, SegmentRequest, SegmentService};
-    use tekir_core::{SegmentKind, TextTransformer};
+    use super::{SegmentMode, SegmentService};
+    use tekir_core::SegmentKind;
 
     #[test]
     fn splits_simple_sentences() {
         let service = SegmentService;
-        let response = service.execute(SegmentRequest::new(
-            "Merhaba dunya. Nasılsın? İyiyim!",
-            SegmentMode::Turkish,
-        ));
+        let response = service.split("Merhaba dunya. Nasılsın? İyiyim!", SegmentMode::Turkish);
 
         assert_eq!(
             response
@@ -297,10 +282,7 @@ mod tests {
     #[test]
     fn does_not_split_after_common_abbreviations() {
         let service = SegmentService;
-        let response = service.execute(SegmentRequest::new(
-            "Dr. Ahmet geldi. Merhaba dedi.",
-            SegmentMode::Turkish,
-        ));
+        let response = service.split("Dr. Ahmet geldi. Merhaba dedi.", SegmentMode::Turkish);
 
         assert_eq!(
             response
@@ -316,10 +298,7 @@ mod tests {
     #[test]
     fn keeps_byte_spans_for_sentences() {
         let service = SegmentService;
-        let response = service.execute(SegmentRequest::new(
-            "Ankara'ya gitti mi? Evet.",
-            SegmentMode::Turkish,
-        ));
+        let response = service.split("Ankara'ya gitti mi? Evet.", SegmentMode::Turkish);
 
         assert_eq!(response.output.segments[0].start_byte, 0);
         assert_eq!(response.output.segments[0].end_byte, 19);
@@ -330,10 +309,10 @@ mod tests {
     #[test]
     fn splits_news_headings_and_paragraphs() {
         let service = SegmentService;
-        let response = service.execute(SegmentRequest::new(
+        let response = service.split(
             "'MAYIS ORTASINI AŞMAYACAK ŞEKİLDE'\n\nBağımsız Maden İş Sendikası Avukatı dedi.\n\nİÇİŞLERİ BAKANLIĞI'NDAN AÇIKLAMA\n\nİçişleri Bakanlığı'ndan açıklama yapıldı.",
             SegmentMode::Turkish,
-        ));
+        );
 
         assert_eq!(
             response
@@ -356,10 +335,7 @@ mod tests {
     #[test]
     fn marks_colon_ended_intro_as_lead_in() {
         let service = SegmentService;
-        let response = service.execute(SegmentRequest::new(
-            "Açıklamada şu ifadelere yer verildi:",
-            SegmentMode::Turkish,
-        ));
+        let response = service.split("Açıklamada şu ifadelere yer verildi:", SegmentMode::Turkish);
 
         assert_eq!(response.output.segments[0].kind, SegmentKind::LeadIn);
     }

@@ -1,5 +1,5 @@
 use serde::Serialize;
-use tekir_core::{TextRequest, TextTransformResponse, TextTransformer, Token, TokenKind};
+use tekir_core::{TextTransformResponse, Token, TokenKind};
 use unicode_segmentation::UnicodeSegmentation;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
@@ -10,8 +10,6 @@ pub enum TokenizeMode {
     Graphemes,
     Lines,
 }
-
-pub type TokenizeRequest = TextRequest<TokenizeMode>;
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct TokenizeOutput {
@@ -25,27 +23,19 @@ pub type TokenizeResponse = TextTransformResponse<TokenizeOutput>;
 #[derive(Debug, Default, Clone, Copy)]
 pub struct TokenizeService;
 
-impl TextTransformer for TokenizeService {
-    type Options = TokenizeMode;
-    type Output = TokenizeOutput;
-
-    fn execute(&self, request: TokenizeRequest) -> TokenizeResponse {
-        let tokens = tokenize_text(&request.input, request.options);
+impl TokenizeService {
+    pub fn tokenize(&self, input: impl Into<String>, mode: TokenizeMode) -> TokenizeResponse {
+        let input = input.into();
+        let tokens = tokenize_text(&input, mode);
 
         TextTransformResponse::new(
-            request.input,
+            input,
             TokenizeOutput {
                 token_count: tokens.len(),
                 tokens,
-                mode: request.options,
+                mode: mode,
             },
         )
-    }
-}
-
-impl TokenizeService {
-    pub fn tokenize(&self, input: impl Into<String>, mode: TokenizeMode) -> TokenizeResponse {
-        self.execute(TokenizeRequest::new(input, mode))
     }
 }
 
@@ -202,16 +192,13 @@ fn tokenize_lines(input: &str) -> Vec<Token> {
 
 #[cfg(test)]
 mod tests {
-    use super::{TokenizeMode, TokenizeRequest, TokenizeService};
-    use tekir_core::{TextTransformer, TokenKind};
+    use super::{TokenizeMode, TokenizeService};
+    use tekir_core::TokenKind;
 
     #[test]
     fn turkish_mode_keeps_apostrophe_suffixes_and_splits_punctuation() {
         let service = TokenizeService;
-        let response = service.execute(TokenizeRequest::new(
-            "Ankara'ya gidiyor, değil mi?",
-            TokenizeMode::Turkish,
-        ));
+        let response = service.tokenize("Ankara'ya gidiyor, değil mi?", TokenizeMode::Turkish);
 
         assert_eq!(
             response
@@ -231,10 +218,7 @@ mod tests {
     #[test]
     fn classifies_numbers_and_abbreviations() {
         let service = TokenizeService;
-        let response = service.execute(TokenizeRequest::new(
-            "Dr. 2026 geldi.",
-            TokenizeMode::Turkish,
-        ));
+        let response = service.tokenize("Dr. 2026 geldi.", TokenizeMode::Turkish);
 
         assert_eq!(response.output.tokens[0].kind, TokenKind::Abbreviation);
         assert_eq!(response.output.tokens[2].kind, TokenKind::Number);
@@ -243,10 +227,7 @@ mod tests {
     #[test]
     fn tokenizes_by_whitespace() {
         let service = TokenizeService;
-        let response = service.execute(TokenizeRequest::new(
-            "merhaba guzel dunya",
-            TokenizeMode::Whitespace,
-        ));
+        let response = service.tokenize("merhaba guzel dunya", TokenizeMode::Whitespace);
 
         assert_eq!(
             response
@@ -263,7 +244,7 @@ mod tests {
     #[test]
     fn tokenizes_by_graphemes() {
         let service = TokenizeService;
-        let response = service.execute(TokenizeRequest::new("sa", TokenizeMode::Graphemes));
+        let response = service.tokenize("sa", TokenizeMode::Graphemes);
 
         assert_eq!(
             response
@@ -280,7 +261,7 @@ mod tests {
     #[test]
     fn tokenizes_by_lines() {
         let service = TokenizeService;
-        let response = service.execute(TokenizeRequest::new("bir\niki", TokenizeMode::Lines));
+        let response = service.tokenize("bir\niki", TokenizeMode::Lines);
 
         assert_eq!(
             response

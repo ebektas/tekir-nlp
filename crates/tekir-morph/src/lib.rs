@@ -12,8 +12,7 @@ pub mod rules;
 pub mod state;
 
 pub use analysis::{
-    AnalysisSource, MorphAnalysis, MorphOutput, MorphRequest, MorphResponse, MorphService,
-    PartOfSpeech,
+    AnalysisSource, MorphAnalysis, MorphOutput, MorphResponse, MorphService, PartOfSpeech,
 };
 pub use analyzer::{Analyzer, MAX_IGS, RawAnalysis, analyze_word};
 pub use generator::generate_from_igs;

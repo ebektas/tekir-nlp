@@ -1,5 +1,5 @@
 use serde::Serialize;
-use tekir_core::{TextRequest, TextTransformResponse, TextTransformer};
+use tekir_core::TextTransformResponse;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
 #[serde(rename_all = "snake_case")]
@@ -7,8 +7,6 @@ pub enum NormalizeMode {
     Basic,
     Turkish,
 }
-
-pub type NormalizeRequest = TextRequest<NormalizeMode>;
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub struct NormalizeOutput {
@@ -22,27 +20,19 @@ pub type NormalizeResponse = TextTransformResponse<NormalizeOutput>;
 #[derive(Debug, Default, Clone, Copy)]
 pub struct NormalizeService;
 
-impl TextTransformer for NormalizeService {
-    type Options = NormalizeMode;
-    type Output = NormalizeOutput;
-
-    fn execute(&self, request: NormalizeRequest) -> NormalizeResponse {
-        let normalized = normalize_text(&request.input, request.options);
+impl NormalizeService {
+    pub fn normalize(&self, input: impl Into<String>, mode: NormalizeMode) -> NormalizeResponse {
+        let input = input.into();
+        let normalized = normalize_text(&input, mode);
 
         TextTransformResponse::new(
-            request.input,
+            input,
             NormalizeOutput {
                 output_len_bytes: normalized.len(),
                 normalized,
-                mode: request.options,
+                mode: mode,
             },
         )
-    }
-}
-
-impl NormalizeService {
-    pub fn normalize(&self, input: impl Into<String>, mode: NormalizeMode) -> NormalizeResponse {
-        self.execute(NormalizeRequest::new(input, mode))
     }
 }
 
@@ -189,16 +179,13 @@ fn turkish_lowercase(input: &str) -> String {
 
 #[cfg(test)]
 mod tests {
-    use super::{NormalizeMode, NormalizeRequest, NormalizeService};
-    use tekir_core::TextTransformer;
+    use super::{NormalizeMode, NormalizeService};
 
     #[test]
     fn basic_mode_collapses_whitespace_and_normalizes_quotes() {
         let service = NormalizeService;
-        let response = service.execute(NormalizeRequest::new(
-            "  Merhaba\tDünya\u{2019}dan  selam  ",
-            NormalizeMode::Basic,
-        ));
+        let response =
+            service.normalize("  Merhaba\tDünya\u{2019}dan  selam  ", NormalizeMode::Basic);
 
         assert_eq!(response.output.normalized, "Merhaba Dünya'dan selam");
     }
@@ -206,10 +193,7 @@ mod tests {
     #[test]
     fn turkish_mode_uses_turkish_aware_lowercasing() {
         let service = NormalizeService;
-        let response = service.execute(NormalizeRequest::new(
-            "I İZMİR ISTANBUL",
-            NormalizeMode::Turkish,
-        ));
+        let response = service.normalize("I İZMİR ISTANBUL", NormalizeMode::Turkish);
 
         assert_eq!(response.output.normalized, "ı izmir ıstanbul");
     }
@@ -217,10 +201,10 @@ mod tests {
     #[test]
     fn basic_mode_strips_invisible_chars_and_normalizes_unicode_punctuation() {
         let service = NormalizeService;
-        let response = service.execute(NormalizeRequest::new(
+        let response = service.normalize(
             "Mer\u{200B}haba\u{00AD}...\u{2026} dünya\u{2014}dan",
             NormalizeMode::Basic,
-        ));
+        );
 
         assert_eq!(response.output.normalized, "Merhaba...... dünya-dan");
     }
@@ -228,10 +212,10 @@ mod tests {
     #[test]
     fn basic_mode_repairs_apostrophe_suffix_spacing() {
         let service = NormalizeService;
-        let response = service.execute(NormalizeRequest::new(
+        let response = service.normalize(
             "Ankara \u{2019} ya gittik , kitap \u{2019} ları aldık .",
             NormalizeMode::Basic,
-        ));
+        );
 
         assert_eq!(
             response.output.normalized,
