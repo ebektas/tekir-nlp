@@ -26,9 +26,8 @@ cargo run -p tekir-cli -- spell "kitaplr"
 cargo run -p tekir-cli -- segment "Dr. Ahmet geldi. Merhaba dedi."
 ```
 
-`morph` uses a small seed lexicon by default; pass `--lexicon` (repeatable)
-with the `crates/tekir-morph/data/zemberek-*.tsv` files for the full one.
-`disamb`, `spell`, and the server load the full lexicon automatically.
+Everything loads the full built-in lexicon; pass `--lexicon PATH`
+(repeatable) to use your own TSV files instead.
 
 Batch mode: `--stdin --input-format jsonl --output jsonl --jobs N` reads
 `{"id": ..., "text": ...}` lines and keeps output order.

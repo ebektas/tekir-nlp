@@ -12,7 +12,7 @@ use std::sync::Arc;
 
 use anyhow::{Context, Result};
 use serde::Serialize;
-use tekir_morph::{Lexicon, MorphMode, MorphService};
+use tekir_morph::{Lexicon, MorphService};
 use tekir_normalize::{NormalizeMode, NormalizeService};
 use tekir_segment::{SegmentMode, SegmentService};
 use tekir_tokenize::{TokenizeMode, TokenizeService};
@@ -102,7 +102,7 @@ pub fn run_serve(args: ServeArgs) -> Result<()> {
     });
 
     let service = if config.lexicon.is_empty() {
-        MorphService::with_lexicon(Lexicon::full())
+        MorphService::new()
     } else {
         MorphService::with_lexicon(
             Lexicon::from_tsv_paths(&config.lexicon).context("failed to load lexicon files")?,
@@ -179,10 +179,7 @@ fn dispatch(
     match path {
         "/morph" => envelope(
             "morph",
-            &services
-                .pipeline
-                .service()
-                .analyze(body.text.clone(), MorphMode::NounBaseline),
+            &services.pipeline.service().analyze(body.text.clone()),
         ),
         "/disamb" => envelope("disamb", &services.pipeline.analyze_sentence(&body.text)),
         "/lemmas" => envelope("lemmas", &services.pipeline.lemmas(&body.text)),

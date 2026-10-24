@@ -11,13 +11,7 @@ use crate::{
     state::{Case, InflectionGroup, NounMorpheme, Number, Possessive},
 };
 
-#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
-#[serde(rename_all = "snake_case")]
-pub enum MorphMode {
-    NounBaseline,
-}
-
-pub type MorphRequest = TextRequest<MorphMode>;
+pub type MorphRequest = TextRequest<()>;
 
 /// Where an analysis came from: the lexicon, the unknown-word guesser,
 /// apostrophe suffixation, or the question particle.
@@ -75,7 +69,6 @@ pub struct MorphAnalysis {
 pub struct MorphOutput {
     pub best_analysis: Option<MorphAnalysis>,
     pub analyses: Vec<MorphAnalysis>,
-    pub mode: MorphMode,
     pub analysis_count: usize,
 }
 
@@ -97,8 +90,13 @@ impl Default for MorphService {
 }
 
 impl MorphService {
-    /// Service over the built-in seed lexicon.
+    /// Service over the full built-in lexicon (seed + Zemberek roots).
     pub fn new() -> Self {
+        Self::with_lexicon(Lexicon::full())
+    }
+
+    /// Service over the small seed lexicon (fast to build; used by tests).
+    pub fn seed() -> Self {
         Self::with_lexicon(Lexicon::seed())
     }
 
@@ -114,30 +112,26 @@ impl MorphService {
         &self.lexicon
     }
 
-    pub fn analyze(&self, input: impl Into<String>, mode: MorphMode) -> MorphResponse {
-        self.execute(MorphRequest::new(input, mode))
+    pub fn analyze(&self, input: impl Into<String>) -> MorphResponse {
+        self.execute(MorphRequest::new(input, ()))
     }
 }
 
 impl TextTransformer for MorphService {
-    type Options = MorphMode;
+    type Options = ();
     type Output = MorphOutput;
 
     fn execute(&self, request: MorphRequest) -> MorphResponse {
-        let analyses = match request.options {
-            MorphMode::NounBaseline => {
-                if let Some(apostrophe) = crate::guess::apostrophe_analyses(&request.input) {
-                    apostrophe
-                } else {
-                    let mut analyses = Analyzer::new(&self.lexicon).analyze(&request.input);
-                    analyses.extend(crate::closed::closed_analyses(&request.input));
-                    analyses.extend(crate::guess::question_particle_analyses(&request.input));
-                    if analyses.is_empty() {
-                        analyses = crate::guess::guessed_analyses(&request.input);
-                    }
-                    analyses
-                }
+        let analyses = if let Some(apostrophe) = crate::guess::apostrophe_analyses(&request.input) {
+            apostrophe
+        } else {
+            let mut analyses = Analyzer::new(&self.lexicon).analyze(&request.input);
+            analyses.extend(crate::closed::closed_analyses(&request.input));
+            analyses.extend(crate::guess::question_particle_analyses(&request.input));
+            if analyses.is_empty() {
+                analyses = crate::guess::guessed_analyses(&request.input);
             }
+            analyses
         };
         let best_analysis = choose_best_noun_analysis(&analyses);
 
@@ -147,7 +141,6 @@ impl TextTransformer for MorphService {
                 best_analysis,
                 analysis_count: analyses.len(),
                 analyses,
-                mode: request.options,
             },
         )
     }
@@ -155,12 +148,12 @@ impl TextTransformer for MorphService {
 
 #[cfg(test)]
 mod tests {
-    use crate::{MorphMode, MorphService};
+    use crate::MorphService;
 
     #[test]
     fn exposes_preferred_candidate_as_best_analysis() {
-        let service = MorphService::new();
-        let response = service.analyze("evleri", MorphMode::NounBaseline);
+        let service = MorphService::seed();
+        let response = service.analyze("evleri");
 
         assert_eq!(response.output.analysis_count, 4);
         assert_eq!(
@@ -175,8 +168,8 @@ mod tests {
 
     #[test]
     fn exposes_preferred_candidate_for_genitive_ambiguity() {
-        let service = MorphService::new();
-        let response = service.analyze("evin", MorphMode::NounBaseline);
+        let service = MorphService::seed();
+        let response = service.analyze("evin");
 
         assert_eq!(response.output.analysis_count, 2);
         assert_eq!(
@@ -191,8 +184,8 @@ mod tests {
 
     #[test]
     fn keeps_full_candidate_set_when_best_analysis_is_present() {
-        let service = MorphService::new();
-        let response = service.analyze("evleri", MorphMode::NounBaseline);
+        let service = MorphService::seed();
+        let response = service.analyze("evleri");
 
         assert!(response.output.best_analysis.is_some());
         assert_eq!(
@@ -203,7 +196,7 @@ mod tests {
 
     #[test]
     fn service_clones_share_one_lexicon() {
-        let service = MorphService::new();
+        let service = MorphService::seed();
         let clone = service.clone();
 
         assert!(std::ptr::eq(service.lexicon(), clone.lexicon()));

@@ -12,7 +12,7 @@ use std::process::ExitCode;
 
 use tekir_disamb::conllu::{self, turkish_lowercase};
 use tekir_disamb::{Trainer, decode, features, mapping, perceptron::BOUNDARY_TAG, tag_of};
-use tekir_morph::{Lexicon, MorphAnalysis, MorphMode, MorphService};
+use tekir_morph::{Lexicon, MorphAnalysis, MorphService};
 
 struct PreparedToken {
     candidates: Vec<MorphAnalysis>,
@@ -67,7 +67,7 @@ fn main() -> ExitCode {
                     } else {
                         turkish_lowercase(&token.form)
                     };
-                    let response = service.analyze(surface, MorphMode::NounBaseline);
+                    let response = service.analyze(surface);
                     let candidates = response.output.analyses;
                     let gold = mapping::gold_index(token, &candidates);
                     let baseline = response.output.best_analysis.as_ref().and_then(|best| {

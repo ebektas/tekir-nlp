@@ -3,7 +3,7 @@
 //! it has an analysis (Oflazer's original spelling-checker thesis).
 
 use serde::Serialize;
-use tekir_morph::{Lexicon, MorphService, analyze_word, closed, guess};
+use tekir_morph::{MorphService, analyze_word, closed, guess};
 
 /// ASCII letters that may stand for a Turkish letter in deasciified text.
 const DEASCII: &[(char, char)] = &[
@@ -35,7 +35,7 @@ pub struct SpellChecker {
 
 impl Default for SpellChecker {
     fn default() -> Self {
-        Self::new(MorphService::with_lexicon(Lexicon::full()))
+        Self::new(MorphService::new())
     }
 }
 

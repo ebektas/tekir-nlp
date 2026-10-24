@@ -9,7 +9,7 @@ use anyhow::{Context, Result};
 use clap::{Parser, Subcommand, ValueEnum};
 use serde::{Deserialize, Serialize};
 use tekir_core::{ReverseMode, ReverseService};
-use tekir_morph::{Lexicon, MorphMode, MorphService};
+use tekir_morph::{Lexicon, MorphService};
 use tekir_normalize::{NormalizeMode, NormalizeService};
 use tekir_segment::{SegmentMode, SegmentService};
 use tekir_tokenize::{TokenizeMode, TokenizeService};
@@ -60,12 +60,10 @@ struct MorphArgs {
     jobs: usize,
     #[arg(long)]
     best_only: bool,
-    /// Load root lexicon TSV files instead of the built-in seed
+    /// Load root lexicon TSV files instead of the built-in full lexicon
     /// (repeatable; files may hold nouns, adjectives, verbs, or compounds).
     #[arg(long, value_name = "PATH")]
     lexicon: Vec<std::path::PathBuf>,
-    #[arg(long, value_enum, default_value_t = MorphModeArg::NounBaseline)]
-    mode: MorphModeArg,
     #[arg(long, default_value_t = OutputFormat::Text, value_enum)]
     output: OutputFormat,
 }
@@ -200,11 +198,6 @@ enum NormalizeModeArg {
 }
 
 #[derive(Debug, Clone, Copy, ValueEnum)]
-enum MorphModeArg {
-    NounBaseline,
-}
-
-#[derive(Debug, Clone, Copy, ValueEnum)]
 enum SegmentModeArg {
     Turkish,
 }
@@ -236,14 +229,6 @@ impl From<NormalizeModeArg> for NormalizeMode {
         match value {
             NormalizeModeArg::Basic => NormalizeMode::Basic,
             NormalizeModeArg::Turkish => NormalizeMode::Turkish,
-        }
-    }
-}
-
-impl From<MorphModeArg> for MorphMode {
-    fn from(value: MorphModeArg) -> Self {
-        match value {
-            MorphModeArg::NounBaseline => MorphMode::NounBaseline,
         }
     }
 }
@@ -291,13 +276,12 @@ fn run_morph(args: MorphArgs) -> Result<()> {
     };
 
     if args.input_format == InputFormat::Jsonl {
-        let mode = args.mode.into();
         let output = args.output;
-        return run_morph_jsonl(&service, args, mode, output);
+        return run_morph_jsonl(&service, args, output);
     }
 
     let input = resolve_input(args.input, args.stdin)?;
-    let response = service.analyze(input, args.mode.into());
+    let response = service.analyze(input);
 
     match args.output {
         OutputFormat::Text => print_morph_plain(&response, args.best_only),
@@ -316,7 +300,6 @@ fn print_morph_plain(response: &tekir_morph::MorphResponse, best_only: bool) {
 }
 
 fn print_morph_debug(response: &tekir_morph::MorphResponse, best_only: bool) {
-    println!("mode: {:?}", response.output.mode);
     println!("input_len_bytes: {}", response.input_len_bytes);
     println!("analysis_count: {}", response.output.analysis_count);
     println!("best_only: {}", best_only);
@@ -361,7 +344,7 @@ fn morph_analyses_for_output(
 
 fn run_disamb(args: DisambArgs) -> Result<()> {
     let service = if args.lexicon.is_empty() {
-        MorphService::with_lexicon(Lexicon::full())
+        MorphService::new()
     } else {
         let lexicon =
             Lexicon::from_tsv_paths(&args.lexicon).context("failed to load lexicon files")?;
@@ -600,12 +583,7 @@ fn run_tokenize_jsonl(
     })
 }
 
-fn run_morph_jsonl(
-    service: &MorphService,
-    args: MorphArgs,
-    mode: MorphMode,
-    output: OutputFormat,
-) -> Result<()> {
+fn run_morph_jsonl(service: &MorphService, args: MorphArgs, output: OutputFormat) -> Result<()> {
     match output {
         OutputFormat::Text | OutputFormat::Debug => {
             anyhow::bail!("--input-format jsonl requires --output json or --output jsonl")
@@ -614,9 +592,7 @@ fn run_morph_jsonl(
     }
 
     with_jsonl_reader(args.input, args.stdin, |reader| {
-        process_jsonl_stream("morph", reader, args.jobs, |text| {
-            service.analyze(text, mode)
-        })
+        process_jsonl_stream("morph", reader, args.jobs, |text| service.analyze(text))
     })
 }
 
@@ -828,12 +804,12 @@ struct BatchResult {
 #[cfg(test)]
 mod tests {
     use super::{
-        InputFormat, ModeArg, MorphArgs, MorphModeArg, NormalizeArgs, NormalizeModeArg,
-        OutputFormat, ReverseArgs, SegmentArgs, SegmentModeArg, TokenizeArgs, TokenizeModeArg,
+        InputFormat, ModeArg, MorphArgs, NormalizeArgs, NormalizeModeArg, OutputFormat,
+        ReverseArgs, SegmentArgs, SegmentModeArg, TokenizeArgs, TokenizeModeArg,
     };
 
     #[test]
-    fn morph_args_support_noun_baseline_mode() {
+    fn morph_args_support_best_only() {
         let args = MorphArgs {
             input: Some("evler".to_string()),
             stdin: false,
@@ -841,7 +817,6 @@ mod tests {
             jobs: 1,
             best_only: true,
             lexicon: Vec::new(),
-            mode: MorphModeArg::NounBaseline,
             output: OutputFormat::Debug,
         };
 

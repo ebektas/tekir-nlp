@@ -2,7 +2,7 @@
 //! analysis over the full lexicon, and contextual disambiguation.
 
 use serde::Serialize;
-use tekir_morph::{Lexicon, MorphAnalysis, MorphMode, MorphService};
+use tekir_morph::{MorphAnalysis, MorphService};
 use tekir_tokenize::{TokenizeMode, TokenizeService};
 
 use crate::Disambiguator;
@@ -46,10 +46,7 @@ impl Pipeline {
 
     /// Full embedded lexicon and the bundled model.
     pub fn bundled() -> Self {
-        Self::new(
-            MorphService::with_lexicon(Lexicon::full()),
-            Disambiguator::new(bundled_model()),
-        )
+        Self::new(MorphService::new(), Disambiguator::new(bundled_model()))
     }
 
     pub fn service(&self) -> &MorphService {
@@ -72,10 +69,7 @@ impl Pipeline {
                 } else {
                     turkish_lowercase(&token.text)
                 };
-                self.service
-                    .analyze(surface, MorphMode::NounBaseline)
-                    .output
-                    .analyses
+                self.service.analyze(surface).output.analyses
             })
             .collect();
         let choices = self.disambiguator.disambiguate(&candidates);
