@@ -966,6 +966,52 @@ fn realize_segment(
 /// inflectional-group chain (as produced by the analyzer). The chain is
 /// assumed morphotactically legal.
 pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> String {
+    generate(entry, igs, None)
+}
+
+/// Like [`generate_from_igs`], plus the byte offset where each overt suffix
+/// starts (`kitaplarımızdan` -> `[5, 8, 13]`). Offsets are strictly
+/// increasing and lie inside the surface; the stem is everything before the
+/// first one.
+pub fn generate_with_boundaries(
+    entry: &LexiconEntry,
+    igs: &[InflectionGroup],
+) -> (String, Vec<usize>) {
+    let mut boundaries = Vec::new();
+    let surface = generate(entry, igs, Some(&mut boundaries));
+    (surface, boundaries)
+}
+
+/// Suffix boundaries for a tail analysis: `root` is copied verbatim and the
+/// suffixes of `igs` (whose root groups realize nothing) are realized after
+/// it from `ctx`. Returns the full surface and its boundaries, the first
+/// being `root.len()` when any suffix is overt.
+pub(crate) fn generate_tail_with_boundaries(
+    root: &str,
+    ctx: PhonoContext,
+    igs: &[InflectionGroup],
+) -> (String, Vec<usize>) {
+    let entry = LexiconEntry::new("", None, None);
+    let segments = segments_from_igs(&entry, igs);
+    let mut surface = root.to_string();
+    let mut boundaries = Vec::new();
+    let root_vowels = root.chars().filter(|ch| is_vowel(*ch)).count();
+    realize_suffixes(
+        &entry,
+        &segments,
+        ctx,
+        root_vowels,
+        &mut surface,
+        Some(&mut boundaries),
+    );
+    (surface, boundaries)
+}
+
+fn generate(
+    entry: &LexiconEntry,
+    igs: &[InflectionGroup],
+    boundaries: Option<&mut Vec<usize>>,
+) -> String {
     let segments = segments_from_igs(entry, igs);
 
     let bare_context = PhonoContext {
@@ -975,7 +1021,7 @@ pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> Strin
     let root_vowels = entry.bare_stem.chars().filter(|ch| is_vowel(*ch)).count();
 
     let mut buf = SuffixBuf::new();
-    let (stem, mut ctx) = match (vowel_alternant_context(entry), segments.first()) {
+    let (stem, ctx) = match (vowel_alternant_context(entry), segments.first()) {
         (Some(vowel_ctx), Some(first)) => {
             realize_segment(entry, root_vowels, first, vowel_ctx, &mut buf);
             if starts_with_vowel(buf.as_str()) {
@@ -989,10 +1035,25 @@ pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> Strin
 
     let mut surface = String::with_capacity(stem.len() + 16);
     surface.push_str(stem);
+    realize_suffixes(entry, &segments, ctx, root_vowels, &mut surface, boundaries);
+    surface
+}
+
+/// Append the realization of `segments` to `surface` (which holds the
+/// stem), optionally recording where each overt suffix starts.
+fn realize_suffixes(
+    entry: &LexiconEntry,
+    segments: &[Segment],
+    mut ctx: PhonoContext,
+    root_vowels: usize,
+    surface: &mut String,
+    mut boundaries: Option<&mut Vec<usize>>,
+) {
+    let mut buf = SuffixBuf::new();
     let mut pending_voicing_k = false;
     let mut vowel_count = root_vowels;
 
-    for segment in &segments {
+    for segment in segments {
         // Vowel ellipsis before the progressive (`başlıyor`, `yapmıyor`).
         if matches!(
             segment,
@@ -1006,7 +1067,11 @@ pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> Strin
             // (`okumuyor`, `oynuyor`), falling back to the elided one
             // (`yiyor`).
             let elided = surface.pop().expect("surface ends with a vowel");
-            ctx.last_vowel = last_vowel(&surface).or(Some(elided));
+            ctx.last_vowel = last_vowel(surface).or(Some(elided));
+            // A suffix that was only the elided vowel is gone.
+            if let Some(boundaries) = boundaries.as_deref_mut() {
+                boundaries.retain(|&offset| offset < surface.len());
+            }
         }
 
         realize_segment(entry, vowel_count, segment, ctx, &mut buf);
@@ -1014,6 +1079,11 @@ pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> Strin
             surface.pop();
             surface.push('ğ');
             ctx.last_char = 'ğ';
+        }
+        if !buf.as_str().is_empty()
+            && let Some(boundaries) = boundaries.as_deref_mut()
+        {
+            boundaries.push(surface.len());
         }
         surface.push_str(buf.as_str());
         ctx.extend(buf.as_str());
@@ -1029,8 +1099,6 @@ pub fn generate_from_igs(entry: &LexiconEntry, igs: &[InflectionGroup]) -> Strin
             }
         );
     }
-
-    surface
 }
 
 pub fn generate_noun_surface(entry: &LexiconEntry, path: &NounPath) -> String {

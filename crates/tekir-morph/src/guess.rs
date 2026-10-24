@@ -7,8 +7,9 @@
 //! copular machinery (cases, `-ki`, copulas) applies to the suffix side.
 
 use crate::{
-    analysis::{AnalysisSource, MorphAnalysis},
+    analysis::{AnalysisSource, MorphAnalysis, Origin},
     analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_nominal_tail_into},
+    generator::generate_tail_with_boundaries,
     lexical::gloss_from_igs,
     rules::{PhonoContext, last_vowel},
     state::InflectionGroup,
@@ -41,7 +42,14 @@ pub fn apostrophe_analyses(surface: &str) -> Option<Vec<MorphAnalysis>> {
         )];
         push_unique(
             &mut analyses,
-            tail_analysis(surface, stem, Some("+Prop"), &igs, AnalysisSource::Proper),
+            tail_analysis(
+                surface,
+                stem,
+                Some("+Prop"),
+                &igs,
+                AnalysisSource::Proper,
+                Vec::new(),
+            ),
         );
         return Some(analyses);
     }
@@ -56,6 +64,8 @@ pub fn apostrophe_analyses(surface: &str) -> Option<Vec<MorphAnalysis>> {
             Some("+Prop"),
             AnalysisSource::Proper,
             &raw,
+            context,
+            tail,
         );
     }
 
@@ -78,7 +88,14 @@ pub fn question_particle_analyses(surface: &str) -> Vec<MorphAnalysis> {
             let igs = [InflectionGroup::ques()];
             push_unique(
                 &mut analyses,
-                tail_analysis(surface, particle, None, &igs, AnalysisSource::Question),
+                tail_analysis(
+                    surface,
+                    particle,
+                    None,
+                    &igs,
+                    AnalysisSource::Question,
+                    Vec::new(),
+                ),
             );
             continue;
         }
@@ -92,6 +109,8 @@ pub fn question_particle_analyses(surface: &str) -> Vec<MorphAnalysis> {
             None,
             AnalysisSource::Question,
             &raw,
+            context,
+            tail,
         );
     }
 
@@ -129,6 +148,8 @@ pub fn guessed_analyses(surface: &str) -> Vec<MorphAnalysis> {
             Some("+Unk"),
             AnalysisSource::Guessed,
             &raw,
+            context,
+            tail,
         );
     }
 
@@ -162,11 +183,24 @@ fn collect(
     marker: Option<&'static str>,
     source: AnalysisSource,
     raw: &[RawAnalysis],
+    context: PhonoContext,
+    tail: &str,
 ) {
+    // Everything before the tail (root, plus the apostrophe for proper
+    // stems) is one piece; the apostrophe gets a piece of its own.
+    let head = &surface[..surface.len() - tail.len()];
     for candidate in raw {
+        let (generated, mut boundaries) =
+            generate_tail_with_boundaries(head, context, candidate.igs());
+        if generated != surface {
+            boundaries = vec![head.len()];
+        }
+        if head.len() > lemma.len() {
+            boundaries.insert(0, lemma.len());
+        }
         push_unique(
             analyses,
-            tail_analysis(surface, lemma, marker, candidate.igs(), source),
+            tail_analysis(surface, lemma, marker, candidate.igs(), source, boundaries),
         );
     }
 }
@@ -188,6 +222,7 @@ fn tail_analysis(
     marker: Option<&'static str>,
     igs: &[InflectionGroup],
     source: AnalysisSource,
+    boundaries: Vec<usize>,
 ) -> MorphAnalysis {
     let final_ig = *igs.last().expect("analysis has at least one group");
     let mut lexical_form = gloss_from_igs(lemma, igs);
@@ -202,6 +237,7 @@ fn tail_analysis(
         pos: final_ig.pos.into(),
         igs: igs.to_vec(),
         source,
+        origin: Origin::Boundaries(boundaries),
     }
 }
 

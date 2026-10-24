@@ -15,7 +15,7 @@
 //! never reaches the cap).
 
 use crate::{
-    analysis::{AnalysisSource, MorphAnalysis},
+    analysis::{AnalysisSource, MorphAnalysis, Origin},
     generator::{
         SuffixBuf, aorist_is_hr, copula_person_is_past_type, derivation_has_voicing_k,
         harmony_seed, realize_causative, realize_copula_marker, realize_copula_person,
@@ -280,6 +280,7 @@ impl<'a> Analyzer<'a> {
             pos: raw.final_ig().pos.into(),
             igs: igs.to_vec(),
             source: AnalysisSource::Lexicon,
+            origin: Origin::Entry(raw.entry),
         }
     }
 }

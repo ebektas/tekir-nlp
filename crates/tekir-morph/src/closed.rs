@@ -8,8 +8,9 @@
 use std::sync::LazyLock;
 
 use crate::{
-    analysis::{AnalysisSource, MorphAnalysis, PartOfSpeech},
+    analysis::{AnalysisSource, MorphAnalysis, Origin, PartOfSpeech},
     analyzer::{RawAnalysis, analyze_copular_tail_into, analyze_ki_tail_into},
+    generator::generate_tail_with_boundaries,
     lexical::gloss_from_igs,
     rules::PhonoContext,
     state::InflectionGroup,
@@ -74,6 +75,7 @@ pub fn closed_analyses(surface: &str) -> Vec<MorphAnalysis> {
                 form.chain.to_string(),
                 chain_pos(form.chain),
                 1,
+                Vec::new(),
             ));
             continue;
         }
@@ -94,7 +96,12 @@ pub fn closed_analyses(surface: &str) -> Vec<MorphAnalysis> {
             if !analyses.iter().any(|existing: &MorphAnalysis| {
                 existing.lemma == form.lemma && existing.lexical_form.ends_with(&gloss)
             }) {
-                analyses.push(build(surface, form, gloss, pos, igs.len()));
+                let (generated, mut boundaries) =
+                    generate_tail_with_boundaries(form.surface, context, igs);
+                if generated != surface {
+                    boundaries = vec![form.surface.len()];
+                }
+                analyses.push(build(surface, form, gloss, pos, igs.len(), boundaries));
             }
         }
     }
@@ -125,6 +132,7 @@ fn build(
     chain: String,
     pos: PartOfSpeech,
     ig_count: usize,
+    boundaries: Vec<usize>,
 ) -> MorphAnalysis {
     let mut igs = vec![InflectionGroup::func()];
     igs.resize(ig_count.max(1), InflectionGroup::func());
@@ -136,6 +144,7 @@ fn build(
         pos,
         igs,
         source: AnalysisSource::Lexicon,
+        origin: Origin::Boundaries(boundaries),
     }
 }
 

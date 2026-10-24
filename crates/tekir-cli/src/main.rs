@@ -47,6 +47,9 @@ struct MorphArgs {
     jobs: usize,
     #[arg(long)]
     best_only: bool,
+    /// Prefix each analysis with its morpheme split (`kitap|lar|dan`).
+    #[arg(long)]
+    segments: bool,
     /// Load root lexicon TSV files instead of the built-in full lexicon
     /// (repeatable; files may hold nouns, adjectives, verbs, or compounds).
     #[arg(long, value_name = "PATH")]
@@ -251,7 +254,7 @@ fn run_morph(args: MorphArgs) -> Result<()> {
     let response = service.analyze(input);
 
     match args.output {
-        OutputFormat::Text => print_morph_plain(&response, args.best_only),
+        OutputFormat::Text => print_morph_plain(&service, &response, args.best_only, args.segments),
         OutputFormat::Debug => print_morph_debug(&response, args.best_only),
         OutputFormat::Json => print_json("morph", &response)?,
         OutputFormat::Jsonl => print_jsonl_record("morph", None, &response)?,
@@ -260,9 +263,19 @@ fn run_morph(args: MorphArgs) -> Result<()> {
     Ok(())
 }
 
-fn print_morph_plain(response: &tekir_morph::MorphResponse, best_only: bool) {
+fn print_morph_plain(
+    service: &MorphService,
+    response: &tekir_morph::MorphResponse,
+    best_only: bool,
+    segments: bool,
+) {
     for analysis in morph_analyses_for_output(response, best_only) {
-        println!("{}", analysis.lexical_form);
+        if segments {
+            let pieces = analysis.morphemes(service.lexicon());
+            println!("{}\t{}", pieces.join("|"), analysis.lexical_form);
+        } else {
+            println!("{}", analysis.lexical_form);
+        }
     }
 }
 
@@ -759,6 +772,7 @@ mod tests {
             input_format: InputFormat::Text,
             jobs: 1,
             best_only: true,
+            segments: false,
             lexicon: Vec::new(),
             output: OutputFormat::Debug,
         };
