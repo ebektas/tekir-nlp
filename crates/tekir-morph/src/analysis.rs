@@ -175,27 +175,32 @@ impl MorphService {
 
     pub fn analyze(&self, input: impl Into<String>) -> MorphResponse {
         let input = input.into();
-        let analyses = if let Some(apostrophe) = crate::guess::apostrophe_analyses(&input) {
+        let output = self.analyze_word(&input);
+        TextTransformResponse::new(input, output)
+    }
+
+    /// All analyses of one word, without the response envelope. Input is
+    /// expected in Turkish lowercase except for apostrophe forms
+    /// (`Ankara'da`); see [`tekir_core::turkish_lowercase`].
+    pub fn analyze_word(&self, word: &str) -> MorphOutput {
+        let analyses = if let Some(apostrophe) = crate::guess::apostrophe_analyses(word) {
             apostrophe
         } else {
-            let mut analyses = Analyzer::new(&self.lexicon).analyze(&input);
-            analyses.extend(crate::closed::closed_analyses(&input));
-            analyses.extend(crate::guess::question_particle_analyses(&input));
+            let mut analyses = Analyzer::new(&self.lexicon).analyze(word);
+            analyses.extend(crate::closed::closed_analyses(word));
+            analyses.extend(crate::guess::question_particle_analyses(word));
             if analyses.is_empty() {
-                analyses = crate::guess::guessed_analyses(&input);
+                analyses = crate::guess::guessed_analyses(word);
             }
             analyses
         };
         let best_analysis = choose_best_noun_analysis(&analyses);
 
-        TextTransformResponse::new(
-            input,
-            MorphOutput {
-                best_analysis,
-                analysis_count: analyses.len(),
-                analyses,
-            },
-        )
+        MorphOutput {
+            best_analysis,
+            analysis_count: analyses.len(),
+            analyses,
+        }
     }
 }
 

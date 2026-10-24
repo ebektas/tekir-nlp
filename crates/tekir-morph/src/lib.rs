@@ -1,5 +1,6 @@
 pub mod analysis;
 pub mod analyzer;
+pub mod batch;
 pub mod closed;
 pub mod generator;
 #[cfg(test)]
@@ -15,6 +16,7 @@ pub use analysis::{
     AnalysisSource, MorphAnalysis, MorphOutput, MorphResponse, MorphService, PartOfSpeech,
 };
 pub use analyzer::{Analyzer, MAX_IGS, RawAnalysis, analyze_word};
+pub use batch::BatchAnalysis;
 pub use generator::generate_from_igs;
 pub use lexicon::{Lexicon, LexiconEntry, LexiconError, StemAlternant};
 pub use state::{

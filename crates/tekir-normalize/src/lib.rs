@@ -1,5 +1,5 @@
 use serde::Serialize;
-use tekir_core::TextTransformResponse;
+use tekir_core::{TextTransformResponse, turkish_lowercase};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize)]
 #[serde(rename_all = "snake_case")]
@@ -161,20 +161,6 @@ fn is_closing_punctuation(token: &str) -> bool {
         && token
             .chars()
             .all(|ch| matches!(ch, ',' | '.' | '!' | '?' | ':' | ';' | ')' | ']' | '}'))
-}
-
-fn turkish_lowercase(input: &str) -> String {
-    let mut output = String::with_capacity(input.len());
-
-    for ch in input.chars() {
-        match ch {
-            'I' => output.push('ı'),
-            'İ' => output.push('i'),
-            _ => output.extend(ch.to_lowercase()),
-        }
-    }
-
-    output
 }
 
 #[cfg(test)]

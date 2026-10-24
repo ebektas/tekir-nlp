@@ -7,6 +7,7 @@ authors.workspace = true
 rust-version.workspace = true
 
 [dependencies]
+tekir-core = { path = "../tekir-core" }
 tekir-morph = { path = "../tekir-morph" }
 tekir-tokenize = { path = "../tekir-tokenize" }
 serde.workspace = true

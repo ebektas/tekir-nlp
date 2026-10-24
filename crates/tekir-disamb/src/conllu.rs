@@ -76,16 +76,7 @@ pub fn parse(text: &str) -> Vec<Sentence> {
     sentences
 }
 
-/// Turkish-aware lowercasing (`İ -> i`, `I -> ı`).
-pub fn turkish_lowercase(text: &str) -> String {
-    text.chars()
-        .flat_map(|ch| match ch {
-            'İ' => vec!['i'],
-            'I' => vec!['ı'],
-            other => other.to_lowercase().collect(),
-        })
-        .collect()
-}
+pub use tekir_core::turkish_lowercase;
 
 #[cfg(test)]
 mod tests {
@@ -97,11 +88,5 @@ mod tests {
         assert_eq!(sentences[0].tokens.len(), 2);
         assert_eq!(sentences[0].tokens[0].lemma, "ev");
         assert_eq!(sentences[0].tokens[0].feat("Case"), Some("Loc"));
-    }
-
-    #[test]
-    fn lowercases_turkish_dotted_and_dotless() {
-        assert_eq!(super::turkish_lowercase("İSTANBUL'DA"), "istanbul'da");
-        assert_eq!(super::turkish_lowercase("IŞIK"), "ışık");
     }
 }
